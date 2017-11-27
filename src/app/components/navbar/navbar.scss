@@ -1,0 +1,35 @@
+.acme-navbar-text{
+  color: white;
+}
+
+a {
+  color: black;
+}
+
+img {
+  width:20%;
+  }
+
+  @media (max-width: $screen-sm-max) {
+    h3 {
+      font-size: 2vmax; 
+    }
+  }
+ 
+
+.customNav {
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  height: 60px;
+  z-index: 9999;
+  width: 100%;
+  background-color: #34405F;
+  border-radius: 0px;
+  text-align: center;
+}
+
+
+
+
