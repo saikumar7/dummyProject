@@ -65,6 +65,18 @@
         $scope.addChildren = '';
       }
 
+      $scope.localSearch = function(str) {
+        var matches = [];
+        vm.children.forEach(function(person) {
+          if ((person.FirstName.toLowerCase().indexOf(str.toString().toLowerCase()) === 0) ||
+              (person.LastName.toLowerCase().indexOf(str.toString().toLowerCase()) === 0) ||
+              (person.FullName.toLowerCase().indexOf(str.toString().toLowerCase()) === 0)) {
+            matches.push(person);
+          }
+        });
+        return matches;
+      };
+
       vm.search = function () {
           $scope.childIdArray = [];
           $scope.childId = $scope.selectedChild.originalObject.PersonId;
