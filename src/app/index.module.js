@@ -16,4 +16,5 @@
       'ui.bootstrap', 
       'toastr'
     ]);
+
 })();
