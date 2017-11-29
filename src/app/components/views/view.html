@@ -1,136 +1,168 @@
 <div class="content col-sm-9 offset-sm-3 col-md-10 offset-md-2 col-lg-10 col-xl-8">
-  <form  role="form" name="byNameForm" novalidate >
+  <form role="form" name="byNameForm" novalidate>
+  
     <fieldset>
       <div class="col-sm-12">
-        <div class="form-group col-sm-8 col-md-5" >
-          <label for="ChildName" ><h4 class="required">Child's Name</h4></label>
-          <angucomplete-alt id="childname"
-                placeholder="Enter Child's name"
-                pause="400"
-                selected-object="selectedChild"
-                local-data="sbn.children"
-                local-search="localSearch"
-                title-field="FirstName,LastName,DOB"
-                search-fields = "FirstName,LastName,FullName"
-                minlength="1"
-                input-class="form-control form-control-small"
-                override-suggestions="true"
-                ng-model = "selectedChild.originalObject.FullName"
-                match-class="highlight"/>   
+        <div class="form-group col-sm-8 col-md-5">
+          <label for="ChildName">
+            <h4 class="required">Child's Name</h4>
+          </label>
+          <angucomplete-alt 
+              id="childname" 
+              placeholder="Enter Child's name" 
+              pause="400" 
+              selected-object="selectedChild" 
+              local-data="sbn.children"
+              local-search="localSearch" 
+              title-field="FirstName,LastName,DOB" 
+              search-fields="FirstName,LastName,FullName" 
+              minlength="1"
+              input-class="form-control form-control-small"
+              override-suggestions="true"
+              ng-model="selectedChild.originalObject.FullName"
+              match-class="highlight">
+          </angucomplete-alt>
         </div>
         <div class="form-group col-sm-4 col-md-3 col-lg-2">
-          <label for="DOB"><h4 >Date of Birth</h4></label>    
-          <input class="form-control" type="text" name="dob"  id="dob" placeholder="mm/dd/yyyy" ng-model = "selectedChild.originalObject.DOB"  
-          ng-pattern="/^([0-9]{2}[-/][0-9]{2}[-/][0-9]{4})|([0-9]{8})/" ng-disabled="!selectedChild.originalObject.FullName" 
-          ng-class="{'borderRed':byNameForm.dob.$dirty && byNameForm.dob.$invalid}">
-          <span ng-messages="byNameForm.dob.$error" class="has-error ng-scope ng-active "
-            ng-if="byNameForm.dob.$submitted || byNameForm.dob.$Invalid || byNameForm.dob.$dirty  ">
-            <span ng-message="pattern"><span>Should be in mm/dd/yyyy</span></span>
-          </span> 
+          <label for="DOB">
+            <h4 >Date of Birth</h4>
+          </label>
+
+          <input class="form-control" type="text" name="dob" id="dob" placeholder="mm/dd/yyyy"
+            ng-model="selectedChild.originalObject.DOB"
+            ng-pattern="/^([0-9]{2}[-/][0-9]{2}[-/][0-9]{4})|([0-9]{8})/" 
+            ng-disabled="!selectedChild.originalObject.FullName"
+            ng-class="{'borderRed':byNameForm.dob.$dirty && byNameForm.dob.$invalid}">
+
+          <span ng-messages="byNameForm.dob.$error" 
+            class="has-error ng-scope ng-active " 
+            ng-if="byNameForm.dob.$submitted || byNameForm.dob.$Invalid || byNameForm.dob.$dirty">
+            <span ng-message="pattern">
+              <span>Should be in mm/dd/yyyy</span>
+            </span>
+          </span>
+
         </div>
       </div>
+
       <div class="col-sm-12">
-        <div class="form-group col-sm-8 col-md-5" >
-          <label for="Address" ><h4 class="required">Address at Custody</h4></label>
-          <input class="form-control" type="text" name="addrLine1" id="address" placeholder="Address" ng-model = "selectedChild.originalObject.AddrLine1" 
-          ng-class="{'borderRed':byNameForm.addrLine1.$dirty && byNameForm.addrLine1.$invalid}" required>
-          <span ng-messages="byNameForm.addrLine1.$error" class="has-error ng-scope ng-active "
+        <div class="form-group col-sm-8 col-md-5">
+          <label for="Address">
+            <h4 class="required">Address at Custody</h4>
+          </label>
+
+          <input class="form-control" type="text" name="addrLine1" id="address" placeholder="Address"
+            ng-model="selectedChild.originalObject.AddrLine1"
+            ng-class="{'borderRed':byNameForm.addrLine1.$dirty && byNameForm.addrLine1.$invalid}" required>
+
+          <span ng-messages="byNameForm.addrLine1.$error" 
+            class="has-error ng-scope ng-active " 
             ng-if="byNameForm.addrLine1.$Invalid || byNameForm.addrLine1.$dirty">
-           <span ng-message="required"><span>Address Required</span></span>
-          </span> 
+            <span ng-message="required">
+              <span>Address Required</span>
+            </span>
+          </span>
         </div>
       </div>
+
       <div class="col-sm-12">
-        <div class="form-group col-sm-5 col-md-3" >
+        <div class="form-group col-sm-5 col-md-3">
           <label for="City"><h4 class="required">City</h4></label>
-          <input class="form-control" type="text" name="addrCity"  id="city" placeholder="City" ng-model = "selectedChild.originalObject.AddrCity" 
-          ng-class="{'borderRed':byNameForm.addrCity.$dirty && byNameForm.addrCity.$invalid}" required>
-           <span ng-messages="byNameForm.addrCity.$error" class="has-error ng-scope ng-active "
-           ng-if="byNameForm.addrCity.$Invalid || byNameForm.addrCity.$dirty">
+          <input class="form-control" type="text" name="addrCity" id="city" placeholder="City" ng-model="selectedChild.originalObject.AddrCity"
+            ng-class="{'borderRed':byNameForm.addrCity.$dirty && byNameForm.addrCity.$invalid}" required>
+          <span ng-messages="byNameForm.addrCity.$error" class="has-error ng-scope ng-active " ng-if="byNameForm.addrCity.$Invalid || byNameForm.addrCity.$dirty">
           <span ng-message="required"><span>City Required</span></span>
           </span>
         </div>
-        <div class="form-group col-sm-3 col-md-2" >
+        <div class="form-group col-sm-3 col-md-2">
           <label for="State"><h4 class="required">State</h4></label>
-          <input class="form-control" type="text" name="addrState"  id="state" placeholder="State"  ng-model = "selectedChild.originalObject.AddrState" 
-          ng-minlength="2" maxlength="2" ng-class="{'borderRed':byNameForm.addrState.$dirty && byNameForm.addrState.$invalid}"  required>
+          <input class="form-control" type="text" name="addrState" id="state" placeholder="State" ng-model="selectedChild.originalObject.AddrState"
+            ng-minlength="2" maxlength="2" ng-class="{'borderRed':byNameForm.addrState.$dirty && byNameForm.addrState.$invalid}"
+            required>
           <span ng-messages="byNameForm.addrState.$error" class="has-error ng-scope ng-active " ng-if="byNameForm.addrState.$Invalid || byNameForm.addrState.$dirty">
             <span ng-message="required"><span>State Required</span></span>
-          </span> 
+          </span>
         </div>
-        <div class="form-group col-sm-4 col-md-3 col-lg-2" >
+        <div class="form-group col-sm-4 col-md-3 col-lg-2">
           <label for="Zip"><h4 class="required">Zip</h4></label>
-          <input class="form-control" type="text" name="addrZip"  id="zip" placeholder="Zip"  ng-model = "selectedChild.originalObject.AddrZip" 
-           ng-pattern='/^(\d{5}(-\d{4})?|[A-Z]\d[A-Z] *\d[A-Z]\d)$/' ng-minlength="5" ng-maxlength="5" ng-class="{'borderRed':byNameForm.addrZip.$dirty && byNameForm.addrZip.$invalid}" required>
-          <span ng-messages="byNameForm.addrZip.$error" class="has-error ng-scope ng-active "
-            ng-if="byNameForm.gender.$submitted || byNameForm.addrZip.$Invalid || byNameForm.addrZip.$dirty">
+          <input class="form-control" type="text" name="addrZip" id="zip" placeholder="Zip" ng-model="selectedChild.originalObject.AddrZip"
+            ng-pattern='/^(\d{5}(-\d{4})?|[A-Z]\d[A-Z] *\d[A-Z]\d)$/' ng-minlength="5" ng-maxlength="5" ng-class="{'borderRed':byNameForm.addrZip.$dirty && byNameForm.addrZip.$invalid}"
+            required>
+          <span ng-messages="byNameForm.addrZip.$error" class="has-error ng-scope ng-active " ng-if="byNameForm.gender.$submitted || byNameForm.addrZip.$Invalid || byNameForm.addrZip.$dirty">
             <span ng-message="required"><span>Zip Required</span></span>
-            <span ng-message="pattern"><span>Invalid zip code</span></span>
-          </span> 
+          <span ng-message="pattern"><span>Invalid zip code</span></span>
+          </span>
         </div><br/>
       </div>
+
       <div class="col-xs-12 col-sm-12 col-md-12">
-        <div class="form-group col-sm-5 col-md-3 pull-left" >
+        <div class="form-group col-sm-5 col-md-3 pull-left">
           <label for="Addtnchld"><h4 >Additional Children</h4></label>
-          <input class="form-control" type="number" name="addtnchld"  id="addtnchld" min="0" ng-maxlength="2" ng-pattern="/^[0-9]*$/" ng-model = "addChildren" 
-           ng-change="sbn.additionalChildren()" ng-class="{'borderRed':byNameForm.addtnchld.$dirty && byNameForm.addtnchld.$invalid}">
-          <span ng-messages="byNameForm.addtnchld.$error" class="has-error ng-scope ng-active "
-            ng-if="byNameForm.gender.$submitted || byNameForm.addtnchld.$invalid || byNameForm.addtnchld.$dirty">
+          <input class="form-control" type="number" name="addtnchld" id="addtnchld" min="0" ng-maxlength="2" ng-pattern="/^[0-9]*$/"
+            ng-model="addChildren" ng-change="sbn.additionalChildren()" ng-class="{'borderRed':byNameForm.addtnchld.$dirty && byNameForm.addtnchld.$invalid}">
+          <span ng-messages="byNameForm.addtnchld.$error" class="has-error ng-scope ng-active " ng-if="byNameForm.gender.$submitted || byNameForm.addtnchld.$invalid || byNameForm.addtnchld.$dirty">
           <span ng-message="min"><span>Minimum value is 0</span></span>
           <span ng-message="pattern"><span>Invalid patttern</span></span>
-       </span> 
-        </div>  
-      </div>  
-      <div class="col-xs-12 col-sm-12" ng-repeat = "n in childArray" ng-if = "!addChildren == ''">
+          </span>
+        </div>
+      </div>
+  
+      <div class="col-xs-12 col-sm-12" ng-repeat="n in childArray" ng-if="!addChildren == ''">
         <div class="form-group col-sm-5 col-md-3 col-lg-3">
           <label class="required">Gender</label>
-          <select class="form-control" name="gender{{$index}}" id="{{ 'gender-' + $index }}" ng-model="gender[$index]" ng-change="disableInputs = (gender[$index]=== 'ig' || gender[$index]=== 'ib')" 
-          ng-class="{'borderRed':byNameForm['gender' + $index].$touched && byNameForm['gender' + $index].$invalid}" required>
+          <select class="form-control" name="gender{{$index}}" id="{{ 'gender-' + $index }}" ng-model="gender[$index]" ng-change="disableInputs = (gender[$index]=== 'ig' || gender[$index]=== 'ib')"
+            ng-class="{'borderRed':byNameForm['gender' + $index].$touched && byNameForm['gender' + $index].$invalid}" required>
               <option class="form-control" value="" >---Please select---</option> 
               <option class="form-control" value="f">Female</option> 
               <option class="form-control" value="m">Male</option>
               <option class="form-control" value="ig">Infant Female(0 to 18mo)</option>
               <option class="form-control" value="ib">Infant Male(0 to 18mo)</option>
           </select>
-          <span ng-messages="byNameForm['gender' + $index].$error" class="has-error ng-scope ng-active "
-            ng-if="byNameForm['gender' + $index].$submitted || byNameForm['gender' + $index].$Invalid || byNameForm['gender' + $index].$touched">
+          <span ng-messages="byNameForm['gender' + $index].$error" class="has-error ng-scope ng-active " ng-if="byNameForm['gender' + $index].$submitted || byNameForm['gender' + $index].$Invalid || byNameForm['gender' + $index].$touched">
             <span ng-message="required"><span>Required</span></span>
-          </span>   
+          </span>
           <p class="required"><small class="form-text text-muted">Children under 18 months shall sleep in a crib.</small></p>
         </div>
         <div class="form-group col-sm-3 col-md-2 col-lg-2" ng-if="!disableInputs">
           <label class="required">Age</label>
-          <input class="form-control" id="{{ 'age-' + $index }}" type="number" name="age{{$index}}" min="0" max="21" ng-maxlength="2" ng-pattern="/^[0-9]*$/" ng-model="age[$index]" 
-          ng-class="{'borderRed':byNameForm['age' + $index].$dirty && byNameForm['age' + $index].$invalid}" required>
-          <span ng-messages="byNameForm['age' + $index].$error" class="has-error ng-scope ng-active"
-            ng-if="byNameForm['age' + $index].$Invalid ||byNameForm['age' + $index].$dirty">
+          <input class="form-control" id="{{ 'age-' + $index }}" type="number" name="age{{$index}}" min="0" max="21" ng-maxlength="2"
+            ng-pattern="/^[0-9]*$/" ng-model="age[$index]" ng-class="{'borderRed':byNameForm['age' + $index].$dirty && byNameForm['age' + $index].$invalid}"
+            required>
+          <span ng-messages="byNameForm['age' + $index].$error" class="has-error ng-scope ng-active" ng-if="byNameForm['age' + $index].$Invalid ||byNameForm['age' + $index].$dirty">
           <span ng-message="min"><span>Please enter age between 0 and 21</span></span>
           <span ng-message="max"><span>Please enter age between 0 and 21</span></span>
           <span ng-message="required"><span>Required</span></span>
           <span ng-message="pattern"><span>Invalid Age</span></span>
           <span ng-message="maxlength">Your field is too long</span>
-          </span> 
-        </div> 
+          </span>
+        </div>
       </div>
+
       <div class="row">
-        <input type="button" id="clear"  name="btnClear" value="Clear" class="btn btn-lg btn-danger  pull-right" ng-model="submit" ng-click="sbn.clear()" />
-        <input type="button" id="search" value="Search" class="btn btn-lg btn-primary btn-position pull-right" ng-model="search"  ng-click="sbn.search()" ng-disabled="byNameForm.$invalid" name="btnSubmit" />
+        <input type="button" id="clear" name="btnClear" value="Clear" class="btn btn-lg btn-danger  pull-right" ng-model="submit"
+          ng-click="sbn.clear()" />
+        <input type="button" id="search" value="Search" class="btn btn-lg btn-primary btn-position pull-right" ng-model="search"
+          ng-click="sbn.search()" ng-disabled="byNameForm.$invalid" name="btnSubmit" />
       </div>
-      <div class="row" ng-show = "pagedItems.length">
+
+      <div class="row" ng-show="pagedItems.length">
         <div class="col-sm-3 col-md-2 col-lg-2">
           <label>Show</label>
-          <select class="form-control" id="entries" name="entries" min="0" ng-model="entriesPerPage" ng-init="entriesPerPage = '25'" ng-change="sbn.groupToPages(); sbn.setPage(currentPage)">
+          <select class="form-control" id="entries" name="entries" min="0" ng-model="entriesPerPage" ng-init="entriesPerPage = '25'"
+            ng-change="sbn.groupToPages(); sbn.setPage(currentPage)">
             <option class="form-control" selected="selected" value="25">25</option>
             <option class="form-control" value="50">50</option>
             <option class="form-control" value="75">75</option>
             <option class="form-control" value="100">100</option>
           </select>
         </div>
-      </div> 
-    </fieldset>    
+      </div>
+    </fieldset>
   </form>
   <br/>
-  <div class="table table-responsive" ng-if = "pagedItems.length">
+
+  <div class="table table-responsive" ng-if="pagedItems.length">
+
     <table class="table table-hover">
       <thead class="nav nav-pills">
         <tr>
@@ -142,53 +174,53 @@
           <th>Resource Name</th>
           <th>Resource_Address</th>
           <th>Resource <br/>Phone_Number</th>
-          <th>County</th>  
+          <th>County</th>
         </tr>
       </thead>
       <tfoot>
         <td colspan="7">
           <nav class="pull-right">
-              <ul class="pagination">
-                  <li ng-class="{disabled: currentPage == 0}" class="page-item">
-                      <a href ng-click="sbn.firstPage()">« First</a>
-                  </li>
-                  <li ng-class="{disabled: currentPage == 0}" class="page-item">
-                      <a href ng-click="sbn.prevPage()">« Prev</a>
-                  </li>   
-                  <li ng-repeat="page in sbn.range(pagedItems.length, currentPage, currentPage + gap) "
-                      ng-class="{active: page == currentPage}"
-                      ng-click="sbn.setPage(page)" class="page-item">
-                      <a href ng-bind="page + 1">1</a>
-                  </li>          
-                  <li ng-class="{disabled: (currentPage) == pagedItems.length - 1}" class="page-item">
-                      <a href ng-click="sbn.nextPage()">Next »</a>
-                  </li>
-                  <li ng-class="{disabled: (currentPage) == pagedItems.length - 1}" class="page-item">
-                      <a href ng-click="sbn.lastPage()">Last »</a>
-                  </li>
-              </ul>
+            <ul class="pagination">
+              <li ng-class="{disabled: currentPage == 0}" class="page-item">
+                <a href ng-click="sbn.firstPage()">« First</a>
+              </li>
+              <li ng-class="{disabled: currentPage == 0}" class="page-item">
+                <a href ng-click="sbn.prevPage()">« Prev</a>
+              </li>
+              <li ng-repeat="page in sbn.range(pagedItems.length, currentPage, currentPage + gap) " ng-class="{active: page == currentPage}"
+                ng-click="sbn.setPage(page)" class="page-item">
+                <a href ng-bind="page + 1">1</a>
+              </li>
+              <li ng-class="{disabled: (currentPage) == pagedItems.length - 1}" class="page-item">
+                <a href ng-click="sbn.nextPage()">Next »</a>
+              </li>
+              <li ng-class="{disabled: (currentPage) == pagedItems.length - 1}" class="page-item">
+                <a href ng-click="sbn.lastPage()">Last »</a>
+              </li>
+            </ul>
           </nav>
         </td>
       </tfoot>
       <tbody ng-repeat="placement in pagedItems[currentPage]">
         <tr>
-          <td>{{placement.ResourceType}} </td>
-          <td style="text-align: center">{{placement.Distance | number:2}} </td>
-          <td style="text-align: center">{{placement.AvailGirl}} </td>
-          <td style="text-align: center">{{placement.AvailBoy}} </td>
-          <td style="text-align: center">{{placement.AvailEither}} </td>
-          <td>{{placement.ResourceName}} </td>
-          <td>{{placement.Address}}  </td>
+          <td>{{placement.ResourceType}}</td>
+          <td style="text-align: center">{{placement.Distance | number:2}}</td>
+          <td style="text-align: center">{{placement.AvailGirl}}</td>
+          <td style="text-align: center">{{placement.AvailBoy}}</td>
+          <td style="text-align: center">{{placement.AvailEither}}</td>
+          <td>{{placement.ResourceName}}</td>
+          <td>{{placement.Address}}</td>
           <td>
-            <div ng-repeat= "list in placement.PhoneList">{{list.Number}}</div>
+            <div ng-repeat="list in placement.PhoneList">{{list.Number}}</div>
           </td>
-          <td>{{placement.County}} </td>           
-        </tr>       
+          <td>{{placement.County}}</td>
+        </tr>
       </tbody>
     </table>
-  </div>  
+
+  </div>
 </div>
+
 <div class="loading" ng-show="loading">
   <div class="spinn"></div>
 </div>
-
