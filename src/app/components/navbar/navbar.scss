@@ -1,4 +1,4 @@
-.acme-navbar-text{
+.acme-navbar-text {
   color: white;
 }
 
@@ -7,15 +7,14 @@ a {
 }
 
 img {
-  width:20%;
-  }
+  width: 20%;
+}
 
-  @media (max-width: $screen-sm-max) {
-    h3 {
-      font-size: 2vmax; 
-    }
+@media (max-width: $screen-sm-max) {
+  h3 {
+    font-size: 2vmax;
   }
- 
+}
 
 .customNav {
   position: fixed;
@@ -25,11 +24,7 @@ img {
   height: 60px;
   z-index: 9999;
   width: 100%;
-  background-color: #34405F;
+  background-color: #34405f;
   border-radius: 0px;
   text-align: center;
 }
-
-
-
-

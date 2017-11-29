@@ -1,11 +1,11 @@
 (function() {
-    'use strict';
   
-    angular
-      .module('placementMatchingTool')
-      .controller('ErrorController', ErrorController);
-  
-      function ErrorController () {    	
-      }
-  
-   })();
+  "use strict";
+
+  angular
+    .module("placementMatchingTool")
+    .controller("ErrorController", fnErrorController);
+
+  function fnErrorController() {}
+
+})();

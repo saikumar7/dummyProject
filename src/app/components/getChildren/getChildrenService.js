@@ -1,25 +1,25 @@
 (function() {
-  'use strict';
+  
+  "use strict";
 
   angular
-  .module('placementMatchingTool')
-  .factory('getChildrenFactory', getChildrenFactory);
+    .module("placementMatchingTool")
+    .factory("getChildrenFactory", getChildrenFactory);
 
-  getChildrenFactory.$inject = ['$http'];
+  getChildrenFactory.$inject = ["$http"];
 
-  function getChildrenFactory ($http) {
-    
+  function getChildrenFactory($http) {
     // var urlBase = 'http://10.160.100.121:8044/Placement/CurrentPlacements';
-    var urlBase = 'assets/mock/data.json';
-    
+    var urlBase = "assets/mock/data.json";
+
     var getChildrenFactory = {};
 
-    getChildrenFactory.getChildren = function () {
+    getChildrenFactory.getChildren = function() {
       return $http.get(urlBase);
     };
 
-    getChildrenFactory.getChild = function (PersonID) {
-        return $http.get(urlBase + '/' + PersonID);
+    getChildrenFactory.getChild = function(PersonID) {
+      return $http.get(urlBase + "/" + PersonID);
     };
 
     // getChildrenFactory.insertChild = function (child) {
@@ -30,8 +30,6 @@
     //     return $http.put(urlBase + '/' + child.PersonID, child);
     // };
 
-
-    return getChildrenFactory;    
-    }
-    
+    return getChildrenFactory;
+  }
 })();

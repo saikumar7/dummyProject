@@ -1,29 +1,28 @@
 (function() {
-  'use strict';
+
+  "use strict";
 
   angular
-    .module('placementMatchingTool')
-    .directive('acmeNavbar', acmeNavbar);
+  .module("placementMatchingTool")
+  .directive("acmeNavbar", acmeNavbar);
 
   /** @ngInject */
   function acmeNavbar() {
     var directive = {
-      restrict: 'E',
-      templateUrl: 'app/components/navbar/navbar.html',
+      restrict: "E",
+      templateUrl: "app/components/navbar/navbar.html",
       scope: {
-          creationDate: '='
+        creationDate: "="
       },
       controller: NavbarController,
-      controllerAs: 'vm',
+      controllerAs: "vm",
       bindToController: true
     };
 
     return directive;
 
     /** @ngInject */
-    function NavbarController() {
-     
-    }
+    function NavbarController() {}
+    
   }
-
 })();
