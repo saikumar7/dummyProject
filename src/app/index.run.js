@@ -1,15 +1,12 @@
 (function() {
+
   'use strict';
 
   angular
     .module('placementMatchingTool')
-    .run(runBlock);
+    .run(fnRunBlock);
 
   /** @ngInject */
-  function runBlock($log) {
-
-    $log.debug('runBlock end');
-   
-  }
+  function fnRunBlock($log) {}
 
 })();
