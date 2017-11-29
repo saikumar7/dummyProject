@@ -9,7 +9,8 @@
 
   function getChildrenFactory ($http) {
     
-    var urlBase = 'http://10.160.100.121:8044/Placement/CurrentPlacements'; 
+    // var urlBase = 'http://10.160.100.121:8044/Placement/CurrentPlacements';
+    var urlBase = 'assets/mock/data.json';
     
     var getChildrenFactory = {};
 
