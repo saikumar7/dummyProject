@@ -1,4445 +1,2448 @@
+//http://10.15.66.88/CCWISRest/Placement/OptimizePlacement;
 
-//var url = 'http://10.160.96.42:8044/Placement/OptimizePlacement?ChildId='+$scope.inputs[0]+'&b=&g=&ig=&ib=';
+//Savanna Addy
+//421 PLEASANT VALLEY RD, DECATUR, MS 39327
 
-[
-	{
-		"Worker": "MW002900",
-		"ResourceType": "Foster Home",
-		"Distance": "1.32",
-		"ResourceName": "ONEAL, TINA C",
-		"FamStr": "MC",
-		"Address": "E 800 LINDEN ST, CORINTH, MS 38834",
-		"PhoneList": [
-			{
-				"Type": "CELL",
-				"Number": "(901)489-3437"
-			}
-		],
-		"County": "Alcorn",
-		"AvailBoy": "1",
-		"AvailGirl": "1",
-		"AvailEither": "0",
-		"PriorAne": "True",
-		"Services": [
-			"Foster Home",
-			"Adoptive Home (Domestic)",
-			"Relative Foster Home",
-			"ICPC - Incoming"
-		],
-		"Notes": [
-			"INFO:  1 boys, age 0 - 10.",
-			"INFO:  1 girls, age 0 - 5.",
-			"INFO:  Calculated 2 slot(s) total for resource home.",
-			"INFO:  Total of 0 slot(s) in use.",
-			"PASS:  Placement would succeed for boy age 4."
-		]
-	},
-	{
-		"Worker": "MW003338",
-		"ResourceType": "Foster Home",
-		"Distance": "1.8",
-		"ResourceName": "RICHERSON, CHRISTOPHER",
-		"FamStr": "MC",
-		"Address": "3305 GAINES RD, CORINTH, MS 38834",
-		"PhoneList": [
-			{
-				"Type": "CELL",
-				"Number": "(256)303-2755"
-			},
-			{
-				"Type": "CELL",
-				"Number": "(662)554-9191"
-			}
-		],
-		"County": "Alcorn",
-		"AvailBoy": "0",
-		"AvailGirl": "0",
-		"AvailEither": "2",
-		"PriorAne": "True",
-		"Services": [
-			"Foster Home",
-			"Adoptive Home (Domestic)",
-			"Relative Foster Home",
-			"Expedited Pending Relative Res"
-		],
-		"Notes": [
-			"INFO:  3 either, age 0 - 10.",
-			"INFO:  Calculated 3 slot(s) total for resource home.",
-			"INFO:  Total of 1 slot(s) in use.",
-			"PASS:  Placement would succeed for boy age 4."
-		]
-	},
-	{
-		"Worker": "MW002900",
-		"ResourceType": "Foster Home",
-		"Distance": "2.29",
-		"ResourceName": "ROACH, NICOLE",
-		"FamStr": "",
-		"Address": "2208 WILLOW RD, CORINTH, MS 38834",
-		"PhoneList": [
-			{
-				"Type": "CELL",
-				"Number": "(662)415-2880"
-			}
-		],
-		"County": "Alcorn",
-		"AvailBoy": "0",
-		"AvailGirl": "0",
-		"AvailEither": "2",
-		"PriorAne": "False",
-		"Services": [
-			"Foster Home",
-			"Adoptive Home (Domestic)",
-			"Relative Foster Home",
-			"Expedited Pending Relative Res"
-		],
-		"Notes": [
-			"INFO:  2 either, age 0 - 15.",
-			"INFO:  Calculated 2 slot(s) total for resource home.",
-			"INFO:  Total of 0 slot(s) in use.",
-			"PASS:  Placement would succeed for boy age 4."
-		]
-	},
-	{
-		"Worker": "MW002900",
-		"ResourceType": "Foster Home",
-		"Distance": "2.99",
-		"ResourceName": "SHIPP, JENNIFER",
-		"FamStr": "",
-		"Address": "N 3502 N MADISON ST, CORINTH, MS 38834",
-		"PhoneList": [
-			{
-				"Type": "CNTCT",
-				"Number": "(601)209-5072"
-			}
-		],
-		"County": "Alcorn",
-		"AvailBoy": "0",
-		"AvailGirl": "0",
-		"AvailEither": "2",
-		"PriorAne": "False",
-		"Services": [
-			"Foster Home",
-			"Adoptive Home (Domestic)"
-		],
-		"Notes": [
-			"INFO:  2 either, age 3 - 12.",
-			"INFO:  Calculated 2 slot(s) total for resource home.",
-			"INFO:  Total of 0 slot(s) in use.",
-			"PASS:  Placement would succeed for boy age 4."
-		]
-	},
-	{
-		"Worker": "MW003338",
-		"ResourceType": "Foster Home",
-		"Distance": "4.49",
-		"ResourceName": "WILLIAMS, KIMBERLY",
-		"FamStr": "",
-		"Address": "11 LITTLE ZION RD, CORINTH, MS 38834",
-		"PhoneList": [
-			{
-				"Type": "CELL",
-				"Number": "(731)439-5900"
-			}
-		],
-		"County": "Alcorn",
-		"AvailBoy": "0",
-		"AvailGirl": "0",
-		"AvailEither": "3",
-		"PriorAne": "False",
-		"Services": [
-			"Foster Home",
-			"ICPC - Incoming"
-		],
-		"Notes": [
-			"INFO:  3 either, age 0 - 18.",
-			"INFO:  Calculated 3 slot(s) total for resource home.",
-			"INFO:  Total of 0 slot(s) in use.",
-			"PASS:  Placement would succeed for boy age 4."
-		]
-	},
-	{
-		"Worker": "MW004290",
-		"ResourceType": "Foster Home",
-		"Distance": "4.95",
-		"ResourceName": "MALONE, BARBARA L",
-		"FamStr": "",
-		"Address": "6 CR 118, CORINTH, MS 38834",
-		"PhoneList": [
-			{
-				"Type": "CELL",
-				"Number": "(662)212-2645"
-			}
-		],
-		"County": "Alcorn",
-		"AvailBoy": "0",
-		"AvailGirl": "0",
-		"AvailEither": "1",
-		"PriorAne": "False",
-		"Services": [
-			"Foster Home",
-			"Adoptive Home (Domestic)",
-			"Relative Foster Home"
-		],
-		"Notes": [
-			"INFO:  5 either, age 0 - 12.",
-			"INFO:  Calculated 5 slot(s) total for resource home.",
-			"INFO:  Total of 4 slot(s) in use.",
-			"PASS:  Placement would succeed for boy age 4."
-		]
-	},
-	{
-		"Worker": "MW003662",
-		"ResourceType": "Foster Home",
-		"Distance": "4.95",
-		"ResourceName": "JONES, DANA D",
-		"FamStr": "SF",
-		"Address": "8 COUNTY ROAD 118, CORINTH, MS 38834",
-		"PhoneList": [
-			{
-				"Type": "CELL",
-				"Number": "(662)665-1434"
-			},
-			{
-				"Type": "HOME",
-				"Number": "(662)284-0745"
-			},
-			{
-				"Type": "WORK",
-				"Number": "(662)286-2205"
-			}
-		],
-		"County": "Alcorn",
-		"AvailBoy": "0",
-		"AvailGirl": "0",
-		"AvailEither": "2",
-		"PriorAne": "False",
-		"Services": [
-			"Foster Home",
-			"Adoptive Home (Domestic)"
-		],
-		"Notes": [
-			"INFO:  2 either, age 0 - 8.",
-			"INFO:  Calculated 2 slot(s) total for resource home.",
-			"INFO:  Total of 0 slot(s) in use.",
-			"PASS:  Placement would succeed for boy age 4."
-		]
-	},
-	{
-		"Worker": "MW004290",
-		"ResourceType": "Foster Home",
-		"Distance": "5.02",
-		"ResourceName": "JOHNSON, JULIA",
-		"FamStr": "",
-		"Address": "58 COUNTY ROAD 271, GLEN, MS 38846",
-		"PhoneList": [
-			{
-				"Type": "CELL",
-				"Number": "(901)517-6080"
-			},
-			{
-				"Type": "HOME",
-				"Number": "(662)416-2189"
-			}
-		],
-		"County": "Alcorn",
-		"AvailBoy": "0",
-		"AvailGirl": "0",
-		"AvailEither": "3",
-		"PriorAne": "True",
-		"Services": [
-			"Foster Home",
-			"Adoptive Home (Domestic)"
-		],
-		"Notes": [
-			"INFO:  6 either, age 0 - 15.",
-			"INFO:  Calculated 6 slot(s) total for resource home.",
-			"INFO:  Total of 3 slot(s) in use.",
-			"PASS:  Placement would succeed for boy age 4."
-		]
-	},
-	{
-		"Worker": "MW003338",
-		"ResourceType": "Foster Home",
-		"Distance": "11.08",
-		"ResourceName": "PITTMAN, BRENDA S",
-		"FamStr": "MC",
-		"Address": "67 COUNTY ROAD 767, CORINTH, MS 38834",
-		"PhoneList": [
-			{
-				"Type": "CELL",
-				"Number": "(662)396-1044"
-			}
-		],
-		"County": "Alcorn",
-		"AvailBoy": "0",
-		"AvailGirl": "0",
-		"AvailEither": "2",
-		"PriorAne": "True",
-		"Services": [
-			"Foster Home",
-			"Adoptive Home (Domestic)",
-			"Relative Foster Home",
-			"Expedited Pending Relative Res"
-		],
-		"Notes": [
-			"INFO:  7 either, age 0 - 16.",
-			"INFO:  Calculated 7 slot(s) total for resource home.",
-			"INFO:  Total of 5 slot(s) in use.",
-			"PASS:  Placement would succeed for boy age 4."
-		]
-	},
-	{
-		"Worker": "MW003662",
-		"ResourceType": "Foster Home",
-		"Distance": "17.64",
-		"ResourceName": "KEYMON, KIMBERLY S",
-		"FamStr": "MC",
-		"Address": "1890 COUNTY ROAD 218, WALNUT, MS 38683",
-		"PhoneList": [
-			{
-				"Type": "CELL",
-				"Number": "(662)415-1716"
-			},
-			{
-				"Type": "CELL",
-				"Number": "(662)415-1715"
-			},
-			{
-				"Type": "HOME",
-				"Number": "(662)750-6027"
-			}
-		],
-		"County": "Tippah",
-		"AvailBoy": "0",
-		"AvailGirl": "0",
-		"AvailEither": "2",
-		"PriorAne": "False",
-		"Services": [
-			"Foster Home",
-			"Foster Home",
-			"Foster/Adopt Foster Home",
-			"Adoptive Home (Domestic)",
-			"Adoptive Home (Domestic)",
-			"Relative Foster Home"
-		],
-		"Notes": [
-			"INFO:  5 either, age 0 - 18.",
-			"INFO:  Calculated 5 slot(s) total for resource home.",
-			"INFO:  Total of 3 slot(s) in use.",
-			"PASS:  Placement would succeed for boy age 4."
-		]
-	},
-	{
-		"Worker": "MW003338",
-		"ResourceType": "Foster Home",
-		"Distance": "18.36",
-		"ResourceName": "JACKSON, KANDI",
-		"FamStr": "MC",
-		"Address": "104 WESTWOOD DR, BOONEVILLE, MS 38829",
-		"PhoneList": [
-			{
-				"Type": "CELL",
-				"Number": "(662)416-9179"
-			}
-		],
-		"County": "Prentiss",
-		"AvailBoy": "0",
-		"AvailGirl": "0",
-		"AvailEither": "2",
-		"PriorAne": "False",
-		"Services": [
-			"Foster Home"
-		],
-		"Notes": [
-			"INFO:  2 either, age 0 - 8.",
-			"INFO:  Calculated 2 slot(s) total for resource home.",
-			"INFO:  Total of 0 slot(s) in use.",
-			"PASS:  Placement would succeed for boy age 4."
-		]
-	},
-	{
-		"Worker": "MW004969",
-		"ResourceType": "Foster Home",
-		"Distance": "19.53",
-		"ResourceName": "GRISSOM, BRANDON",
-		"FamStr": "MC",
-		"Address": "909 BRIARWOOD DR, IUKA, MS 38852",
-		"PhoneList": [
-			{
-				"Type": "CELL",
-				"Number": "(662)279-2303"
-			}
-		],
-		"County": "Tishomingo",
-		"AvailBoy": "0",
-		"AvailGirl": "0",
-		"AvailEither": "2",
-		"PriorAne": "False",
-		"Services": [
-			"Foster Home",
-			"Adoptive Home (Domestic)",
-			"Relative Foster Home",
-			"Expedited Pending Relative Res"
-		],
-		"Notes": [
-			"INFO:  2 either, age 3 - 16.",
-			"INFO:  Calculated 2 slot(s) total for resource home.",
-			"INFO:  Total of 0 slot(s) in use.",
-			"PASS:  Placement would succeed for boy age 4."
-		]
-	},
-	{
-		"Worker": "MW004290",
-		"ResourceType": "Foster Home",
-		"Distance": "20.6",
-		"ResourceName": "SARTIN, WILLIAM",
-		"FamStr": "",
-		"Address": "112 QUAIL RUN, BOONEVILLE, MS 38829",
-		"PhoneList": [],
-		"County": "Prentiss",
-		"AvailBoy": "3",
-		"AvailGirl": "0",
-		"AvailEither": "0",
-		"PriorAne": "False",
-		"Services": [
-			"Foster Home"
-		],
-		"Notes": [
-			"INFO:  3 boys, age 0 - 8.",
-			"INFO:  Calculated 3 slot(s) total for resource home.",
-			"INFO:  Total of 0 slot(s) in use.",
-			"PASS:  Placement would succeed for boy age 4."
-		]
-	},
-	{
-		"Worker": "MW003662",
-		"ResourceType": "Foster Home",
-		"Distance": "20.63",
-		"ResourceName": "GARTH, TAMALA A",
-		"FamStr": "SF",
-		"Address": "50 SPRING AVENUE, WALNUT, MS 38683",
-		"PhoneList": [
-			{
-				"Type": "CELL",
-				"Number": "(662)750-1239"
-			}
-		],
-		"County": "Tippah",
-		"AvailBoy": "0",
-		"AvailGirl": "0",
-		"AvailEither": "3",
-		"PriorAne": "True",
-		"Services": [
-			"Foster Home",
-			"Adoptive Home (Domestic)",
-			"Relative Foster Home"
-		],
-		"Notes": [
-			"INFO:  3 either, age 0 - 18.",
-			"INFO:  Calculated 3 slot(s) total for resource home.",
-			"INFO:  Total of 0 slot(s) in use.",
-			"PASS:  Placement would succeed for boy age 4."
-		]
-	},
-	{
-		"Worker": "MW003662",
-		"ResourceType": "Foster Home",
-		"Distance": "21.88",
-		"ResourceName": "WILBANKS, CATHERINE",
-		"FamStr": "MC",
-		"Address": "1831 COUNTY ROAD 239, TIPLERSVILLE, MS 38674",
-		"PhoneList": [],
-		"County": "Tippah",
-		"AvailBoy": "0",
-		"AvailGirl": "0",
-		"AvailEither": "1",
-		"PriorAne": "False",
-		"Services": [
-			"Foster Home",
-			"Adoptive Home (Domestic)"
-		],
-		"Notes": [
-			"INFO:  3 either, age 0 - 4.",
-			"INFO:  Calculated 3 slot(s) total for resource home.",
-			"INFO:  Total of 2 slot(s) in use.",
-			"PASS:  Placement would succeed for boy age 4."
-		]
-	},
-	{
-		"Worker": "MW003662",
-		"ResourceType": "Foster Home",
-		"Distance": "22.84",
-		"ResourceName": "BRYANT, JOYCE",
-		"FamStr": "MC",
-		"Address": "851 CR 518, RIPLEY, MS 38663",
-		"PhoneList": [
-			{
-				"Type": "CELL",
-				"Number": "(662)587-0598"
-			},
-			{
-				"Type": "CELL",
-				"Number": "(662)587-0565"
-			},
-			{
-				"Type": "WORK",
-				"Number": "(662)837-0290"
-			}
-		],
-		"County": "Tippah",
-		"AvailBoy": "0",
-		"AvailGirl": "0",
-		"AvailEither": "1",
-		"PriorAne": "True",
-		"Services": [
-			"Foster Home",
-			"Foster Home",
-			"Foster/Adopt Foster Home",
-			"Adoptive Home (Domestic)",
-			"Relative Foster Home",
-			"Teenage Parent Foster Home"
-		],
-		"Notes": [
-			"INFO:  4 either, age 0 - 11.",
-			"INFO:  Calculated 4 slot(s) total for resource home.",
-			"INFO:  Total of 3 slot(s) in use.",
-			"PASS:  Placement would succeed for boy age 4."
-		]
-	},
-	{
-		"Worker": "MW003662",
-		"ResourceType": "Foster Home",
-		"Distance": "28.59",
-		"ResourceName": "JONES, AMANDA",
-		"FamStr": "MC",
-		"Address": "3200A COUNTY ROAD 419, RIPLEY, MS 38663",
-		"PhoneList": [
-			{
-				"Type": "CELL",
-				"Number": "(662)587-0962"
-			}
-		],
-		"County": "Tippah",
-		"AvailBoy": "0",
-		"AvailGirl": "0",
-		"AvailEither": "3",
-		"PriorAne": "False",
-		"Services": [
-			"Foster Home",
-			"Adoptive Home (Domestic)",
-			"Relative Foster Home",
-			"Expedited Pending Relative Res"
-		],
-		"Notes": [
-			"INFO:  3 either, age 0 - 14.",
-			"INFO:  Calculated 3 slot(s) total for resource home.",
-			"INFO:  Total of 0 slot(s) in use.",
-			"PASS:  Placement would succeed for boy age 4."
-		]
-	},
-	{
-		"Worker": "MW004969",
-		"ResourceType": "Foster Home",
-		"Distance": "28.6",
-		"ResourceName": "MCNATT, KAYLA M",
-		"FamStr": "",
-		"Address": "56B COUNTY RD 108, TISHOMINGO, MS 38873",
-		"PhoneList": [
-			{
-				"Type": "CELL",
-				"Number": "(662)279-0611"
-			}
-		],
-		"County": "Tishomingo",
-		"AvailBoy": "0",
-		"AvailGirl": "0",
-		"AvailEither": "1",
-		"PriorAne": "False",
-		"Services": [
-			"Foster Home"
-		],
-		"Notes": [
-			"INFO:  2 either, age 0 - 6.",
-			"INFO:  Calculated 2 slot(s) total for resource home.",
-			"INFO:  Total of 1 slot(s) in use.",
-			"PASS:  Placement would succeed for boy age 4."
-		]
-	},
-	{
-		"Worker": "MW004969",
-		"ResourceType": "Foster Home",
-		"Distance": "28.98",
-		"ResourceName": "GEORGE, CHASITY H",
-		"FamStr": "MC",
-		"Address": "3 CO RD 88, DENNIS, MS 38838",
-		"PhoneList": [
-			{
-				"Type": "CELL",
-				"Number": "(662)423-8565"
-			},
-			{
-				"Type": "CELL",
-				"Number": "(662)424-3648"
-			},
-			{
-				"Type": "HOME",
-				"Number": "(662)454-7891"
-			}
-		],
-		"County": "Tishomingo",
-		"AvailBoy": "0",
-		"AvailGirl": "0",
-		"AvailEither": "1",
-		"PriorAne": "False",
-		"Services": [
-			"Foster Home"
-		],
-		"Notes": [
-			"INFO:  3 either, age 0 - 8.",
-			"INFO:  Calculated 3 slot(s) total for resource home.",
-			"INFO:  Total of 2 slot(s) in use.",
-			"PASS:  Placement would succeed for boy age 4."
-		]
-	},
-	{
-		"Worker": "MW002459",
-		"ResourceType": "Foster Home",
-		"Distance": "29.69",
-		"ResourceName": "STARKS, VARESSA",
-		"FamStr": "",
-		"Address": "551 SOUTH SECOND ST, BALDWYN, MS 38824",
-		"PhoneList": [
-			{
-				"Type": "CELL",
-				"Number": "(662)365-5536"
-			},
-			{
-				"Type": "CNTCT",
-				"Number": "(662)365-5536"
-			}
-		],
-		"County": "Lee",
-		"AvailBoy": "0",
-		"AvailGirl": "0",
-		"AvailEither": "3",
-		"PriorAne": "True",
-		"Services": [
-			"Foster Home",
-			"Adoptive Home (Domestic)"
-		],
-		"Notes": [
-			"INFO:  3 either, age 0 - 18.",
-			"INFO:  Calculated 3 slot(s) total for resource home.",
-			"INFO:  Total of 0 slot(s) in use.",
-			"PASS:  Placement would succeed for boy age 4."
-		]
-	},
-	{
-		"Worker": "MW004076",
-		"ResourceType": "Foster Home",
-		"Distance": "31.43",
-		"ResourceName": "RILEY, ANDREW",
-		"FamStr": "MC",
-		"Address": "222 COUNTY ROAD 2788, GUNTOWN, MS 38849",
-		"PhoneList": [
-			{
-				"Type": "HOME",
-				"Number": "(662)601-7081"
-			}
-		],
-		"County": "Lee",
-		"AvailBoy": "0",
-		"AvailGirl": "0",
-		"AvailEither": "3",
-		"PriorAne": "True",
-		"Services": [
-			"Foster Home",
-			"Adoptive Home (Domestic)",
-			"Teenage Parent Foster Home"
-		],
-		"Notes": [
-			"INFO:  5 either, age 0 - 18.",
-			"INFO:  Calculated 5 slot(s) total for resource home.",
-			"INFO:  Total of 2 slot(s) in use.",
-			"PASS:  Placement would succeed for boy age 4."
-		]
-	},
-	{
-		"Worker": "MW003662",
-		"ResourceType": "Foster Home",
-		"Distance": "31.67",
-		"ResourceName": "GOSSETT, WILSON",
-		"FamStr": "MC",
-		"Address": "2450 HIGHWAY 368, BLUE MOUNTAIN, MS 38610",
-		"PhoneList": [
-			{
-				"Type": "CELL",
-				"Number": "(662)512-8626"
-			},
-			{
-				"Type": "CELL",
-				"Number": "(662)587-4537"
-			},
-			{
-				"Type": "WORK",
-				"Number": "(662)685-4706"
-			}
-		],
-		"County": "Tippah",
-		"AvailBoy": "0",
-		"AvailGirl": "0",
-		"AvailEither": "2",
-		"PriorAne": "True",
-		"Services": [
-			"Foster Home",
-			"Adoptive Home (Domestic)"
-		],
-		"Notes": [
-			"INFO:  2 either, age 0 - 19.",
-			"INFO:  Calculated 2 slot(s) total for resource home.",
-			"INFO:  Total of 0 slot(s) in use.",
-			"PASS:  Placement would succeed for boy age 4."
-		]
-	},
-	{
-		"Worker": "MW003274",
-		"ResourceType": "Foster Home",
-		"Distance": "31.97",
-		"ResourceName": "POSEY, JENNIFER",
-		"FamStr": "MC",
-		"Address": "1015 370 HWY, BALDWYN, MS 38824",
-		"PhoneList": [
-			{
-				"Type": "CELL",
-				"Number": "(662)871-1064"
-			}
-		],
-		"County": "Union",
-		"AvailBoy": "0",
-		"AvailGirl": "0",
-		"AvailEither": "2",
-		"PriorAne": "False",
-		"Services": [
-			"Foster Home",
-			"Adoptive Home (Domestic)",
-			"Relative Foster Home",
-			"Expedited Pending Relative Res"
-		],
-		"Notes": [
-			"INFO:  2 either, age 0 - 18.",
-			"INFO:  Calculated 2 slot(s) total for resource home.",
-			"INFO:  Total of 0 slot(s) in use.",
-			"PASS:  Placement would succeed for boy age 4."
-		]
-	},
-	{
-		"Worker": "MW002459",
-		"ResourceType": "Foster Home",
-		"Distance": "32.74",
-		"ResourceName": "HEREFORD, KANDY M",
-		"FamStr": "",
-		"Address": "116 COLT LN, GUNTOWN, MS 38849",
-		"PhoneList": [
-			{
-				"Type": "CELL",
-				"Number": "(662)202-7387"
-			},
-			{
-				"Type": "HOME",
-				"Number": "(662)534-2169"
-			}
-		],
-		"County": "Lee",
-		"AvailBoy": "0",
-		"AvailGirl": "0",
-		"AvailEither": "1",
-		"PriorAne": "False",
-		"Services": [
-			"Foster Home"
-		],
-		"Notes": [
-			"INFO:  1 either, age 0 - 4.",
-			"INFO:  Calculated 1 slot(s) total for resource home.",
-			"INFO:  Total of 0 slot(s) in use.",
-			"PASS:  Placement would succeed for boy age 4."
-		]
-	},
-	{
-		"Worker": "MW000635",
-		"ResourceType": "Foster Home",
-		"Distance": "32.94",
-		"ResourceName": "REEDER, LIANNA",
-		"FamStr": "MC",
-		"Address": "121 BENELLI DR, GUNTOWN, MS 38849",
-		"PhoneList": [
-			{
-				"Type": "CELL",
-				"Number": "(662)322-4253"
-			},
-			{
-				"Type": "CELL",
-				"Number": "(662)316-2775"
-			}
-		],
-		"County": "Lee",
-		"AvailBoy": "0",
-		"AvailGirl": "0",
-		"AvailEither": "1",
-		"PriorAne": "False",
-		"Services": [
-			"Foster Home",
-			"Adoptive Home (Domestic)"
-		],
-		"Notes": [
-			"INFO:  2 either, age 0 - 4.",
-			"INFO:  Calculated 2 slot(s) total for resource home.",
-			"INFO:  Total of 1 slot(s) in use.",
-			"PASS:  Placement would succeed for boy age 4."
-		]
-	},
-	{
-		"Worker": "MW004063",
-		"ResourceType": "Foster Home",
-		"Distance": "33.51",
-		"ResourceName": "JETER, TIMOTHY D",
-		"FamStr": "MC",
-		"Address": "4740 HWY 15, BLUE MOUNTATIN, MS 38610",
-		"PhoneList": [
-			{
-				"Type": "HOME",
-				"Number": "(662)224-3228"
-			},
-			{
-				"Type": "WORK",
-				"Number": "(662)837-8500"
-			}
-		],
-		"County": "Tippah",
-		"AvailBoy": "1",
-		"AvailGirl": "1",
-		"AvailEither": "0",
-		"PriorAne": "False",
-		"Services": [
-			"Foster Home",
-			"Relative Foster Home",
-			"Expedited Pending Relative Res"
-		],
-		"Notes": [
-			"INFO:  1 boys, age 0 - 10.",
-			"INFO:  1 girls, age 0 - 10.",
-			"INFO:  Calculated 2 slot(s) total for resource home.",
-			"INFO:  Total of 0 slot(s) in use.",
-			"PASS:  Placement would succeed for boy age 4."
-		]
-	},
-	{
-		"Worker": "MW002922",
-		"ResourceType": "Foster Home",
-		"Distance": "33.71",
-		"ResourceName": "JACKSON, ROBIN",
-		"FamStr": "",
-		"Address": "156 SILVER LAKE, GUNTOWN, MS 38849",
-		"PhoneList": [
-			{
-				"Type": "CELL",
-				"Number": "(662)837-5454"
-			},
-			{
-				"Type": "CELL",
-				"Number": "(662)837-0377"
-			}
-		],
-		"County": "Lee",
-		"AvailBoy": "0",
-		"AvailGirl": "0",
-		"AvailEither": "3",
-		"PriorAne": "False",
-		"Services": [
-			"Foster Home"
-		],
-		"Notes": [
-			"INFO:  3 either, age 3 - 15.",
-			"INFO:  Calculated 3 slot(s) total for resource home.",
-			"INFO:  Total of 0 slot(s) in use.",
-			"PASS:  Placement would succeed for boy age 4."
-		]
-	},
-	{
-		"Worker": "MW003274",
-		"ResourceType": "Foster Home",
-		"Distance": "35.62",
-		"ResourceName": "CARR, JOAN",
-		"FamStr": "",
-		"Address": "1146 CR 135  E 1, NEW ALBANY, MS 38652",
-		"PhoneList": [
-			{
-				"Type": "CELL",
-				"Number": "(662)316-0598"
-			}
-		],
-		"County": "Union",
-		"AvailBoy": "0",
-		"AvailGirl": "0",
-		"AvailEither": "1",
-		"PriorAne": "False",
-		"Services": [
-			"Foster Home"
-		],
-		"Notes": [
-			"INFO:  1 either, age 4 - 8.",
-			"INFO:  Calculated 1 slot(s) total for resource home.",
-			"INFO:  Total of 0 slot(s) in use.",
-			"PASS:  Placement would succeed for boy age 4."
-		]
-	},
-	{
-		"Worker": "MW003662",
-		"ResourceType": "Foster Home",
-		"Distance": "35.86",
-		"ResourceName": "KNOX, MARY A",
-		"FamStr": "",
-		"Address": "1151 CR 830, BLUE MOUNTAIN, MS 38610",
-		"PhoneList": [
-			{
-				"Type": "CELL",
-				"Number": "(662)316-4934"
-			}
-		],
-		"County": "Tippah",
-		"AvailBoy": "0",
-		"AvailGirl": "0",
-		"AvailEither": "1",
-		"PriorAne": "False",
-		"Services": [
-			"Foster Home"
-		],
-		"Notes": [
-			"INFO:  2 either, age 0 - 10.",
-			"INFO:  Calculated 2 slot(s) total for resource home.",
-			"INFO:  Total of 1 slot(s) in use.",
-			"PASS:  Placement would succeed for boy age 4."
-		]
-	},
-	{
-		"Worker": "MW003274",
-		"ResourceType": "Foster Home",
-		"Distance": "37.02",
-		"ResourceName": "MAY, TIFFANY",
-		"FamStr": "",
-		"Address": "1091 CR 191, BLUE SPRINGS, MS 38828",
-		"PhoneList": [
-			{
-				"Type": "CELL",
-				"Number": "(662)231-9017"
-			},
-			{
-				"Type": "WORK",
-				"Number": "(662)842-4656"
-			}
-		],
-		"County": "Union",
-		"AvailBoy": "0",
-		"AvailGirl": "0",
-		"AvailEither": "2",
-		"PriorAne": "True",
-		"Services": [
-			"Foster Home"
-		],
-		"Notes": [
-			"INFO:  3 either, age 0 - 10.",
-			"INFO:  Calculated 3 slot(s) total for resource home.",
-			"INFO:  Total of 1 slot(s) in use.",
-			"PASS:  Placement would succeed for boy age 4."
-		]
-	},
-	{
-		"Worker": "MW004474",
-		"ResourceType": "Foster Home",
-		"Distance": "38.12",
-		"ResourceName": "DAVIDSON, MELISSA R",
-		"FamStr": "",
-		"Address": "110A NORTH ST, SALTILLO, MS 38866",
-		"PhoneList": [
-			{
-				"Type": "HOME",
-				"Number": "(662)891-6340"
-			}
-		],
-		"County": "Lee",
-		"AvailBoy": "0",
-		"AvailGirl": "0",
-		"AvailEither": "3",
-		"PriorAne": "False",
-		"Services": [
-			"Foster Home"
-		],
-		"Notes": [
-			"INFO:  4 either, age 0 - 6.",
-			"INFO:  Calculated 4 slot(s) total for resource home.",
-			"INFO:  Total of 1 slot(s) in use.",
-			"PASS:  Placement would succeed for boy age 4."
-		]
-	},
-	{
-		"Worker": "MW003414",
-		"ResourceType": "Foster Home",
-		"Distance": "38.63",
-		"ResourceName": "SPENCER, MELYNDA N",
-		"FamStr": "",
-		"Address": "147 LAKESIDE AVE, SALTILLO, MS 38866",
-		"PhoneList": [
-			{
-				"Type": "CELL",
-				"Number": "(662)871-7999"
-			}
-		],
-		"County": "Lee",
-		"AvailBoy": "0",
-		"AvailGirl": "0",
-		"AvailEither": "2",
-		"PriorAne": "False",
-		"Services": [
-			"Foster Home",
-			"Adoptive Home (Domestic)"
-		],
-		"Notes": [
-			"INFO:  4 either, age 0 - 5.",
-			"INFO:  Calculated 4 slot(s) total for resource home.",
-			"INFO:  Total of 2 slot(s) in use.",
-			"PASS:  Placement would succeed for boy age 4."
-		]
-	},
-	{
-		"Worker": "MW003274",
-		"ResourceType": "Foster Home",
-		"Distance": "38.78",
-		"ResourceName": "DELASHMIT, ROSIE N",
-		"FamStr": "MC",
-		"Address": "977 HIGHWAY 30 EAST  E, NEW ALBANY, MS 38652",
-		"PhoneList": [
-			{
-				"Type": "CELL",
-				"Number": "(662)316-5411"
-			},
-			{
-				"Type": "CNTCT",
-				"Number": "(662)534-9767"
-			},
-			{
-				"Type": "HOME",
-				"Number": "(662)534-6057"
-			}
-		],
-		"County": "Union",
-		"AvailBoy": "0",
-		"AvailGirl": "0",
-		"AvailEither": "2",
-		"PriorAne": "True",
-		"Services": [
-			"Foster Home",
-			"Adoptive Home (Domestic)",
-			"Respite Foster Home",
-			"Relative Foster Home"
-		],
-		"Notes": [
-			"INFO:  2 either, age 0 - 18.",
-			"INFO:  Calculated 2 slot(s) total for resource home.",
-			"INFO:  Total of 0 slot(s) in use.",
-			"PASS:  Placement would succeed for boy age 4."
-		]
-	},
-	{
-		"Worker": "MW003274",
-		"ResourceType": "Foster Home",
-		"Distance": "39.49",
-		"ResourceName": "ZIEGLER, JUDY",
-		"FamStr": "MC",
-		"Address": "1301 COUNTY ROAD 73, MYRTLE, MS 38650",
-		"PhoneList": [
-			{
-				"Type": "CELL",
-				"Number": "(662)316-4134"
-			}
-		],
-		"County": "Union",
-		"AvailBoy": "0",
-		"AvailGirl": "0",
-		"AvailEither": "3",
-		"PriorAne": "False",
-		"Services": [
-			"Foster Home"
-		],
-		"Notes": [
-			"INFO:  4 either, age 1 - 18.",
-			"INFO:  Calculated 4 slot(s) total for resource home.",
-			"INFO:  Total of 1 slot(s) in use.",
-			"PASS:  Placement would succeed for boy age 4."
-		]
-	},
-	{
-		"Worker": "MW003274",
-		"ResourceType": "Foster Home",
-		"Distance": "39.89",
-		"ResourceName": "BARKLEY, TINA",
-		"FamStr": "MC",
-		"Address": "1717 COUNTY ROAD 478, NEW ALBANY, MS 38652",
-		"PhoneList": [
-			{
-				"Type": "CNTCT",
-				"Number": "(662)539-1382"
-			},
-			{
-				"Type": "CNTCT",
-				"Number": "(662)232-8742"
-			}
-		],
-		"County": "Union",
-		"AvailBoy": "0",
-		"AvailGirl": "0",
-		"AvailEither": "1",
-		"PriorAne": "False",
-		"Services": [
-			"Foster Home",
-			"Adoptive Home (Domestic)"
-		],
-		"Notes": [
-			"INFO:  2 either, age 0 - 5.",
-			"INFO:  Calculated 2 slot(s) total for resource home.",
-			"INFO:  Total of 1 slot(s) in use.",
-			"PASS:  Placement would succeed for boy age 4."
-		]
-	},
-	{
-		"Worker": "MW003274",
-		"ResourceType": "Foster Home",
-		"Distance": "40",
-		"ResourceName": "BAKER, CHELSEA",
-		"FamStr": "MC",
-		"Address": "308 SUBSTATION ST, NEW ALBANY, MS 38652",
-		"PhoneList": [],
-		"County": "Union",
-		"AvailBoy": "0",
-		"AvailGirl": "0",
-		"AvailEither": "1",
-		"PriorAne": "False",
-		"Services": [
-			"Foster Home",
-			"Adoptive Home (Domestic)"
-		],
-		"Notes": [
-			"INFO:  2 either, age 0 - 8.",
-			"INFO:  Calculated 2 slot(s) total for resource home.",
-			"INFO:  Total of 1 slot(s) in use.",
-			"PASS:  Placement would succeed for boy age 4."
-		]
-	},
-	{
-		"Worker": "MW002863",
-		"ResourceType": "Foster Home",
-		"Distance": "40.21",
-		"ResourceName": "MCDUFFA, RITA G",
-		"FamStr": "",
-		"Address": "21371 HIGHWAY 25  N, FULTON, MS 38843",
-		"PhoneList": [
-			{
-				"Type": "CELL",
-				"Number": "(662)279-9810"
-			},
-			{
-				"Type": "HOME",
-				"Number": "(662)585-3826"
-			},
-			{
-				"Type": "WORK",
-				"Number": "(662)862-3928"
-			}
-		],
-		"County": "Itawamba",
-		"AvailBoy": "1",
-		"AvailGirl": "1",
-		"AvailEither": "0",
-		"PriorAne": "True",
-		"Services": [
-			"Foster Home",
-			"Adoptive Home (Domestic)",
-			"Relative Foster Home",
-			"Expedited Pending Relative Res"
-		],
-		"Notes": [
-			"INFO:  2 boys, age 0 - 10.",
-			"INFO:  1 girls, age 0 - 10.",
-			"INFO:  Calculated 3 slot(s) total for resource home.",
-			"INFO:  Total of 1 slot(s) in use.",
-			"PASS:  Placement would succeed for boy age 4."
-		]
-	},
-	{
-		"Worker": "MW003274",
-		"ResourceType": "Foster Home",
-		"Distance": "40.22",
-		"ResourceName": "DERRICK, EMILY",
-		"FamStr": "MC",
-		"Address": "E 401 BANKHEAD ST, NEW ALBANY, MS 38652",
-		"PhoneList": [
-			{
-				"Type": "CELL",
-				"Number": "(601)260-0040"
-			},
-			{
-				"Type": "CNTCT",
-				"Number": "(706)844-3050"
-			}
-		],
-		"County": "Union",
-		"AvailBoy": "0",
-		"AvailGirl": "0",
-		"AvailEither": "2",
-		"PriorAne": "False",
-		"Services": [
-			"Foster Home"
-		],
-		"Notes": [
-			"INFO:  2 either, age 0 - 13.",
-			"INFO:  Calculated 2 slot(s) total for resource home.",
-			"INFO:  Total of 0 slot(s) in use.",
-			"PASS:  Placement would succeed for boy age 4."
-		]
-	},
-	{
-		"Worker": "MW003274",
-		"ResourceType": "Foster Home",
-		"Distance": "40.64",
-		"ResourceName": "CRUMP, KATINA",
-		"FamStr": "MC",
-		"Address": "1722 COUNTY ROAD 278 1, BLUE SPRINGS, MS 38828",
-		"PhoneList": [
-			{
-				"Type": "CELL",
-				"Number": "(662)255-8348"
-			},
-			{
-				"Type": "CNTCT",
-				"Number": "(662)255-8356"
-			},
-			{
-				"Type": "WORK",
-				"Number": "(662)489-5655"
-			}
-		],
-		"County": "Union",
-		"AvailBoy": "0",
-		"AvailGirl": "0",
-		"AvailEither": "3",
-		"PriorAne": "True",
-		"Services": [
-			"Foster Home",
-			"Adoptive Home (Domestic)",
-			"Relative Foster Home",
-			"Relative Foster Home"
-		],
-		"Notes": [
-			"INFO:  3 either, age 0 - 18.",
-			"INFO:  Calculated 3 slot(s) total for resource home.",
-			"INFO:  Total of 0 slot(s) in use.",
-			"PASS:  Placement would succeed for boy age 4."
-		]
-	},
-	{
-		"Worker": "MW003274",
-		"ResourceType": "Foster Home",
-		"Distance": "40.64",
-		"ResourceName": "VANCE, JODI L",
-		"FamStr": "",
-		"Address": "1135 COUNTY ROAD 216, BLUE SPRINGS, MS 38828",
-		"PhoneList": [
-			{
-				"Type": "CELL",
-				"Number": "(662)316-5633"
-			}
-		],
-		"County": "Union",
-		"AvailBoy": "0",
-		"AvailGirl": "0",
-		"AvailEither": "3",
-		"PriorAne": "False",
-		"Services": [
-			"Foster Home",
-			"Adoptive Home (Domestic)"
-		],
-		"Notes": [
-			"INFO:  3 either, age 0 - 10.",
-			"INFO:  Calculated 3 slot(s) total for resource home.",
-			"INFO:  Total of 0 slot(s) in use.",
-			"PASS:  Placement would succeed for boy age 4."
-		]
-	},
-	{
-		"Worker": "MW003274",
-		"ResourceType": "Foster Home",
-		"Distance": "40.7",
-		"ResourceName": "WISEMAN, REBEKAH",
-		"FamStr": "",
-		"Address": "1014 ABERMAR ROUNDS, NEW ALBANY, MS 38652",
-		"PhoneList": [
-			{
-				"Type": "CELL",
-				"Number": "(662)316-0986"
-			}
-		],
-		"County": "Union",
-		"AvailBoy": "0",
-		"AvailGirl": "0",
-		"AvailEither": "2",
-		"PriorAne": "True",
-		"Services": [
-			"Foster Home",
-			"Adoptive Home (Domestic)"
-		],
-		"Notes": [
-			"INFO:  2 either, age 0 - 5.",
-			"INFO:  Calculated 2 slot(s) total for resource home.",
-			"INFO:  Total of 0 slot(s) in use.",
-			"PASS:  Placement would succeed for boy age 4."
-		]
-	},
-	{
-		"Worker": "MW001984",
-		"ResourceType": "Foster Home",
-		"Distance": "41.01",
-		"ResourceName": "VOGLER, MICHAEL",
-		"FamStr": "",
-		"Address": "507 HARRIS CHAPEL RD, MICHIGAN CITY, MS 38647",
-		"PhoneList": [
-			{
-				"Type": "CELL",
-				"Number": "(901)591-6931"
-			},
-			{
-				"Type": "CNTCT",
-				"Number": "(901)848-1597"
-			}
-		],
-		"County": "Benton",
-		"AvailBoy": "0",
-		"AvailGirl": "0",
-		"AvailEither": "3",
-		"PriorAne": "True",
-		"Services": [
-			"Foster Home",
-			"Adoptive Home (Domestic)"
-		],
-		"Notes": [
-			"INFO:  3 either, age 0 - 8.",
-			"INFO:  Calculated 3 slot(s) total for resource home.",
-			"INFO:  Total of 0 slot(s) in use.",
-			"PASS:  Placement would succeed for boy age 4."
-		]
-	},
-	{
-		"Worker": "MW003274",
-		"ResourceType": "Foster Home",
-		"Distance": "41.19",
-		"ResourceName": "ROBERTS, JENNIFER",
-		"FamStr": "",
-		"Address": "400 WOODLAND DR, NEW ALBANY, MS 38652",
-		"PhoneList": [
-			{
-				"Type": "CNTCT",
-				"Number": "(662)316-7882"
-			},
-			{
-				"Type": "CNTCT",
-				"Number": "(662)534-1926"
-			}
-		],
-		"County": "Union",
-		"AvailBoy": "0",
-		"AvailGirl": "0",
-		"AvailEither": "1",
-		"PriorAne": "False",
-		"Services": [
-			"Foster Home",
-			"Adoptive Home (Domestic)"
-		],
-		"Notes": [
-			"INFO:  2 either, age 0 - 7.",
-			"INFO:  Calculated 2 slot(s) total for resource home.",
-			"INFO:  Total of 1 slot(s) in use.",
-			"PASS:  Placement would succeed for boy age 4."
-		]
-	},
-	{
-		"Worker": "MW003274",
-		"ResourceType": "Foster Home",
-		"Distance": "41.22",
-		"ResourceName": "CHILES, NICOLE",
-		"FamStr": "",
-		"Address": "1362 STATE HIGHWAY 178  E, NEW ALBANY, MS 38652",
-		"PhoneList": [
-			{
-				"Type": "CELL",
-				"Number": "(662)891-8931"
-			}
-		],
-		"County": "Union",
-		"AvailBoy": "0",
-		"AvailGirl": "0",
-		"AvailEither": "1",
-		"PriorAne": "False",
-		"Services": [
-			"Foster Home"
-		],
-		"Notes": [
-			"INFO:  1 either, age 0 - 7.",
-			"INFO:  Calculated 1 slot(s) total for resource home.",
-			"INFO:  Total of 0 slot(s) in use.",
-			"PASS:  Placement would succeed for boy age 4."
-		]
-	},
-	{
-		"Worker": "MW003074",
-		"ResourceType": "Foster Home",
-		"Distance": "41.47",
-		"ResourceName": "MAGEE, ROBERT",
-		"FamStr": "",
-		"Address": "548 COUNTY RD 102, OXFORD, MS 38655",
-		"PhoneList": [
-			{
-				"Type": "HOME",
-				"Number": "(662)832-0194"
-			}
-		],
-		"County": "Lafayette",
-		"AvailBoy": "0",
-		"AvailGirl": "0",
-		"AvailEither": "2",
-		"PriorAne": "False",
-		"Services": [
-			"Foster Home"
-		],
-		"Notes": [
-			"INFO:  2 either, age 0 - 4.",
-			"INFO:  Calculated 2 slot(s) total for resource home.",
-			"INFO:  Total of 0 slot(s) in use.",
-			"PASS:  Placement would succeed for boy age 4."
-		]
-	},
-	{
-		"Worker": "MW004474",
-		"ResourceType": "Foster Home",
-		"Distance": "42.7",
-		"ResourceName": "MILNER, MICHELLE",
-		"FamStr": "",
-		"Address": "151 BENTGRASS CR, SALTILLO, MS 38866",
-		"PhoneList": [
-			{
-				"Type": "CELL",
-				"Number": "(662)230-2393"
-			},
-			{
-				"Type": "WORK",
-				"Number": "(662)862-8361"
-			},
-			{
-				"Type": "WORK",
-				"Number": "(662)620-5000"
-			}
-		],
-		"County": "Lee",
-		"AvailBoy": "0",
-		"AvailGirl": "0",
-		"AvailEither": "2",
-		"PriorAne": "True",
-		"Services": [
-			"Foster Home",
-			"Adoptive Home (Domestic)",
-			"Relative Foster Home"
-		],
-		"Notes": [
-			"INFO:  4 either, age 0 - 18.",
-			"INFO:  Calculated 4 slot(s) total for resource home.",
-			"INFO:  Total of 2 slot(s) in use.",
-			"PASS:  Placement would succeed for boy age 4."
-		]
-	},
-	{
-		"Worker": "MW002863",
-		"ResourceType": "Foster Home",
-		"Distance": "43.09",
-		"ResourceName": "CLOUSE, MARY M",
-		"FamStr": "SF",
-		"Address": "1160 MURPHY RD, MANTACHIE, MS 38855",
-		"PhoneList": [
-			{
-				"Type": "CNTCT",
-				"Number": "(662)610-4864"
-			}
-		],
-		"County": "Itawamba",
-		"AvailBoy": "0",
-		"AvailGirl": "0",
-		"AvailEither": "2",
-		"PriorAne": "False",
-		"Services": [
-			"Foster Home",
-			"Adoptive Home (Domestic)",
-			"Relative Foster Home",
-			"Expedited Pending Relative Res"
-		],
-		"Notes": [
-			"INFO:  3 either, age 0 - 18.",
-			"INFO:  Calculated 3 slot(s) total for resource home.",
-			"INFO:  Total of 1 slot(s) in use.",
-			"PASS:  Placement would succeed for boy age 4."
-		]
-	},
-	{
-		"Worker": "MW000774",
-		"ResourceType": "Foster Home",
-		"Distance": "44.33",
-		"ResourceName": "ABBOTT, DELPHINE",
-		"FamStr": "MC",
-		"Address": "200 RIVER RD, MANTACHIE, MS 38855",
-		"PhoneList": [
-			{
-				"Type": "CELL",
-				"Number": "(662)321-7740"
-			}
-		],
-		"County": "Itawamba",
-		"AvailBoy": "0",
-		"AvailGirl": "0",
-		"AvailEither": "2",
-		"PriorAne": "False",
-		"Services": [
-			"Foster Home",
-			"Adoptive Home (Domestic)"
-		],
-		"Notes": [
-			"INFO:  2 either, age 0 - 18.",
-			"INFO:  Calculated 2 slot(s) total for resource home.",
-			"INFO:  Total of 0 slot(s) in use.",
-			"PASS:  Placement would succeed for boy age 4."
-		]
-	},
-	{
-		"Worker": "MW001984",
-		"ResourceType": "Foster Home",
-		"Distance": "45.04",
-		"ResourceName": "BEAN, MARY",
-		"FamStr": "MC",
-		"Address": "3201 HWY 7, LAMAR, MS 38642",
-		"PhoneList": [
-			{
-				"Type": "CELL",
-				"Number": "(662)216-6667"
-			},
-			{
-				"Type": "HOME",
-				"Number": "(662)252-1427"
-			}
-		],
-		"County": "Benton",
-		"AvailBoy": "0",
-		"AvailGirl": "0",
-		"AvailEither": "2",
-		"PriorAne": "True",
-		"Services": [
-			"Foster Home",
-			"Adoptive Home (Domestic)"
-		],
-		"Notes": [
-			"INFO:  5 either, age 0 - 18.",
-			"INFO:  Calculated 5 slot(s) total for resource home.",
-			"INFO:  Total of 3 slot(s) in use.",
-			"PASS:  Placement would succeed for boy age 4."
-		]
-	},
-	{
-		"Worker": "MW002863",
-		"ResourceType": "Foster Home",
-		"Distance": "45.31",
-		"ResourceName": "STEWART, JOEL",
-		"FamStr": "",
-		"Address": "E 623 MAIN ST, FULTON, MS 38843",
-		"PhoneList": [
-			{
-				"Type": "CELL",
-				"Number": "(205)712-3036"
-			},
-			{
-				"Type": "WORK",
-				"Number": "(662)862-2165"
-			}
-		],
-		"County": "Itawamba",
-		"AvailBoy": "0",
-		"AvailGirl": "0",
-		"AvailEither": "1",
-		"PriorAne": "False",
-		"Services": [
-			"Foster Home",
-			"Adoptive Home (Domestic)"
-		],
-		"Notes": [
-			"INFO:  2 either, age 0 - 8.",
-			"INFO:  Calculated 2 slot(s) total for resource home.",
-			"INFO:  Total of 1 slot(s) in use.",
-			"PASS:  Placement would succeed for boy age 4."
-		]
-	},
-	{
-		"Worker": "MW002863",
-		"ResourceType": "Foster Home",
-		"Distance": "45.51",
-		"ResourceName": "TIMMONS, KEVIN",
-		"FamStr": "",
-		"Address": "E 504 MAIN ST, FULTON, MS 38843",
-		"PhoneList": [
-			{
-				"Type": "CELL",
-				"Number": "(662)687-3434"
-			},
-			{
-				"Type": "HOME",
-				"Number": "(662)862-9889"
-			}
-		],
-		"County": "Itawamba",
-		"AvailBoy": "0",
-		"AvailGirl": "0",
-		"AvailEither": "2",
-		"PriorAne": "False",
-		"Services": [
-			"Foster Home"
-		],
-		"Notes": [
-			"INFO:  2 either, age 0 - 4.",
-			"INFO:  Calculated 2 slot(s) total for resource home.",
-			"INFO:  Total of 0 slot(s) in use.",
-			"PASS:  Placement would succeed for boy age 4."
-		]
-	},
-	{
-		"Worker": "MW000635",
-		"ResourceType": "Foster Home",
-		"Distance": "46.15",
-		"ResourceName": "MCGILLIVRAY, ELIZABETH",
-		"FamStr": "MC",
-		"Address": "1738 FOREST HILL CV, BELDEN, MS 38826",
-		"PhoneList": [
-			{
-				"Type": "CELL",
-				"Number": "(662)296-1040"
-			},
-			{
-				"Type": "CELL",
-				"Number": "(662)296-1050"
-			}
-		],
-		"County": "Lee",
-		"AvailBoy": "0",
-		"AvailGirl": "0",
-		"AvailEither": "1",
-		"PriorAne": "False",
-		"Services": [
-			"Foster Home",
-			"Adoptive Home (Domestic)"
-		],
-		"Notes": [
-			"INFO:  1 either, age 0 - 18.",
-			"INFO:  Calculated 1 slot(s) total for resource home.",
-			"INFO:  Total of 0 slot(s) in use.",
-			"PASS:  Placement would succeed for boy age 4."
-		]
-	},
-	{
-		"Worker": "MW003274",
-		"ResourceType": "Foster Home",
-		"Distance": "46.23",
-		"ResourceName": "WHISENANT, BARRIE",
-		"FamStr": "MC",
-		"Address": "1335 CR 515-L2, MYRTLE, MS 38650",
-		"PhoneList": [
-			{
-				"Type": "CELL",
-				"Number": "(662)316-7039"
-			},
-			{
-				"Type": "HOME",
-				"Number": "(662)534-9695"
-			}
-		],
-		"County": "Union",
-		"AvailBoy": "0",
-		"AvailGirl": "0",
-		"AvailEither": "2",
-		"PriorAne": "True",
-		"Services": [
-			"Foster Home",
-			"Adoptive Home (Domestic)"
-		],
-		"Notes": [
-			"INFO:  2 either, age 0 - 18.",
-			"INFO:  Calculated 2 slot(s) total for resource home.",
-			"INFO:  Total of 0 slot(s) in use.",
-			"PASS:  Placement would succeed for boy age 4."
-		]
-	},
-	{
-		"Worker": "MW002863",
-		"ResourceType": "Foster Home",
-		"Distance": "46.24",
-		"ResourceName": "ESHIET, IBEREDEM",
-		"FamStr": "",
-		"Address": "609 LINWOOD DR, FULTON, MS 38843",
-		"PhoneList": [
-			{
-				"Type": "CELL",
-				"Number": "(662)610-7588"
-			}
-		],
-		"County": "Itawamba",
-		"AvailBoy": "0",
-		"AvailGirl": "0",
-		"AvailEither": "1",
-		"PriorAne": "False",
-		"Services": [
-			"Foster Home"
-		],
-		"Notes": [
-			"INFO:  3 either, age 0 - 18.",
-			"INFO:  Calculated 3 slot(s) total for resource home.",
-			"INFO:  Total of 2 slot(s) in use.",
-			"PASS:  Placement would succeed for boy age 4."
-		]
-	},
-	{
-		"Worker": "MW002459",
-		"ResourceType": "Foster Home",
-		"Distance": "46.64",
-		"ResourceName": "PENSON, ALICE",
-		"FamStr": "",
-		"Address": "115 BRIARWOOD CIR, TUPELO, MS 38804",
-		"PhoneList": [
-			{
-				"Type": "CELL",
-				"Number": "(662)681-6018"
-			}
-		],
-		"County": "Lee",
-		"AvailBoy": "0",
-		"AvailGirl": "0",
-		"AvailEither": "1",
-		"PriorAne": "False",
-		"Services": [
-			"Foster Home"
-		],
-		"Notes": [
-			"INFO:  1 either, age 0 - 4.",
-			"INFO:  Calculated 1 slot(s) total for resource home.",
-			"INFO:  Total of 0 slot(s) in use.",
-			"PASS:  Placement would succeed for boy age 4."
-		]
-	},
-	{
-		"Worker": "MW004076",
-		"ResourceType": "Foster Home",
-		"Distance": "46.73",
-		"ResourceName": "RAMAGE, ANGELA",
-		"FamStr": "",
-		"Address": "5481 WATERPOINTE CV, TUPELO, MS 38801",
-		"PhoneList": [
-			{
-				"Type": "HOME",
-				"Number": "(662)397-7843"
-			}
-		],
-		"County": "Lee",
-		"AvailBoy": "1",
-		"AvailGirl": "0",
-		"AvailEither": "0",
-		"PriorAne": "False",
-		"Services": [
-			"Foster Home"
-		],
-		"Notes": [
-			"INFO:  1 boys, age 0 - 6.",
-			"INFO:  Calculated 1 slot(s) total for resource home.",
-			"INFO:  Total of 0 slot(s) in use.",
-			"PASS:  Placement would succeed for boy age 4."
-		]
-	},
-	{
-		"Worker": "MW003414",
-		"ResourceType": "Foster Home",
-		"Distance": "46.79",
-		"ResourceName": "MEDLIN, JONATHAN",
-		"FamStr": "MC",
-		"Address": "532 WALNUT ST, TUPELO, MS 38804",
-		"PhoneList": [
-			{
-				"Type": "CELL",
-				"Number": "(662)279-3730"
-			}
-		],
-		"County": "Lee",
-		"AvailBoy": "0",
-		"AvailGirl": "0",
-		"AvailEither": "1",
-		"PriorAne": "False",
-		"Services": [
-			"Foster Home",
-			"Adoptive Home (Domestic)"
-		],
-		"Notes": [
-			"INFO:  1 either, age 0 - 5.",
-			"INFO:  Calculated 1 slot(s) total for resource home.",
-			"INFO:  Total of 0 slot(s) in use.",
-			"PASS:  Placement would succeed for boy age 4."
-		]
-	},
-	{
-		"Worker": "MW004474",
-		"ResourceType": "Foster Home",
-		"Distance": "46.91",
-		"ResourceName": "LEACH, JAMES",
-		"FamStr": "",
-		"Address": "915 ELDERBERRY ST, TUPELO, MS 38801",
-		"PhoneList": [],
-		"County": "Lee",
-		"AvailBoy": "0",
-		"AvailGirl": "0",
-		"AvailEither": "3",
-		"PriorAne": "True",
-		"Services": [
-			"Foster Home",
-			"Adoptive Home (Domestic)",
-			"Relative Foster Home"
-		],
-		"Notes": [
-			"INFO:  4 either, age 0 - 18.",
-			"INFO:  Calculated 4 slot(s) total for resource home.",
-			"INFO:  Total of 1 slot(s) in use.",
-			"PASS:  Placement would succeed for boy age 4."
-		]
-	},
-	{
-		"Worker": "MW002459",
-		"ResourceType": "Foster Home",
-		"Distance": "47.08",
-		"ResourceName": "WEBB, AMANDA",
-		"FamStr": "MC",
-		"Address": "134 ROAD 1124, MOOREVILLE, MS 38857",
-		"PhoneList": [
-			{
-				"Type": "CELL",
-				"Number": "(760)429-8161"
-			}
-		],
-		"County": "Lee",
-		"AvailBoy": "0",
-		"AvailGirl": "0",
-		"AvailEither": "1",
-		"PriorAne": "True",
-		"Services": [
-			"Foster Home",
-			"Adoptive Home (Domestic)",
-			"Relative Foster Home",
-			"ICPC - Incoming",
-			"ICPC - Incoming"
-		],
-		"Notes": [
-			"INFO:  1 either, age 0 - 18.",
-			"INFO:  Calculated 1 slot(s) total for resource home.",
-			"INFO:  Total of 0 slot(s) in use.",
-			"PASS:  Placement would succeed for boy age 4."
-		]
-	},
-	{
-		"Worker": "MW003274",
-		"ResourceType": "Foster Home",
-		"Distance": "48.27",
-		"ResourceName": "BUTLER, BETTY",
-		"FamStr": "MC",
-		"Address": "1047 COUNTY ROAD 22, MYRTLE, MS 38650",
-		"PhoneList": [
-			{
-				"Type": "CELL",
-				"Number": "(662)316-3744"
-			}
-		],
-		"County": "Union",
-		"AvailBoy": "0",
-		"AvailGirl": "0",
-		"AvailEither": "3",
-		"PriorAne": "False",
-		"Services": [
-			"Foster Home",
-			"Adoptive Home (Domestic)",
-			"Relative Foster Home",
-			"Expedited Pending Relative Res"
-		],
-		"Notes": [
-			"INFO:  3 either, age 0 - 18.",
-			"INFO:  Calculated 3 slot(s) total for resource home.",
-			"INFO:  Total of 0 slot(s) in use.",
-			"PASS:  Placement would succeed for boy age 4."
-		]
-	},
-	{
-		"Worker": "MW002831",
-		"ResourceType": "Foster Home",
-		"Distance": "49.15",
-		"ResourceName": "HARDEN, TRACY",
-		"FamStr": "",
-		"Address": "697 BRASSFIELD RD, PONTOTOC, MS 38863",
-		"PhoneList": [
-			{
-				"Type": "CELL",
-				"Number": "(662)297-8644"
-			}
-		],
-		"County": "Pontotoc",
-		"AvailBoy": "0",
-		"AvailGirl": "0",
-		"AvailEither": "3",
-		"PriorAne": "True",
-		"Services": [
-			"Foster Home",
-			"Adoptive Home (Domestic)",
-			"Relative Foster Home",
-			"Expedited Pending Relative Res"
-		],
-		"Notes": [
-			"INFO:  3 either, age 0 - 15.",
-			"INFO:  Calculated 3 slot(s) total for resource home.",
-			"INFO:  Total of 0 slot(s) in use.",
-			"PASS:  Placement would succeed for boy age 4."
-		]
-	},
-	{
-		"Worker": "MW004076",
-		"ResourceType": "Foster Home",
-		"Distance": "49.22",
-		"ResourceName": "CHAMBERS, SHELIA",
-		"FamStr": "",
-		"Address": "101 KATHRYN CIR, TUPELO, MS 38801",
-		"PhoneList": [],
-		"County": "Lee",
-		"AvailBoy": "0",
-		"AvailGirl": "0",
-		"AvailEither": "3",
-		"PriorAne": "True",
-		"Services": [
-			"Foster Home",
-			"Adoptive Home (Domestic)",
-			"Teenage Parent Foster Home"
-		],
-		"Notes": [
-			"INFO:  5 either, age 0 - 18.",
-			"INFO:  Calculated 5 slot(s) total for resource home.",
-			"INFO:  Total of 2 slot(s) in use.",
-			"PASS:  Placement would succeed for boy age 4."
-		]
-	},
-	{
-		"Worker": "MW004474",
-		"ResourceType": "Foster Home",
-		"Distance": "49.27",
-		"ResourceName": "BISHOP, LAURIE",
-		"FamStr": "",
-		"Address": "2261 HICKORY WOOD DR, TUPELO, MS 38801",
-		"PhoneList": [
-			{
-				"Type": "CELL",
-				"Number": "(662)871-1872"
-			},
-			{
-				"Type": "WORK",
-				"Number": "(662)841-8970"
-			}
-		],
-		"County": "Lee",
-		"AvailBoy": "0",
-		"AvailGirl": "0",
-		"AvailEither": "1",
-		"PriorAne": "False",
-		"Services": [
-			"Foster Home"
-		],
-		"Notes": [
-			"INFO:  1 either, age 0 - 6.",
-			"INFO:  Calculated 1 slot(s) total for resource home.",
-			"INFO:  Total of 0 slot(s) in use.",
-			"PASS:  Placement would succeed for boy age 4."
-		]
-	},
-	{
-		"Worker": "MW001984",
-		"ResourceType": "Foster Home",
-		"Distance": "49.39",
-		"ResourceName": "HOBBS, ROBERT",
-		"FamStr": "MC",
-		"Address": "3098 HIGDON RD, HOLLY SPRINGS, MS 38635",
-		"PhoneList": [
-			{
-				"Type": "CELL",
-				"Number": "(662)252-9540"
-			},
-			{
-				"Type": "HOME",
-				"Number": "(662)252-4190"
-			}
-		],
-		"County": "Marshall",
-		"AvailBoy": "0",
-		"AvailGirl": "0",
-		"AvailEither": "2",
-		"PriorAne": "False",
-		"Services": [
-			"Foster Home",
-			"Adoptive Home (Domestic)",
-			"Relative Foster Home"
-		],
-		"Notes": [
-			"INFO:  3 either, age 0 - 18.",
-			"INFO:  Calculated 3 slot(s) total for resource home.",
-			"INFO:  Total of 1 slot(s) in use.",
-			"PASS:  Placement would succeed for boy age 4."
-		]
-	},
-	{
-		"Worker": "MW004076",
-		"ResourceType": "Foster Home",
-		"Distance": "49.47",
-		"ResourceName": "PAYNE, RENEE",
-		"FamStr": "SF",
-		"Address": "480 ROAD 41, TUPELO, MS 38801",
-		"PhoneList": [
-			{
-				"Type": "CELL",
-				"Number": "(662)322-1631"
-			}
-		],
-		"County": "Lee",
-		"AvailBoy": "0",
-		"AvailGirl": "0",
-		"AvailEither": "1",
-		"PriorAne": "False",
-		"Services": [
-			"Foster Home",
-			"Adoptive Home (Domestic)",
-			"Relative Foster Home"
-		],
-		"Notes": [
-			"INFO:  2 either, age 0 - 18.",
-			"INFO:  Calculated 2 slot(s) total for resource home.",
-			"INFO:  Total of 1 slot(s) in use.",
-			"PASS:  Placement would succeed for boy age 4."
-		]
-	},
-	
-	{
-		"Worker": "MW003913",
-		"ResourceType": "Foster Home",
-		"Distance": "6.82",
-		"ResourceName": "SMITH, DEBRA D",
-		"FamStr": "SF",
-		"Address": "404 WOOD STREET, NEWTON, MS 39345",
-		"PhoneList": [
-			{
-				"Type": "CELL",
-				"Number": "(601)701-4711"
-			}
-		],
-		"County": "Newton",
-		"AvailBoy": "0",
-		"AvailGirl": "1",
-		"AvailEither": "0",
-		"PriorAne": "True",
-		"Services": [
-			"Foster Home",
-			"Adoptive Home (Domestic)"
-		],
-		"Notes": [
-			"INFO:  3 girls, age 8 - 18.",
-			"INFO:  Calculated 3 slot(s) total for resource home.",
-			"INFO:  Total of 2 slot(s) in use.",
-			"PASS:  Placement would succeed for girl age 10."
-		]
-	},
-	{
-		"Worker": "MW001478",
-		"ResourceType": "Foster Home",
-		"Distance": "15.14",
-		"ResourceName": "RASCO, STACEY",
-		"FamStr": "",
-		"Address": "203 WESTOVER DR, FOREST, MS 39074",
-		"PhoneList": [
-			{
-				"Type": "CELL",
-				"Number": "(601)900-5440"
-			},
-			{
-				"Type": "HOME",
-				"Number": "(601)900-9759"
-			}
-		],
-		"County": "Scott",
-		"AvailBoy": "0",
-		"AvailGirl": "0",
-		"AvailEither": "2",
-		"PriorAne": "False",
-		"Services": [
-			"Foster Home"
-		],
-		"Notes": [
-			"INFO:  2 either, age 6 - 17.",
-			"INFO:  Calculated 2 slot(s) total for resource home.",
-			"INFO:  Total of 0 slot(s) in use.",
-			"PASS:  Placement would succeed for girl age 10."
-		]
-	},
-	{
-		"Worker": "MW003913",
-		"ResourceType": "Foster Home",
-		"Distance": "15.8",
-		"ResourceName": "BANKS, DIANE",
-		"FamStr": "",
-		"Address": "350 CHOCKIE ODOM BEAMON RD, FORREST, MS 39074",
-		"PhoneList": [
-			{
-				"Type": "CELL",
-				"Number": "(601)697-6892"
-			}
-		],
-		"County": "Scott",
-		"AvailBoy": "0",
-		"AvailGirl": "0",
-		"AvailEither": "1",
-		"PriorAne": "False",
-		"Services": [
-			"Foster Home"
-		],
-		"Notes": [
-			"INFO:  3 either, age 0 - 12.",
-			"INFO:  Calculated 3 slot(s) total for resource home.",
-			"INFO:  Total of 2 slot(s) in use.",
-			"PASS:  Placement would succeed for girl age 10."
-		]
-	},
-	{
-		"Worker": "MW001478",
-		"ResourceType": "Foster Home",
-		"Distance": "15.89",
-		"ResourceName": "HARPER, LAKEASHA",
-		"FamStr": "SF",
-		"Address": "928 HUGHES ROAD, FOREST, MS 39074",
-		"PhoneList": [
-			{
-				"Type": "CELL",
-				"Number": "(769)274-4868"
-			},
-			{
-				"Type": "CELL",
-				"Number": "(601)504-3662"
-			},
-			{
-				"Type": "HOME",
-				"Number": "(601)625-7791"
-			},
-			{
-				"Type": "HOME",
-				"Number": "(601)625-7791"
-			}
-		],
-		"County": "Scott",
-		"AvailBoy": "0",
-		"AvailGirl": "0",
-		"AvailEither": "1",
-		"PriorAne": "True",
-		"Services": [
-			"Foster Home",
-			"Relative Foster Home",
-			"Expedited Pending Relative Res"
-		],
-		"Notes": [
-			"INFO:  2 either, age 0 - 17.",
-			"INFO:  Calculated 2 slot(s) total for resource home.",
-			"INFO:  Total of 1 slot(s) in use.",
-			"PASS:  Placement would succeed for girl age 10."
-		]
-	},
-	{
-		"Worker": "MW003356",
-		"ResourceType": "Foster Home",
-		"Distance": "16.37",
-		"ResourceName": "MOORE, GARY L",
-		"FamStr": "",
-		"Address": "2930 COUNTY ROAD 24, NEWTON, MS 39345",
-		"PhoneList": [
-			{
-				"Type": "CELL",
-				"Number": "(601)335-4473"
-			},
-			{
-				"Type": "CELL",
-				"Number": "(601)335-4481"
-			},
-			{
-				"Type": "HOME",
-				"Number": "(601)745-0446"
-			},
-			{
-				"Type": "WORK",
-				"Number": "(601)693-5981"
-			}
-		],
-		"County": "Newton",
-		"AvailBoy": "0",
-		"AvailGirl": "0",
-		"AvailEither": "2",
-		"PriorAne": "True",
-		"Services": [
-			"Foster Home"
-		],
-		"Notes": [
-			"INFO:  3 either, age 0 - 12.",
-			"INFO:  Calculated 3 slot(s) total for resource home.",
-			"INFO:  Total of 1 slot(s) in use.",
-			"PASS:  Placement would succeed for girl age 10."
-		]
-	},
-	{
-		"Worker": "MW001478",
-		"ResourceType": "Foster Home",
-		"Distance": "17.24",
-		"ResourceName": "STINGLEY, BELINDA",
-		"FamStr": "",
-		"Address": "564 FORTUNE TRAIL, WALNUT GROVE, MS 39189",
-		"PhoneList": [
-			{
-				"Type": "CELL",
-				"Number": "(601)780-0076"
-			},
-			{
-				"Type": "CELL",
-				"Number": "(601)780-0649"
-			},
-			{
-				"Type": "CELL",
-				"Number": "(601)780-0649"
-			},
-			{
-				"Type": "CNTCT",
-				"Number": "(601)253-2504"
-			},
-			{
-				"Type": "HOME",
-				"Number": "(601)253-2137"
-			},
-			{
-				"Type": "WORK",
-				"Number": "(601)625-7432"
-			}
-		],
-		"County": "Leake",
-		"AvailBoy": "0",
-		"AvailGirl": "0",
-		"AvailEither": "2",
-		"PriorAne": "True",
-		"Services": [
-			"Foster Home"
-		],
-		"Notes": [
-			"INFO:  3 either, age 0 - 18.",
-			"INFO:  Calculated 3 slot(s) total for resource home.",
-			"INFO:  Total of 1 slot(s) in use.",
-			"PASS:  Placement would succeed for girl age 10."
-		]
-	},
-	{
-		"Worker": "MW001478",
-		"ResourceType": "Foster Home",
-		"Distance": "20.98",
-		"ResourceName": "PERKINS, REBECCA",
-		"FamStr": "MC",
-		"Address": "437 RISHER RD, CARTHAGE, MS 39051",
-		"PhoneList": [
-			{
-				"Type": "CELL",
-				"Number": "(601)504-2323"
-			},
-			{
-				"Type": "CELL",
-				"Number": "(601)562-6705"
-			},
-			{
-				"Type": "WORK",
-				"Number": "(601)267-4562"
-			}
-		],
-		"County": "Leake",
-		"AvailBoy": "0",
-		"AvailGirl": "0",
-		"AvailEither": "2",
-		"PriorAne": "False",
-		"Services": [
-			"Foster Home"
-		],
-		"Notes": [
-			"INFO:  2 either, age 0 - 13.",
-			"INFO:  Calculated 2 slot(s) total for resource home.",
-			"INFO:  Total of 0 slot(s) in use.",
-			"PASS:  Placement would succeed for girl age 10."
-		]
-	},
-	{
-		"Worker": "MW002926",
-		"ResourceType": "Foster Home",
-		"Distance": "23.06",
-		"ResourceName": "DUCK, WALTER C JR.",
-		"FamStr": "",
-		"Address": "9503 HIGHWAY 19  N, COLLINSVILLE, MS 39325",
-		"PhoneList": [],
-		"County": "Lauderdale",
-		"AvailBoy": "0",
-		"AvailGirl": "0",
-		"AvailEither": "1",
-		"PriorAne": "False",
-		"Services": [
-			"Foster Home",
-			"Adoptive Home (Domestic)"
-		],
-		"Notes": [
-			"INFO:  2 either, age 0 - 12.",
-			"INFO:  Calculated 2 slot(s) total for resource home.",
-			"INFO:  Total of 1 slot(s) in use.",
-			"PASS:  Placement would succeed for girl age 10."
-		]
-	},
-	{
-		"Worker": "MW001478",
-		"ResourceType": "Foster Home",
-		"Distance": "26.42",
-		"ResourceName": "HOWELL, FELECIA",
-		"FamStr": "MC",
-		"Address": "110 WELLS PL, PHILADELPHIA, MS 39350",
-		"PhoneList": [
-			{
-				"Type": "CELL",
-				"Number": "(601)504-8711"
-			},
-			{
-				"Type": "HOME",
-				"Number": "(601)879-6614"
-			}
-		],
-		"County": "Neshoba",
-		"AvailBoy": "0",
-		"AvailGirl": "0",
-		"AvailEither": "3",
-		"PriorAne": "False",
-		"Services": [
-			"Foster Home"
-		],
-		"Notes": [
-			"INFO:  4 either, age 0 - 18.",
-			"INFO:  Calculated 4 slot(s) total for resource home.",
-			"INFO:  Total of 1 slot(s) in use.",
-			"PASS:  Placement would succeed for girl age 10."
-		]
-	},
-	{
-		"Worker": "MW001478",
-		"ResourceType": "Foster Home",
-		"Distance": "26.74",
-		"ResourceName": "BENNETT, CHRISSA",
-		"FamStr": "",
-		"Address": "221 MYRTLE ST W, PHILADELPHIA, MS 39350",
-		"PhoneList": [
-			{
-				"Type": "CELL",
-				"Number": "(601)416-4475"
-			},
-			{
-				"Type": "HOME",
-				"Number": "(601)416-4475"
-			},
-			{
-				"Type": "WORK",
-				"Number": "(601)774-8211"
-			}
-		],
-		"County": "Neshoba",
-		"AvailBoy": "0",
-		"AvailGirl": "2",
-		"AvailEither": "0",
-		"PriorAne": "False",
-		"Services": [
-			"Foster Home"
-		],
-		"Notes": [
-			"INFO:  2 girls, age 7 - 18.",
-			"INFO:  Calculated 2 slot(s) total for resource home.",
-			"INFO:  Total of 0 slot(s) in use.",
-			"PASS:  Placement would succeed for girl age 10."
-		]
-	},
-	{
-		"Worker": "MW001478",
-		"ResourceType": "Foster Home",
-		"Distance": "27.24",
-		"ResourceName": "INGRAM, GLORIA",
-		"FamStr": "SF",
-		"Address": "10401 ROAD 545, PHILADELPHIA, MS 39350",
-		"PhoneList": [
-			{
-				"Type": "CELL",
-				"Number": "(601)650-8066"
-			}
-		],
-		"County": "Neshoba",
-		"AvailBoy": "0",
-		"AvailGirl": "0",
-		"AvailEither": "2",
-		"PriorAne": "False",
-		"Services": [
-			"Foster Home"
-		],
-		"Notes": [
-			"INFO:  3 either, age 0 - 18.",
-			"INFO:  Calculated 3 slot(s) total for resource home.",
-			"INFO:  Total of 1 slot(s) in use.",
-			"PASS:  Placement would succeed for girl age 10."
-		]
-	},
-	{
-		"Worker": "MW000757",
-		"ResourceType": "Foster Home",
-		"Distance": "27.89",
-		"ResourceName": "YATES, EASTER M",
-		"FamStr": "SF",
-		"Address": "1919 COUNTY ROAD 333, ENTERPRISE, MS 39330",
-		"PhoneList": [
-			{
-				"Type": "CELL",
-				"Number": "(601)616-4760"
-			},
-			{
-				"Type": "CNTCT",
-				"Number": "(601)616-4760"
-			},
-			{
-				"Type": "HOME",
-				"Number": "(601)659-9114"
-			}
-		],
-		"County": "Clarke",
-		"AvailBoy": "0",
-		"AvailGirl": "0",
-		"AvailEither": "2",
-		"PriorAne": "True",
-		"Services": [
-			"Foster Home",
-			"Adoptive Home (Domestic)"
-		],
-		"Notes": [
-			"INFO:  3 either, age 0 - 18.",
-			"INFO:  Calculated 3 slot(s) total for resource home.",
-			"INFO:  Total of 1 slot(s) in use.",
-			"PASS:  Placement would succeed for girl age 10."
-		]
-	},
-	{
-		"Worker": "MW001478",
-		"ResourceType": "Foster Home",
-		"Distance": "28.78",
-		"ResourceName": "PALMER, FELTON",
-		"FamStr": "",
-		"Address": "293 KIRBY RD, CARTHAGE, MS 39051",
-		"PhoneList": [
-			{
-				"Type": "CELL",
-				"Number": "(601)562-8208"
-			},
-			{
-				"Type": "CELL",
-				"Number": "(601)416-5171"
-			}
-		],
-		"County": "Leake",
-		"AvailBoy": "0",
-		"AvailGirl": "0",
-		"AvailEither": "1",
-		"PriorAne": "False",
-		"Services": [
-			"Foster Home",
-			"Relative Foster Home",
-			"Expedited Pending Relative Res"
-		],
-		"Notes": [
-			"INFO:  2 either, age 0 - 18.",
-			"INFO:  Calculated 2 slot(s) total for resource home.",
-			"INFO:  Total of 1 slot(s) in use.",
-			"PASS:  Placement would succeed for girl age 10."
-		]
-	},
-	{
-		"Worker": "MW002216",
-		"ResourceType": "Foster Home",
-		"Distance": "28.78",
-		"ResourceName": "HARBIN, SYLVIA B",
-		"FamStr": "MC",
-		"Address": "607 64TH AVE, MERIDIAN, MS 39307",
-		"PhoneList": [
-			{
-				"Type": "CELL",
-				"Number": "(601)479-0484"
-			},
-			{
-				"Type": "HOME",
-				"Number": "(601)693-6875"
-			}
-		],
-		"County": "Lauderdale",
-		"AvailBoy": "0",
-		"AvailGirl": "0",
-		"AvailEither": "1",
-		"PriorAne": "False",
-		"Services": [
-			"Foster Home"
-		],
-		"Notes": [
-			"INFO:  2 either, age 1 - 17.",
-			"INFO:  Calculated 2 slot(s) total for resource home.",
-			"INFO:  Total of 1 slot(s) in use.",
-			"PASS:  Placement would succeed for girl age 10."
-		]
-	},
-	{
-		"Worker": "MW002216",
-		"ResourceType": "Foster Home",
-		"Distance": "29.41",
-		"ResourceName": "LEWIS, RENEE",
-		"FamStr": "",
-		"Address": "5455 WINDSOR CIR, MERIDIAN, MS 39305",
-		"PhoneList": [
-			{
-				"Type": "CELL",
-				"Number": "(601)917-4641"
-			},
-			{
-				"Type": "HOME",
-				"Number": "(601)681-9927"
-			}
-		],
-		"County": "Lauderdale",
-		"AvailBoy": "0",
-		"AvailGirl": "0",
-		"AvailEither": "2",
-		"PriorAne": "True",
-		"Services": [
-			"Foster Home",
-			"Adoptive Home (Domestic)"
-		],
-		"Notes": [
-			"INFO:  4 either, age 0 - 17.",
-			"INFO:  Calculated 4 slot(s) total for resource home.",
-			"INFO:  Total of 2 slot(s) in use.",
-			"PASS:  Placement would succeed for girl age 10."
-		]
-	},
-	{
-		"Worker": "MW002432",
-		"ResourceType": "Foster Home",
-		"Distance": "30.03",
-		"ResourceName": "JONES, ANNIE K",
-		"FamStr": "",
-		"Address": "4211 19TH ST, MERIDIAN, MS 39307",
-		"PhoneList": [
-			{
-				"Type": "HOME",
-				"Number": "(601)696-7041"
-			}
-		],
-		"County": "Lauderdale",
-		"AvailBoy": "0",
-		"AvailGirl": "0",
-		"AvailEither": "3",
-		"PriorAne": "False",
-		"Services": [
-			"Foster Home"
-		],
-		"Notes": [
-			"INFO:  3 either, age 7 - 18.",
-			"INFO:  Calculated 3 slot(s) total for resource home.",
-			"INFO:  Total of 0 slot(s) in use.",
-			"PASS:  Placement would succeed for girl age 10."
-		]
-	},
-	{
-		"Worker": "MW002432",
-		"ResourceType": "Foster Home",
-		"Distance": "30.32",
-		"ResourceName": "WALKER, ROMANDE",
-		"FamStr": "SF",
-		"Address": "3915 SOUTH ST, MERIDIAN, MS 39307",
-		"PhoneList": [
-			{
-				"Type": "CELL",
-				"Number": "(601)616-6122"
-			},
-			{
-				"Type": "CNTCT",
-				"Number": "(601)207-5068"
-			}
-		],
-		"County": "Lauderdale",
-		"AvailBoy": "0",
-		"AvailGirl": "0",
-		"AvailEither": "2",
-		"PriorAne": "True",
-		"Services": [
-			"Foster Home"
-		],
-		"Notes": [
-			"INFO:  3 either, age 6 - 19.",
-			"INFO:  Calculated 3 slot(s) total for resource home.",
-			"INFO:  Total of 1 slot(s) in use.",
-			"PASS:  Placement would succeed for girl age 10."
-		]
-	},
-	{
-		"Worker": "MW002432",
-		"ResourceType": "Foster Home",
-		"Distance": "30.87",
-		"ResourceName": "RUSSELL, CAROLYN",
-		"FamStr": "SF",
-		"Address": "2714 56TH ST, MERIDIAN, MS 39305",
-		"PhoneList": [
-			{
-				"Type": "CELL",
-				"Number": "(601)678-1967"
-			},
-			{
-				"Type": "HOME",
-				"Number": "(601)482-4320"
-			}
-		],
-		"County": "Lauderdale",
-		"AvailBoy": "0",
-		"AvailGirl": "0",
-		"AvailEither": "1",
-		"PriorAne": "True",
-		"Services": [
-			"Foster Home",
-			"Adoptive Home (Domestic)",
-			"Relative Foster Home"
-		],
-		"Notes": [
-			"INFO:  3 either, age 3 - 20.",
-			"INFO:  Calculated 3 slot(s) total for resource home.",
-			"INFO:  Total of 2 slot(s) in use.",
-			"PASS:  Placement would succeed for girl age 10."
-		]
-	},
-	{
-		"Worker": "MW002216",
-		"ResourceType": "Foster Home",
-		"Distance": "31.73",
-		"ResourceName": "HANSCHKE, CLAIRE",
-		"FamStr": "",
-		"Address": "1305 63RD ST, MERIDIAN, MS 39305",
-		"PhoneList": [
-			{
-				"Type": "CELL",
-				"Number": "(608)770-7724"
-			},
-			{
-				"Type": "CNTCT",
-				"Number": "(262)352-1844"
-			}
-		],
-		"County": "Lauderdale",
-		"AvailBoy": "0",
-		"AvailGirl": "0",
-		"AvailEither": "1",
-		"PriorAne": "True",
-		"Services": [
-			"Foster Home"
-		],
-		"Notes": [
-			"INFO:  3 either, age 0 - 10.",
-			"INFO:  Calculated 3 slot(s) total for resource home.",
-			"INFO:  Total of 2 slot(s) in use.",
-			"PASS:  Placement would succeed for girl age 10."
-		]
-	},
-	{
-		"Worker": "MW003913",
-		"ResourceType": "Foster Home",
-		"Distance": "31.79",
-		"ResourceName": "MCCOY, DARNELL",
-		"FamStr": "MC",
-		"Address": "6628 13TH PLACE, MERIDIAN, MS 39305",
-		"PhoneList": [
-			{
-				"Type": "CELL",
-				"Number": "(601)604-2928"
-			},
-			{
-				"Type": "CELL",
-				"Number": "(601)604-8881"
-			}
-		],
-		"County": "Lauderdale",
-		"AvailBoy": "0",
-		"AvailGirl": "1",
-		"AvailEither": "0",
-		"PriorAne": "False",
-		"Services": [
-			"Foster Home"
-		],
-		"Notes": [
-			"INFO:  3 girls, age 6 - 15.",
-			"INFO:  Calculated 3 slot(s) total for resource home.",
-			"INFO:  Total of 2 slot(s) in use.",
-			"PASS:  Placement would succeed for girl age 10."
-		]
-	},
-	{
-		"Worker": "MW002216",
-		"ResourceType": "Foster Home",
-		"Distance": "31.96",
-		"ResourceName": "CRAIG, VERGANELL",
-		"FamStr": "",
-		"Address": "903 23RD ST, MERIDIAN, MS 39301",
-		"PhoneList": [
-			{
-				"Type": "CELL",
-				"Number": "(601)686-6315"
-			}
-		],
-		"County": "Lauderdale",
-		"AvailBoy": "0",
-		"AvailGirl": "0",
-		"AvailEither": "2",
-		"PriorAne": "False",
-		"Services": [
-			"Foster Home"
-		],
-		"Notes": [
-			"INFO:  2 either, age 0 - 18.",
-			"INFO:  Calculated 2 slot(s) total for resource home.",
-			"INFO:  Total of 0 slot(s) in use.",
-			"PASS:  Placement would succeed for girl age 10."
-		]
-	},
-	{
-		"Worker": "MW002216",
-		"ResourceType": "Foster Home",
-		"Distance": "31.98",
-		"ResourceName": "HERSEY, SUSAN",
-		"FamStr": "",
-		"Address": "803 29TH ST 711, MERIDIAN, MS 39305",
-		"PhoneList": [
-			{
-				"Type": "CELL",
-				"Number": "(601)480-1902"
-			}
-		],
-		"County": "Lauderdale",
-		"AvailBoy": "0",
-		"AvailGirl": "0",
-		"AvailEither": "1",
-		"PriorAne": "False",
-		"Services": [
-			"Foster Home"
-		],
-		"Notes": [
-			"INFO:  2 either, age 0 - 12.",
-			"INFO:  Calculated 2 slot(s) total for resource home.",
-			"INFO:  Total of 1 slot(s) in use.",
-			"PASS:  Placement would succeed for girl age 10."
-		]
-	},
-	{
-		"Worker": "MW000757",
-		"ResourceType": "Foster Home",
-		"Distance": "31.99",
-		"ResourceName": "RHODES, CATHERINE",
-		"FamStr": "",
-		"Address": "231 CHESTNUT ST, PACHUTA, MS 39347",
-		"PhoneList": [
-			{
-				"Type": "HOME",
-				"Number": "(601)776-9047"
-			}
-		],
-		"County": "Clarke",
-		"AvailBoy": "0",
-		"AvailGirl": "0",
-		"AvailEither": "1",
-		"PriorAne": "False",
-		"Services": [
-			"Foster Home"
-		],
-		"Notes": [
-			"INFO:  3 either, age 0 - 12.",
-			"INFO:  Calculated 3 slot(s) total for resource home.",
-			"INFO:  Total of 2 slot(s) in use.",
-			"PASS:  Placement would succeed for girl age 10."
-		]
-	},
-	{
-		"Worker": "MW002432",
-		"ResourceType": "Foster Home",
-		"Distance": "33.39",
-		"ResourceName": "MAYO, TRACI",
-		"FamStr": "",
-		"Address": "326 REDBUD LANE, MERIDIAN, MS 39301",
-		"PhoneList": [
-			{
-				"Type": "CELL",
-				"Number": "(601)480-4075"
-			}
-		],
-		"County": "Clarke",
-		"AvailBoy": "0",
-		"AvailGirl": "0",
-		"AvailEither": "1",
-		"PriorAne": "False",
-		"Services": [
-			"Foster Home"
-		],
-		"Notes": [
-			"INFO:  3 either, age 0 - 12.",
-			"INFO:  Calculated 3 slot(s) total for resource home.",
-			"INFO:  Total of 2 slot(s) in use.",
-			"PASS:  Placement would succeed for girl age 10."
-		]
-	},
-	{
-		"Worker": "MW002432",
-		"ResourceType": "Foster Home",
-		"Distance": "34.25",
-		"ResourceName": "JOHNSON, BETTY J",
-		"FamStr": "SF",
-		"Address": "4775 C A PICKARD RD, MERIDIAN, MS 39301",
-		"PhoneList": [
-			{
-				"Type": "CELL",
-				"Number": "(601)527-7131"
-			},
-			{
-				"Type": "CNTCT",
-				"Number": "(601)595-0163"
-			}
-		],
-		"County": "Lauderdale",
-		"AvailBoy": "0",
-		"AvailGirl": "0",
-		"AvailEither": "3",
-		"PriorAne": "True",
-		"Services": [
-			"Foster Home",
-			"Adoptive Home (Domestic)"
-		],
-		"Notes": [
-			"INFO:  3 either, age 0 - 16.",
-			"INFO:  Calculated 3 slot(s) total for resource home.",
-			"INFO:  Total of 0 slot(s) in use.",
-			"PASS:  Placement would succeed for girl age 10."
-		]
-	},
-	{
-		"Worker": "MW000757",
-		"ResourceType": "Foster Home",
-		"Distance": "34.64",
-		"ResourceName": "MADERE, MARY",
-		"FamStr": "",
-		"Address": "5391 ZERO RD, MERIDIAN, MS 39301",
-		"PhoneList": [
-			{
-				"Type": "CELL",
-				"Number": "(601)604-2605"
-			}
-		],
-		"County": "Lauderdale",
-		"AvailBoy": "0",
-		"AvailGirl": "0",
-		"AvailEither": "1",
-		"PriorAne": "False",
-		"Services": [
-			"Foster Home"
-		],
-		"Notes": [
-			"INFO:  1 either, age 5 - 12.",
-			"INFO:  Calculated 1 slot(s) total for resource home.",
-			"INFO:  Total of 0 slot(s) in use.",
-			"PASS:  Placement would succeed for girl age 10."
-		]
-	},
-	{
-		"Worker": "MW001478",
-		"ResourceType": "Foster Home",
-		"Distance": "34.9",
-		"ResourceName": "HENRY, BONNIE J",
-		"FamStr": "",
-		"Address": "1672 KEELI RD, CARTHAGE, MS 39051",
-		"PhoneList": [
-			{
-				"Type": "CELL",
-				"Number": "(601)946-7997"
-			},
-			{
-				"Type": "HOME",
-				"Number": "(601)267-8367"
-			},
-			{
-				"Type": "WORK",
-				"Number": "(601)267-3223"
-			}
-		],
-		"County": "Leake",
-		"AvailBoy": "0",
-		"AvailGirl": "0",
-		"AvailEither": "1",
-		"PriorAne": "True",
-		"Services": [
-			"Foster Home",
-			"Adoptive Home (Domestic)"
-		],
-		"Notes": [
-			"INFO:  4 either, age 0 - 18.",
-			"INFO:  Calculated 4 slot(s) total for resource home.",
-			"INFO:  Total of 3 slot(s) in use.",
-			"PASS:  Placement would succeed for girl age 10."
-		]
-	},
-	{
-		"Worker": "MW002216",
-		"ResourceType": "Foster Home",
-		"Distance": "35.56",
-		"ResourceName": "JONES, JENNIFER",
-		"FamStr": "SF",
-		"Address": "1128 WALKER SPUR RD, MERIDIAN, MS 39301",
-		"PhoneList": [
-			{
-				"Type": "CELL",
-				"Number": "(601)701-5827"
-			}
-		],
-		"County": "Lauderdale",
-		"AvailBoy": "0",
-		"AvailGirl": "0",
-		"AvailEither": "1",
-		"PriorAne": "False",
-		"Services": [
-			"Foster Home"
-		],
-		"Notes": [
-			"INFO:  2 either, age 1 - 16.",
-			"INFO:  Calculated 2 slot(s) total for resource home.",
-			"INFO:  Total of 1 slot(s) in use.",
-			"PASS:  Placement would succeed for girl age 10."
-		]
-	},
-	{
-		"Worker": "MW003722",
-		"ResourceType": "Foster Home",
-		"Distance": "36.17",
-		"ResourceName": "WEST, GARY",
-		"FamStr": "MC",
-		"Address": "2143 JOHNS MAYTON RD, BRANDON, MS 39042",
-		"PhoneList": [
-			{
-				"Type": "CELL",
-				"Number": "(769)610-1096"
-			},
-			{
-				"Type": "CNTCT",
-				"Number": "(601)201-7713"
-			},
-			{
-				"Type": "CNTCT",
-				"Number": "(601)201-7713"
-			}
-		],
-		"County": "Rankin",
-		"AvailBoy": "0",
-		"AvailGirl": "0",
-		"AvailEither": "3",
-		"PriorAne": "False",
-		"Services": [
-			"Foster Home",
-			"Adoptive Home (Domestic)"
-		],
-		"Notes": [
-			"INFO:  3 either, age 0 - 15.",
-			"INFO:  Calculated 3 slot(s) total for resource home.",
-			"INFO:  Total of 0 slot(s) in use.",
-			"PASS:  Placement would succeed for girl age 10."
-		]
-	},
-	{
-		"Worker": "MW002216",
-		"ResourceType": "Foster Home",
-		"Distance": "36.42",
-		"ResourceName": "CAMERON, ZELLA",
-		"FamStr": "",
-		"Address": "2471 HIGHWAY 513, QUITMAN, MS 39355",
-		"PhoneList": [
-			{
-				"Type": "CELL",
-				"Number": "(601)934-6511"
-			},
-			{
-				"Type": "WORK",
-				"Number": "(601)776-1015"
-			}
-		],
-		"County": "Clarke",
-		"AvailBoy": "0",
-		"AvailGirl": "1",
-		"AvailEither": "0",
-		"PriorAne": "False",
-		"Services": [
-			"Foster Home",
-			"Relative Foster Home",
-			"Expedited Pending Relative Res"
-		],
-		"Notes": [
-			"INFO:  1 boys, age 6 - 17.",
-			"INFO:  1 girls, age 6 - 12.",
-			"INFO:  Calculated 2 slot(s) total for resource home.",
-			"INFO:  Total of 1 slot(s) in use.",
-			"PASS:  Placement would succeed for girl age 10."
-		]
-	},
-	{
-		"Worker": "MW003913",
-		"ResourceType": "Foster Home",
-		"Distance": "37.32",
-		"ResourceName": "BOZEMAN, INETA E",
-		"FamStr": "MC",
-		"Address": "10951 ROAD 2826, PHILADELPHIA, MS 39350",
-		"PhoneList": [
-			{
-				"Type": "HOME",
-				"Number": "(601)650-9502"
-			},
-			{
-				"Type": "WORK",
-				"Number": "(601)656-3463"
-			}
-		],
-		"County": "Neshoba",
-		"AvailBoy": "0",
-		"AvailGirl": "0",
-		"AvailEither": "1",
-		"PriorAne": "True",
-		"Services": [
-			"Foster Home",
-			"Foster/Adopt Foster Home",
-			"Adoptive Home (Domestic)"
-		],
-		"Notes": [
-			"INFO:  2 either, age 0 - 12.",
-			"INFO:  Calculated 2 slot(s) total for resource home.",
-			"INFO:  Total of 1 slot(s) in use.",
-			"PASS:  Placement would succeed for girl age 10."
-		]
-	},
-	{
-		"Worker": "MW000757",
-		"ResourceType": "Foster Home",
-		"Distance": "38.04",
-		"ResourceName": "CHAMPION, MATHEW",
-		"FamStr": "",
-		"Address": "1260 COUNTY ROAD 140, QUITMAN, MS 39355",
-		"PhoneList": [
-			{
-				"Type": "CELL",
-				"Number": "(601)479-8595"
-			},
-			{
-				"Type": "CELL",
-				"Number": "(601)479-6010"
-			},
-			{
-				"Type": "WORK",
-				"Number": "(601)703-9695"
-			}
-		],
-		"County": "Clarke",
-		"AvailBoy": "0",
-		"AvailGirl": "0",
-		"AvailEither": "2",
-		"PriorAne": "False",
-		"Services": [
-			"Foster Home",
-			"Adoptive Home (Domestic)"
-		],
-		"Notes": [
-			"INFO:  2 either, age 0 - 17.",
-			"INFO:  Calculated 2 slot(s) total for resource home.",
-			"INFO:  Total of 0 slot(s) in use.",
-			"PASS:  Placement would succeed for girl age 10."
-		]
-	},
-	{
-		"Worker": "MW002689",
-		"ResourceType": "Foster Home",
-		"Distance": "38.28",
-		"ResourceName": "HEGWOOD, WILLIAM D",
-		"FamStr": "MC",
-		"Address": "3680 HWY 80  E, BRANDON, MS 39042",
-		"PhoneList": [
-			{
-				"Type": "CELL",
-				"Number": "(601)201-6620"
-			},
-			{
-				"Type": "CNTCT",
-				"Number": "(601)259-3673"
-			},
-			{
-				"Type": "HOME",
-				"Number": "(601)825-7743"
-			}
-		],
-		"County": "Rankin",
-		"AvailBoy": "0",
-		"AvailGirl": "0",
-		"AvailEither": "1",
-		"PriorAne": "True",
-		"Services": [
-			"Foster Home",
-			"Adoptive Home (Domestic)"
-		],
-		"Notes": [
-			"INFO:  3 either, age 0 - 19.",
-			"INFO:  Calculated 3 slot(s) total for resource home.",
-			"INFO:  Total of 2 slot(s) in use.",
-			"PASS:  Placement would succeed for girl age 10."
-		]
-	},
-	{
-		"Worker": "MW000757",
-		"ResourceType": "Foster Home",
-		"Distance": "38.91",
-		"ResourceName": "EVANS, HEATHER",
-		"FamStr": "",
-		"Address": "3839 COUNTY ROAD 114, QUITMAN, MS 39355",
-		"PhoneList": [
-			{
-				"Type": "CELL",
-				"Number": "(601)480-3371"
-			}
-		],
-		"County": "Clarke",
-		"AvailBoy": "0",
-		"AvailGirl": "0",
-		"AvailEither": "1",
-		"PriorAne": "True",
-		"Services": [
-			"Foster Home",
-			"Relative Foster Home",
-			"Expedited Pending Relative Res"
-		],
-		"Notes": [
-			"INFO:  3 either, age 0 - 12.",
-			"INFO:  Calculated 3 slot(s) total for resource home.",
-			"INFO:  Total of 2 slot(s) in use.",
-			"PASS:  Placement would succeed for girl age 10."
-		]
-	},
-	{
-		"Worker": "MW003356",
-		"ResourceType": "Foster Home",
-		"Distance": "39.09",
-		"ResourceName": "BOOKER, STACEY",
-		"FamStr": "",
-		"Address": "305 MULBERRY LN, QUITMAN, MS 39355",
-		"PhoneList": [
-			{
-				"Type": "CELL",
-				"Number": "(601)616-4623"
-			},
-			{
-				"Type": "CELL",
-				"Number": "(601)678-5727"
-			},
-			{
-				"Type": "CNTCT",
-				"Number": "(601)678-5727"
-			}
-		],
-		"County": "Clarke",
-		"AvailBoy": "0",
-		"AvailGirl": "0",
-		"AvailEither": "2",
-		"PriorAne": "False",
-		"Services": [
-			"Foster Home",
-			"Adoptive Home (Domestic)"
-		],
-		"Notes": [
-			"INFO:  3 either, age 0 - 14.",
-			"INFO:  Calculated 3 slot(s) total for resource home.",
-			"INFO:  Total of 1 slot(s) in use.",
-			"PASS:  Placement would succeed for girl age 10."
-		]
-	},
-	{
-		"Worker": "MW000757",
-		"ResourceType": "Foster Home",
-		"Distance": "39.13",
-		"ResourceName": "WATKINS, REBECCA W",
-		"FamStr": "",
-		"Address": "E 601 CHURCH ST, QUITMAN, MS 39355",
-		"PhoneList": [
-			{
-				"Type": "CELL",
-				"Number": "(601)938-5247"
-			},
-			{
-				"Type": "HOME",
-				"Number": "(601)776-5433"
-			}
-		],
-		"County": "Clarke",
-		"AvailBoy": "0",
-		"AvailGirl": "0",
-		"AvailEither": "2",
-		"PriorAne": "False",
-		"Services": [
-			"Foster Home"
-		],
-		"Notes": [
-			"INFO:  2 either, age 0 - 18.",
-			"INFO:  Calculated 2 slot(s) total for resource home.",
-			"INFO:  Total of 0 slot(s) in use.",
-			"PASS:  Placement would succeed for girl age 10."
-		]
-	},
-	{
-		"Worker": "MW004843",
-		"ResourceType": "Foster Home",
-		"Distance": "39.47",
-		"ResourceName": "RANKIN-THOMPSON, KENNY E",
-		"FamStr": "MC",
-		"Address": "145 RUBY TAYLOR RD, MENDENHALL, MS 39114",
-		"PhoneList": [
-			{
-				"Type": "CELL",
-				"Number": "(601)953-4474"
-			},
-			{
-				"Type": "CNTCT",
-				"Number": "(228)234-1871"
-			},
-			{
-				"Type": "HOME",
-				"Number": "(601)847-0118"
-			}
-		],
-		"County": "Simpson",
-		"AvailBoy": "0",
-		"AvailGirl": "0",
-		"AvailEither": "3",
-		"PriorAne": "False",
-		"Services": [
-			"Foster Home",
-			"Relative Foster Home",
-			"Expedited Pending Relative Res"
-		],
-		"Notes": [
-			"INFO:  3 either, age 0 - 18.",
-			"INFO:  Calculated 3 slot(s) total for resource home.",
-			"INFO:  Total of 0 slot(s) in use.",
-			"PASS:  Placement would succeed for girl age 10."
-		]
-	},
-	{
-		"Worker": "MW000757",
-		"ResourceType": "Foster Home",
-		"Distance": "39.76",
-		"ResourceName": "JAMES OLIVER, JESSIE",
-		"FamStr": "",
-		"Address": "2401 18 E HIGHWAY, QUITMAN, MS 39355",
-		"PhoneList": [],
-		"County": "Clarke",
-		"AvailBoy": "0",
-		"AvailGirl": "0",
-		"AvailEither": "1",
-		"PriorAne": "True",
-		"Services": [
-			"Foster Home"
-		],
-		"Notes": [
-			"INFO:  2 either, age 0 - 13.",
-			"INFO:  Calculated 2 slot(s) total for resource home.",
-			"INFO:  Total of 1 slot(s) in use.",
-			"PASS:  Placement would succeed for girl age 10."
-		]
-	},
-	{
-		"Worker": "MW003277",
-		"ResourceType": "Foster Home",
-		"Distance": "40.58",
-		"ResourceName": "COTTON, AMY",
-		"FamStr": "",
-		"Address": "3446 ATTALA ROAD 1106, CARTHAGE, MS 39051",
-		"PhoneList": [
-			{
-				"Type": "HOME",
-				"Number": "(662)582-3723"
-			}
-		],
-		"County": "Attala",
-		"AvailBoy": "0",
-		"AvailGirl": "0",
-		"AvailEither": "2",
-		"PriorAne": "False",
-		"Services": [
-			"Foster Home"
-		],
-		"Notes": [
-			"INFO:  3 either, age 4 - 16.",
-			"INFO:  Calculated 3 slot(s) total for resource home.",
-			"INFO:  Total of 1 slot(s) in use.",
-			"PASS:  Placement would succeed for girl age 10."
-		]
-	},
-	{
-		"Worker": "MW003313",
-		"ResourceType": "Foster Home",
-		"Distance": "40.84",
-		"ResourceName": "ROGERS, DEBRA",
-		"FamStr": "SF",
-		"Address": "190 STULL RD, BRANDON, MS 39047",
-		"PhoneList": [
-			{
-				"Type": "CELL",
-				"Number": "(601)927-4099"
-			},
-			{
-				"Type": "CELL",
-				"Number": "(601)720-8946"
-			},
-			{
-				"Type": "HOME",
-				"Number": "(601)829-2861"
-			}
-		],
-		"County": "Rankin",
-		"AvailBoy": "0",
-		"AvailGirl": "0",
-		"AvailEither": "2",
-		"PriorAne": "True",
-		"Services": [
-			"Foster Home",
-			"Teenage Parent Foster Home"
-		],
-		"Notes": [
-			"INFO:  2 either, age 0 - 18.",
-			"INFO:  Calculated 2 slot(s) total for resource home.",
-			"INFO:  Total of 0 slot(s) in use.",
-			"PASS:  Placement would succeed for girl age 10."
-		]
-	},
-	{
-		"Worker": "MW000757",
-		"ResourceType": "Foster Home",
-		"Distance": "40.92",
-		"ResourceName": "NIXON, SABRINA A",
-		"FamStr": "MC",
-		"Address": "14246 COUNTY ROAD 210, VOSSBURG, MS 39366",
-		"PhoneList": [
-			{
-				"Type": "CNTCT",
-				"Number": "(601)935-1048"
-			},
-			{
-				"Type": "HOME",
-				"Number": "(601)787-2232"
-			}
-		],
-		"County": "Clarke",
-		"AvailBoy": "0",
-		"AvailGirl": "0",
-		"AvailEither": "1",
-		"PriorAne": "False",
-		"Services": [
-			"Foster Home",
-			"Relative Foster Home",
-			"Expedited Pending Relative Res"
-		],
-		"Notes": [
-			"INFO:  1 either, age 0 - 12.",
-			"INFO:  Calculated 1 slot(s) total for resource home.",
-			"INFO:  Total of 0 slot(s) in use.",
-			"PASS:  Placement would succeed for girl age 10."
-		]
-	},
-	{
-		"Worker": "MW003435",
-		"ResourceType": "Foster Home",
-		"Distance": "41.47",
-		"ResourceName": "NEVINS, ERIC",
-		"FamStr": "",
-		"Address": "637 POWER CIR, BILOXI, MS 39531",
-		"PhoneList": [
-			{
-				"Type": "CELL",
-				"Number": "(334)313-4924"
-			},
-			{
-				"Type": "CNTCT",
-				"Number": "(334)730-5752"
-			}
-		],
-		"County": "Harrison",
-		"AvailBoy": "0",
-		"AvailGirl": "0",
-		"AvailEither": "3",
-		"PriorAne": "True",
-		"Services": [
-			"Foster Home",
-			"Adoptive Home (Domestic)"
-		],
-		"Notes": [
-			"INFO:  3 either, age 0 - 10.",
-			"INFO:  Calculated 3 slot(s) total for resource home.",
-			"INFO:  Total of 0 slot(s) in use.",
-			"PASS:  Placement would succeed for girl age 10."
-		]
-	},
-	{
-		"Worker": "MW001478",
-		"ResourceType": "Foster Home",
-		"Distance": "41.83",
-		"ResourceName": "SMITH, JENNIFER",
-		"FamStr": "MC",
-		"Address": "2188 LOVORN RD, LOUISVILLE, MS 39339",
-		"PhoneList": [
-			{
-				"Type": "CELL",
-				"Number": "(662)803-0561"
-			},
-			{
-				"Type": "CELL",
-				"Number": "(662)803-8462"
-			},
-			{
-				"Type": "WORK",
-				"Number": "(662)779-0099"
-			}
-		],
-		"County": "Winston",
-		"AvailBoy": "0",
-		"AvailGirl": "0",
-		"AvailEither": "1",
-		"PriorAne": "False",
-		"Services": [
-			"Foster Home",
-			"Adoptive Home (Domestic)"
-		],
-		"Notes": [
-			"INFO:  3 either, age 0 - 10.",
-			"INFO:  Calculated 3 slot(s) total for resource home.",
-			"INFO:  Total of 2 slot(s) in use.",
-			"PASS:  Placement would succeed for girl age 10."
-		]
-	},
-	{
-		"Worker": "MW000757",
-		"ResourceType": "Foster Home",
-		"Distance": "42.33",
-		"ResourceName": "POWE, CAROLYN",
-		"FamStr": "MC",
-		"Address": "940 CO RD 220, HEIDELBERG, MS 39439",
-		"PhoneList": [
-			{
-				"Type": "CELL",
-				"Number": "(601)513-0858"
-			},
-			{
-				"Type": "CELL",
-				"Number": "(601)935-8891"
-			},
-			{
-				"Type": "HOME",
-				"Number": "(601)787-3557"
-			},
-			{
-				"Type": "WORK",
-				"Number": "(601)776-6123"
-			}
-		],
-		"County": "Clarke",
-		"AvailBoy": "0",
-		"AvailGirl": "0",
-		"AvailEither": "3",
-		"PriorAne": "False",
-		"Services": [
-			"Foster Home"
-		],
-		"Notes": [
-			"INFO:  3 either, age 0 - 16.",
-			"INFO:  Calculated 3 slot(s) total for resource home.",
-			"INFO:  Total of 0 slot(s) in use.",
-			"PASS:  Placement would succeed for girl age 10."
-		]
-	},
-	{
-		"Worker": "MW003313",
-		"ResourceType": "Foster Home",
-		"Distance": "42.93",
-		"ResourceName": "ROBERTS, ANNA",
-		"FamStr": "",
-		"Address": "101 FAITH WAY, BRANDON, MS 39042",
-		"PhoneList": [
-			{
-				"Type": "CELL",
-				"Number": "(601)966-2680"
-			},
-			{
-				"Type": "CNTCT",
-				"Number": "(601)937-0306"
-			}
-		],
-		"County": "Rankin",
-		"AvailBoy": "0",
-		"AvailGirl": "0",
-		"AvailEither": "1",
-		"PriorAne": "False",
-		"Services": [
-			"Foster Home",
-			"Adoptive Home (Domestic)"
-		],
-		"Notes": [
-			"INFO:  2 either, age 5 - 12.",
-			"INFO:  Calculated 2 slot(s) total for resource home.",
-			"INFO:  Total of 1 slot(s) in use.",
-			"PASS:  Placement would succeed for girl age 10."
-		]
-	},
-	{
-		"Worker": "MW002432",
-		"ResourceType": "Foster Home",
-		"Distance": "42.98",
-		"ResourceName": "MCDONALD, MICHELLE",
-		"FamStr": "MC",
-		"Address": "7693 KEMPER SPRING RD, LAUDERDALE, MS 39335",
-		"PhoneList": [
-			{
-				"Type": "CELL",
-				"Number": "(601)938-1927"
-			},
-			{
-				"Type": "HOME",
-				"Number": "(601)743-4158"
-			}
-		],
-		"County": "Kemper",
-		"AvailBoy": "0",
-		"AvailGirl": "0",
-		"AvailEither": "1",
-		"PriorAne": "True",
-		"Services": [
-			"Foster Home",
-			"Adoptive Home (Domestic)",
-			"Relative Foster Home",
-			"Expedited Pending Relative Res"
-		],
-		"Notes": [
-			"INFO:  3 either, age 0 - 18.",
-			"INFO:  Calculated 3 slot(s) total for resource home.",
-			"INFO:  Total of 2 slot(s) in use.",
-			"PASS:  Placement would succeed for girl age 10."
-		]
-	},
-	{
-		"Worker": "MW002619",
-		"ResourceType": "Foster Home",
-		"Distance": "43.37",
-		"ResourceName": "ALLISON, COURTNEY",
-		"FamStr": "MC",
-		"Address": "268 REEDY CREEK RD, LAUREL, MS 39443",
-		"PhoneList": [
-			{
-				"Type": "CELL",
-				"Number": "(601)422-7090"
-			}
-		],
-		"County": "Jones",
-		"AvailBoy": "0",
-		"AvailGirl": "0",
-		"AvailEither": "1",
-		"PriorAne": "True",
-		"Services": [
-			"Foster Home",
-			"Adoptive Home (Domestic)"
-		],
-		"Notes": [
-			"INFO:  2 either, age 0 - 12.",
-			"INFO:  Calculated 2 slot(s) total for resource home.",
-			"INFO:  Total of 1 slot(s) in use.",
-			"PASS:  Placement would succeed for girl age 10."
-		]
-	},
-	{
-		"Worker": "MW001441",
-		"ResourceType": "Foster Home",
-		"Distance": "43.83",
-		"ResourceName": "NELMS, AMANDA",
-		"FamStr": "MC",
-		"Address": "104 WELLINGTON PL, BRANDON, MS 39042",
-		"PhoneList": [
-			{
-				"Type": "HOME",
-				"Number": "(662)299-0966"
-			}
-		],
-		"County": "Rankin",
-		"AvailBoy": "0",
-		"AvailGirl": "0",
-		"AvailEither": "2",
-		"PriorAne": "True",
-		"Services": [
-			"Foster Home",
-			"Respite Foster Home"
-		],
-		"Notes": [
-			"INFO:  2 either, age 0 - 18.",
-			"INFO:  Calculated 2 slot(s) total for resource home.",
-			"INFO:  Total of 0 slot(s) in use.",
-			"PASS:  Placement would succeed for girl age 10."
-		]
-	},
-	{
-		"Worker": "MW003722",
-		"ResourceType": "Foster Home",
-		"Distance": "44.1",
-		"ResourceName": "MCCOY, RICHARD",
-		"FamStr": "MC",
-		"Address": "362 TOWNE ST, BRANDON, MS 39042",
-		"PhoneList": [
-			{
-				"Type": "CELL",
-				"Number": "(601)941-0913"
-			},
-			{
-				"Type": "WORK",
-				"Number": "(601)576-6986"
-			}
-		],
-		"County": "Rankin",
-		"AvailBoy": "0",
-		"AvailGirl": "0",
-		"AvailEither": "1",
-		"PriorAne": "False",
-		"Services": [
-			"Foster Home",
-			"Adoptive Home (Domestic)"
-		],
-		"Notes": [
-			"INFO:  2 either, age 0 - 10.",
-			"INFO:  Calculated 2 slot(s) total for resource home.",
-			"INFO:  Total of 1 slot(s) in use.",
-			"PASS:  Placement would succeed for girl age 10."
-		]
-	},
-	{
-		"Worker": "MW003722",
-		"ResourceType": "Foster Home",
-		"Distance": "45.19",
-		"ResourceName": "CHAPMAN, CATHERINE",
-		"FamStr": "MC",
-		"Address": "1425 BAYVISTA, BRANDON, MS 39047",
-		"PhoneList": [
-			{
-				"Type": "CELL",
-				"Number": "(601)716-4285"
-			}
-		],
-		"County": "Rankin",
-		"AvailBoy": "0",
-		"AvailGirl": "1",
-		"AvailEither": "0",
-		"PriorAne": "False",
-		"Services": [
-			"Foster Home"
-		],
-		"Notes": [
-			"INFO:  1 boys, age 6 - 13.",
-			"INFO:  1 girls, age 6 - 18.",
-			"INFO:  Calculated 2 slot(s) total for resource home.",
-			"INFO:  Total of 1 slot(s) in use.",
-			"PASS:  Placement would succeed for girl age 10."
-		]
-	},
-	{
-		"Worker": "MW004681",
-		"ResourceType": "Foster Home",
-		"Distance": "45.29",
-		"ResourceName": "CLARK, DIANNE S",
-		"FamStr": "SF",
-		"Address": "2970 HWY 532, TAYLORSVILLE, MS 39168",
-		"PhoneList": [
-			{
-				"Type": "CELL",
-				"Number": "(601)335-4609"
-			},
-			{
-				"Type": "CELL",
-				"Number": "(601)452-2771"
-			}
-		],
-		"County": "Covington",
-		"AvailBoy": "0",
-		"AvailGirl": "0",
-		"AvailEither": "1",
-		"PriorAne": "True",
-		"Services": [
-			"Foster Home"
-		],
-		"Notes": [
-			"INFO:  3 either, age 0 - 10.",
-			"INFO:  Calculated 3 slot(s) total for resource home.",
-			"INFO:  Total of 2 slot(s) in use.",
-			"PASS:  Placement would succeed for girl age 10."
-		]
-	},
-	{
-		"Worker": "MW004843",
-		"ResourceType": "Foster Home",
-		"Distance": "45.65",
-		"ResourceName": "WILLIAMS, TREMAYNE",
-		"FamStr": "",
-		"Address": "130 WILLIE CARTER DR, MENDENHALL, MS 39114",
-		"PhoneList": [
-			{
-				"Type": "CELL",
-				"Number": "(601)672-1590"
-			}
-		],
-		"County": "Simpson",
-		"AvailBoy": "0",
-		"AvailGirl": "0",
-		"AvailEither": "2",
-		"PriorAne": "False",
-		"Services": [
-			"Foster Home"
-		],
-		"Notes": [
-			"INFO:  3 either, age 0 - 10.",
-			"INFO:  Calculated 3 slot(s) total for resource home.",
-			"INFO:  Total of 1 slot(s) in use.",
-			"PASS:  Placement would succeed for girl age 10."
-		]
-	},
-	{
-		"Worker": "MW004681",
-		"ResourceType": "Foster Home",
-		"Distance": "45.67",
-		"ResourceName": "MCLAURIN, STEPHANIE",
-		"FamStr": "",
-		"Address": "116 WOODGATE DR, MAGEE, MS 39111",
-		"PhoneList": [
-			{
-				"Type": "CELL",
-				"Number": "(601)564-3905"
-			},
-			{
-				"Type": "CNTCT",
-				"Number": "(601)849-3227"
-			}
-		],
-		"County": "Simpson",
-		"AvailBoy": "0",
-		"AvailGirl": "0",
-		"AvailEither": "2",
-		"PriorAne": "False",
-		"Services": [
-			"Foster Home"
-		],
-		"Notes": [
-			"INFO:  3 either, age 0 - 14.",
-			"INFO:  Calculated 3 slot(s) total for resource home.",
-			"INFO:  Total of 1 slot(s) in use.",
-			"PASS:  Placement would succeed for girl age 10."
-		]
-	},
-	{
-		"Worker": "MW002689",
-		"ResourceType": "Foster Home",
-		"Distance": "45.98",
-		"ResourceName": "MOFFITT, ROBIN A",
-		"FamStr": "",
-		"Address": "521 STONECREEK DR, BRANDON, MS 39042",
-		"PhoneList": [
-			{
-				"Type": "CELL",
-				"Number": "(601)906-8948"
-			},
-			{
-				"Type": "WORK",
-				"Number": "(601)825-4706"
-			}
-		],
-		"County": "Rankin",
-		"AvailBoy": "0",
-		"AvailGirl": "0",
-		"AvailEither": "1",
-		"PriorAne": "False",
-		"Services": [
-			"Foster Home",
-			"Adoptive Home (Domestic)",
-			"Adoptive Home (Domestic)"
-		],
-		"Notes": [
-			"INFO:  4 either, age 0 - 15.",
-			"INFO:  Calculated 4 slot(s) total for resource home.",
-			"INFO:  Total of 3 slot(s) in use.",
-			"PASS:  Placement would succeed for girl age 10."
-		]
-	},
-	{
-		"Worker": "MW003115",
-		"ResourceType": "Foster Home",
-		"Distance": "46.17",
-		"ResourceName": "MONK, JIMMY",
-		"FamStr": "",
-		"Address": "194 CUMBERLAND RD B, BRANDON, MS 39047",
-		"PhoneList": [
-			{
-				"Type": "CELL",
-				"Number": "(601)760-8796"
-			}
-		],
-		"County": "Rankin",
-		"AvailBoy": "0",
-		"AvailGirl": "0",
-		"AvailEither": "1",
-		"PriorAne": "False",
-		"Services": [
-			"Foster Home",
-			"Adoptive Home (Domestic)"
-		],
-		"Notes": [
-			"INFO:  2 either, age 0 - 13.",
-			"INFO:  Calculated 2 slot(s) total for resource home.",
-			"INFO:  Total of 1 slot(s) in use.",
-			"PASS:  Placement would succeed for girl age 10."
-		]
-	},
-	{
-		"Worker": "MW001441",
-		"ResourceType": "Foster Home",
-		"Distance": "46.33",
-		"ResourceName": "KREILAUS, JOSEPH M",
-		"FamStr": "MC",
-		"Address": "307 TURTLE CREEK DR, BRANDON, MS 39047",
-		"PhoneList": [
-			{
-				"Type": "CELL",
-				"Number": "(601)398-8611"
-			}
-		],
-		"County": "Rankin",
-		"AvailBoy": "0",
-		"AvailGirl": "0",
-		"AvailEither": "1",
-		"PriorAne": "False",
-		"Services": [
-			"Foster Home"
-		],
-		"Notes": [
-			"INFO:  4 either, age 0 - 15.",
-			"INFO:  Calculated 4 slot(s) total for resource home.",
-			"INFO:  Total of 3 slot(s) in use.",
-			"PASS:  Placement would succeed for girl age 10."
-		]
-	},
-	{
-		"Worker": "MW004843",
-		"ResourceType": "Foster Home",
-		"Distance": "46.57",
-		"ResourceName": "MACK, LEKITHA B",
-		"FamStr": "",
-		"Address": "305 WOODGATE CT, MAGEE, MS 39111",
-		"PhoneList": [
-			{
-				"Type": "CNTCT",
-				"Number": "(601)405-3357"
-			}
-		],
-		"County": "Simpson",
-		"AvailBoy": "0",
-		"AvailGirl": "0",
-		"AvailEither": "2",
-		"PriorAne": "False",
-		"Services": [
-			"Foster Home"
-		],
-		"Notes": [
-			"INFO:  2 either, age 3 - 18.",
-			"INFO:  Calculated 2 slot(s) total for resource home.",
-			"INFO:  Total of 0 slot(s) in use.",
-			"PASS:  Placement would succeed for girl age 10."
-		]
-	},
-	{
-		"Worker": "MW002689",
-		"ResourceType": "Foster Home",
-		"Distance": "46.6",
-		"ResourceName": "GILL, JOSEPH W",
-		"FamStr": "",
-		"Address": "304 PEPPERTREE CV, BRANDON, MS 39047",
-		"PhoneList": [
-			{
-				"Type": "CELL",
-				"Number": "(601)850-6442"
-			}
-		],
-		"County": "Rankin",
-		"AvailBoy": "0",
-		"AvailGirl": "0",
-		"AvailEither": "2",
-		"PriorAne": "False",
-		"Services": [
-			"Foster Home"
-		],
-		"Notes": [
-			"INFO:  2 either, age 5 - 12.",
-			"INFO:  Calculated 2 slot(s) total for resource home.",
-			"INFO:  Total of 0 slot(s) in use.",
-			"PASS:  Placement would succeed for girl age 10."
-		]
-	},
-	{
-		"Worker": "MW003722",
-		"ResourceType": "Foster Home",
-		"Distance": "46.63",
-		"ResourceName": "BYRD, DOUGLAS T",
-		"FamStr": "",
-		"Address": "142 FOREST RIDGE DR, BRANDON, MS 39042",
-		"PhoneList": [
-			{
-				"Type": "CELL",
-				"Number": "(601)383-0025"
-			}
-		],
-		"County": "Rankin",
-		"AvailBoy": "0",
-		"AvailGirl": "0",
-		"AvailEither": "2",
-		"PriorAne": "False",
-		"Services": [
-			"Foster Home"
-		],
-		"Notes": [
-			"INFO:  2 either, age 0 - 14.",
-			"INFO:  Calculated 2 slot(s) total for resource home.",
-			"INFO:  Total of 0 slot(s) in use.",
-			"PASS:  Placement would succeed for girl age 10."
-		]
-	},
-	{
-		"Worker": "MW002619",
-		"ResourceType": "Foster Home",
-		"Distance": "46.76",
-		"ResourceName": "COOLEY, AMANDA",
-		"FamStr": "",
-		"Address": "10 CLAIRMONT CIR, LAUREL, MS 39440",
-		"PhoneList": [
-			{
-				"Type": "HOME",
-				"Number": "(601)577-4724"
-			}
-		],
-		"County": "Jones",
-		"AvailBoy": "0",
-		"AvailGirl": "0",
-		"AvailEither": "1",
-		"PriorAne": "False",
-		"Services": [
-			"Foster Home"
-		],
-		"Notes": [
-			"INFO:  3 either, age 0 - 15.",
-			"INFO:  Calculated 3 slot(s) total for resource home.",
-			"INFO:  Total of 2 slot(s) in use.",
-			"PASS:  Placement would succeed for girl age 10."
-		]
-	},
-	{
-		"Worker": "MW003722",
-		"ResourceType": "Foster Home",
-		"Distance": "46.89",
-		"ResourceName": "WILSON, HOWARD",
-		"FamStr": "",
-		"Address": "60 TERRAPIN HILL RD N, BRANDON, MS 39042",
-		"PhoneList": [
-			{
-				"Type": "CNTCT",
-				"Number": "(601)829-4344"
-			}
-		],
-		"County": "Rankin",
-		"AvailBoy": "0",
-		"AvailGirl": "0",
-		"AvailEither": "3",
-		"PriorAne": "False",
-		"Services": [
-			"Foster Home",
-			"Adoptive Home (Domestic)"
-		],
-		"Notes": [
-			"INFO:  3 either, age 0 - 12.",
-			"INFO:  Calculated 3 slot(s) total for resource home.",
-			"INFO:  Total of 0 slot(s) in use.",
-			"PASS:  Placement would succeed for girl age 10."
-		]
-	},
-	{
-		"Worker": "MW003356",
-		"ResourceType": "Foster Home",
-		"Distance": "47.76",
-		"ResourceName": "PAYTON, JERINA",
-		"FamStr": "",
-		"Address": "85 FLYNT ROAD RD, LAUREL, MS 39440",
-		"PhoneList": [
-			{
-				"Type": "CELL",
-				"Number": "(601)651-6353"
-			},
-			{
-				"Type": "CNTCT",
-				"Number": "(601)323-9811"
-			}
-		],
-		"County": "Jones",
-		"AvailBoy": "0",
-		"AvailGirl": "1",
-		"AvailEither": "0",
-		"PriorAne": "False",
-		"Services": [
-			"Foster Home",
-			"Relative Foster Home",
-			"Expedited Pending Relative Res"
-		],
-		"Notes": [
-			"INFO:  2 girls, age 0 - 18.",
-			"INFO:  Calculated 2 slot(s) total for resource home.",
-			"INFO:  Total of 1 slot(s) in use.",
-			"PASS:  Placement would succeed for girl age 10."
-		]
-	},
-	{
-		"Worker": "MW002619",
-		"ResourceType": "Foster Home",
-		"Distance": "48",
-		"ResourceName": "NOBLES, JERLEAN",
-		"FamStr": "SF",
-		"Address": "E 720 18TH ST, LAUREL, MS 39440",
-		"PhoneList": [
-			{
-				"Type": "CELL",
-				"Number": "(601)470-8150"
-			},
-			{
-				"Type": "CNTCT",
-				"Number": "(601)319-3354"
-			}
-		],
-		"County": "Jones",
-		"AvailBoy": "0",
-		"AvailGirl": "0",
-		"AvailEither": "1",
-		"PriorAne": "True",
-		"Services": [
-			"Foster Home"
-		],
-		"Notes": [
-			"INFO:  4 either, age 0 - 12.",
-			"INFO:  Calculated 4 slot(s) total for resource home.",
-			"INFO:  Total of 3 slot(s) in use.",
-			"PASS:  Placement would succeed for girl age 10."
-		]
-	},
-	{
-		"Worker": "MW004524",
-		"ResourceType": "Foster Home",
-		"Distance": "48.22",
-		"ResourceName": "MCNATT, DAVID",
-		"FamStr": "",
-		"Address": "E 441 DINKINS ST, CANTON, MS 39046",
-		"PhoneList": [
-			{
-				"Type": "CELL",
-				"Number": "(601)955-4006"
-			},
-			{
-				"Type": "CELL",
-				"Number": "(601)942-9259"
-			}
-		],
-		"County": "Madison",
-		"AvailBoy": "0",
-		"AvailGirl": "0",
-		"AvailEither": "4",
-		"PriorAne": "True",
-		"Services": [
-			"Foster Home",
-			"Adoptive Home (Domestic)",
-			"Relative Foster Home"
-		],
-		"Notes": [
-			"INFO:  5 either, age 0 - 18.",
-			"INFO:  Calculated 5 slot(s) total for resource home.",
-			"INFO:  Total of 1 slot(s) in use.",
-			"PASS:  Placement would succeed for girl age 10."
-		]
-	},
-	{
-		"Worker": "MW003313",
-		"ResourceType": "Foster Home",
-		"Distance": "48.39",
-		"ResourceName": "LORINCZOVA, MONIKA",
-		"FamStr": "MC",
-		"Address": "113 EAGLE DR, BRANDON, MS 39047",
-		"PhoneList": [
-			{
-				"Type": "CELL",
-				"Number": "(601)609-0283"
-			},
-			{
-				"Type": "WORK",
-				"Number": "(662)325-1815"
-			}
-		],
-		"County": "Rankin",
-		"AvailBoy": "0",
-		"AvailGirl": "0",
-		"AvailEither": "2",
-		"PriorAne": "False",
-		"Services": [
-			"Foster Home",
-			"Adoptive Home (Domestic)"
-		],
-		"Notes": [
-			"INFO:  2 either, age 0 - 12.",
-			"INFO:  Calculated 2 slot(s) total for resource home.",
-			"INFO:  Total of 0 slot(s) in use.",
-			"PASS:  Placement would succeed for girl age 10."
-		]
-	},
-	{
-		"Worker": "MW003722",
-		"ResourceType": "Foster Home",
-		"Distance": "48.51",
-		"ResourceName": "FLOWERS, TYWANDA",
-		"FamStr": "",
-		"Address": "205 JACKS PL, BRANDON, MS 39047",
-		"PhoneList": [
-			{
-				"Type": "CELL",
-				"Number": "(662)803-6860"
-			}
-		],
-		"County": "Rankin",
-		"AvailBoy": "0",
-		"AvailGirl": "0",
-		"AvailEither": "1",
-		"PriorAne": "False",
-		"Services": [
-			"Foster Home"
-		],
-		"Notes": [
-			"INFO:  1 either, age 0 - 10.",
-			"INFO:  Calculated 1 slot(s) total for resource home.",
-			"INFO:  Total of 0 slot(s) in use.",
-			"PASS:  Placement would succeed for girl age 10."
-		]
-	},
-	{
-		"Worker": "MW002689",
-		"ResourceType": "Foster Home",
-		"Distance": "48.77",
-		"ResourceName": "GRAHAM, COURTNEY",
-		"FamStr": "MC",
-		"Address": "460 OLYMPIC DR, FLOWOOD, MS 39232",
-		"PhoneList": [
-			{
-				"Type": "CELL",
-				"Number": "(601)540-0976"
-			},
-			{
-				"Type": "WORK",
-				"Number": "(601)984-1801"
-			}
-		],
-		"County": "Rankin",
-		"AvailBoy": "0",
-		"AvailGirl": "0",
-		"AvailEither": "1",
-		"PriorAne": "False",
-		"Services": [
-			"Foster Home",
-			"Adoptive Home (Domestic)"
-		],
-		"Notes": [
-			"INFO:  2 either, age 0 - 13.",
-			"INFO:  Calculated 2 slot(s) total for resource home.",
-			"INFO:  Total of 1 slot(s) in use.",
-			"PASS:  Placement would succeed for girl age 10."
-		]
-	},
-	{
-		"Worker": "MW003356",
-		"ResourceType": "Foster Home",
-		"Distance": "48.95",
-		"ResourceName": "HINTON, ANGELA",
-		"FamStr": "MC",
-		"Address": "N 520 8TH AVE, LAUREL, MS 39440",
-		"PhoneList": [
-			{
-				"Type": "CELL",
-				"Number": "(601)270-1872"
-			},
-			{
-				"Type": "CELL",
-				"Number": "(601)255-5474"
-			}
-		],
-		"County": "Jones",
-		"AvailBoy": "0",
-		"AvailGirl": "0",
-		"AvailEither": "2",
-		"PriorAne": "True",
-		"Services": [
-			"Foster Home",
-			"Adoptive Home (Domestic)"
-		],
-		"Notes": [
-			"INFO:  3 either, age 0 - 18.",
-			"INFO:  Calculated 3 slot(s) total for resource home.",
-			"INFO:  Total of 1 slot(s) in use.",
-			"PASS:  Placement would succeed for girl age 10."
-		]
-	},
-	{
-		"Worker": "MW002003",
-		"ResourceType": "Foster Home",
-		"Distance": "49.26",
-		"ResourceName": "OBANNON, TINA F",
-		"FamStr": "SF",
-		"Address": "994 CLUBHOUSE DR, PEARL, MS 39028",
-		"PhoneList": [
-			{
-				"Type": "CELL",
-				"Number": "(601)572-1392"
-			},
-			{
-				"Type": "HOME",
-				"Number": "(662)235-4397"
-			},
-			{
-				"Type": "WORK",
-				"Number": "(662)235-5113"
-			}
-		],
-		"County": "Rankin",
-		"AvailBoy": "0",
-		"AvailGirl": "0",
-		"AvailEither": "2",
-		"PriorAne": "False",
-		"Services": [
-			"Foster Home",
-			"Adoptive Home (Domestic)"
-		],
-		"Notes": [
-			"INFO:  3 either, age 0 - 12.",
-			"INFO:  Calculated 3 slot(s) total for resource home.",
-			"INFO:  Total of 1 slot(s) in use.",
-			"PASS:  Placement would succeed for girl age 10."
-		]
-	},
-	{
-		"Worker": "MW002003",
-		"ResourceType": "Foster Home",
-		"Distance": "49.44",
-		"ResourceName": "CLAY, ETHEL M",
-		"FamStr": "SF",
-		"Address": "313 PISGAH BOTTOM RD, CANTON, MS 39046",
-		"PhoneList": [
-			{
-				"Type": "CELL",
-				"Number": "(601)209-3530"
-			},
-			{
-				"Type": "CELL",
-				"Number": "(601)209-3530"
-			},
-			{
-				"Type": "HOME",
-				"Number": "(601)859-9086"
-			}
-		],
-		"County": "Madison",
-		"AvailBoy": "0",
-		"AvailGirl": "0",
-		"AvailEither": "3",
-		"PriorAne": "True",
-		"Services": [
-			"Foster Home",
-			"Teenage Parent Foster Home"
-		],
-		"Notes": [
-			"INFO:  5 either, age 0 - 19.",
-			"INFO:  Calculated 5 slot(s) total for resource home.",
-			"INFO:  Total of 2 slot(s) in use.",
-			"PASS:  Placement would succeed for girl age 10."
-		]
-	},
-	{
-		"Worker": "MW004524",
-		"ResourceType": "Foster Home",
-		"Distance": "49.59",
-		"ResourceName": "JOHNSON, MICHAEL",
-		"FamStr": "",
-		"Address": "517 ARBOR DR, MADISON, MS 39110",
-		"PhoneList": [
-			{
-				"Type": "CELL",
-				"Number": "(601)573-8659"
-			}
-		],
-		"County": "Madison",
-		"AvailBoy": "0",
-		"AvailGirl": "0",
-		"AvailEither": "1",
-		"PriorAne": "False",
-		"Services": [
-			"Foster Home",
-			"Adoptive Home (Domestic)"
-		],
-		"Notes": [
-			"INFO:  2 either, age 1 - 12.",
-			"INFO:  Calculated 2 slot(s) total for resource home.",
-			"INFO:  Total of 1 slot(s) in use.",
-			"PASS:  Placement would succeed for girl age 10."
-		]
-	},
-	{
-		"Worker": "MW004712",
-		"ResourceType": "Foster Home",
-		"Distance": "49.61",
-		"ResourceName": "BISHOP, MAGGIE",
-		"FamStr": "",
-		"Address": "106 STAPLETON DRIVE, CANTON, MS 39046",
-		"PhoneList": [
-			{
-				"Type": "CELL",
-				"Number": "(662)386-3083"
-			},
-			{
-				"Type": "CNTCT",
-				"Number": "(314)749-1149"
-			}
-		],
-		"County": "Madison",
-		"AvailBoy": "0",
-		"AvailGirl": "1",
-		"AvailEither": "0",
-		"PriorAne": "True",
-		"Services": [
-			"Foster Home"
-		],
-		"Notes": [
-			"INFO:  2 girls, age 7 - 16.",
-			"INFO:  Calculated 2 slot(s) total for resource home.",
-			"INFO:  Total of 1 slot(s) in use.",
-			"PASS:  Placement would succeed for girl age 10."
-		]
-	},
-	{
-		"Worker": "MW003873",
-		"ResourceType": "Foster Home",
-		"Distance": "49.82",
-		"ResourceName": "HATHORN, MORICE D",
-		"FamStr": "",
-		"Address": "18380 HIGHWAY 15  N, LOUISVILLE, MS 39339",
-		"PhoneList": [
-			{
-				"Type": "CELL",
-				"Number": "(662)803-2568"
-			},
-			{
-				"Type": "CNTCT",
-				"Number": "(662)803-6305"
-			},
-			{
-				"Type": "WORK",
-				"Number": "(662)773-9418"
-			}
-		],
-		"County": "Winston",
-		"AvailBoy": "0",
-		"AvailGirl": "1",
-		"AvailEither": "0",
-		"PriorAne": "True",
-		"Services": [
-			"Foster Home",
-			"Adoptive Home (Domestic)"
-		],
-		"Notes": [
-			"INFO:  1 girls, age 2 - 18.",
-			"INFO:  Calculated 1 slot(s) total for resource home.",
-			"INFO:  Total of 1 slot(s) in use.",
-			"PASS:  Placement would succeed for girl age 10."
-		]
-	},
-	{
-		"Worker": "MW002003",
-		"ResourceType": "Foster Home",
-		"Distance": "49.91",
-		"ResourceName": "OWEN, AMANDA",
-		"FamStr": "",
-		"Address": "39 MAPLE ST, FLORENCE, MS 39073",
-		"PhoneList": [
-			{
-				"Type": "CELL",
-				"Number": "(601)566-8716"
-			},
-			{
-				"Type": "CELL",
-				"Number": "(601)278-8951"
-			}
-		],
-		"County": "Rankin",
-		"AvailBoy": "0",
-		"AvailGirl": "0",
-		"AvailEither": "1",
-		"PriorAne": "False",
-		"Services": [
-			"Foster Home",
-			"Adoptive Home (Domestic)"
-		],
-		"Notes": [
-			"INFO:  3 either, age 2 - 18.",
-			"INFO:  Calculated 3 slot(s) total for resource home.",
-			"INFO:  Total of 2 slot(s) in use.",
-			"PASS:  Placement would succeed for girl age 10."
-		]
-	}
 
-]
+{
+	"Metadata": [
+		{
+			"IsSourceEstimated": "false"
+		}
+	],
+	"Results": [
+		{
+			"ResourceType": "Foster Home",
+			"Distance": "6.82",
+			"ResourceName": "SMITH, DEBRA D",
+			"FamStr": "SF",
+			"Address": "404 WOOD STREET, NEWTON, MS 39345",
+			"PhoneList": [
+				{
+					"Type": "CELL",
+					"Number": "(601)701-4711"
+				}
+			],
+			"County": "Newton",
+			"AvailBoy": "0",
+			"AvailGirl": "1",
+			"AvailEither": "0",
+			"PriorAne": "True",
+			"Services": [
+				"9020",
+				"9130"
+			],
+			"Notes": [
+				"INFO:  3 girls, age 8 - 18.",
+				"INFO:  Calculated 3 slot(s) total for resource home.",
+				"INFO:  Total of 2 slot(s) in use.",
+				"PASS:  Placement would succeed for girl age 10."
+			]
+		},
+		{
+			"ResourceType": "Foster Home",
+			"Distance": "13.58",
+			"ResourceName": "CORLEY, WILLIE M",
+			"FamStr": "",
+			"Address": "908 E 7TH ST, FOREST, MS 39074",
+			"PhoneList": [
+				{
+					"Type": "CELL",
+					"Number": "(601)900-8254"
+				},
+				{
+					"Type": "HOME",
+					"Number": "(601)469-9884"
+				}
+			],
+			"County": "Scott",
+			"AvailBoy": "0",
+			"AvailGirl": "2",
+			"AvailEither": "0",
+			"PriorAne": "False",
+			"Services": [
+				"9020",
+				"9130",
+				"9190"
+			],
+			"Notes": [
+				"INFO:  2 girls, age 0 - 15.",
+				"INFO:  Calculated 2 slot(s) total for resource home.",
+				"INFO:  Total of 0 slot(s) in use.",
+				"PASS:  Placement would succeed for girl age 10."
+			]
+		},
+		{
+			"ResourceType": "Foster Home",
+			"Distance": "15.8",
+			"ResourceName": "BANKS, DIANE",
+			"FamStr": "",
+			"Address": "350 CHOCKIE ODOM BEAMON RD, FORREST, MS 39074",
+			"PhoneList": [
+				{
+					"Type": "CELL",
+					"Number": "(601)697-6892"
+				}
+			],
+			"County": "Scott",
+			"AvailBoy": "0",
+			"AvailGirl": "0",
+			"AvailEither": "1",
+			"PriorAne": "False",
+			"Services": [
+				"9020"
+			],
+			"Notes": [
+				"INFO:  3 either, age 0 - 12.",
+				"INFO:  Calculated 3 slot(s) total for resource home.",
+				"INFO:  Total of 2 slot(s) in use.",
+				"PASS:  Placement would succeed for girl age 10."
+			]
+		},
+		{
+			"ResourceType": "Foster Home",
+			"Distance": "15.89",
+			"ResourceName": "HARPER, LAKEASHA",
+			"FamStr": "SF",
+			"Address": "928 HUGHES ROAD, FOREST, MS 39074",
+			"PhoneList": [
+				{
+					"Type": "CELL",
+					"Number": "(769)274-4868"
+				},
+				{
+					"Type": "CELL",
+					"Number": "(601)504-3662"
+				},
+				{
+					"Type": "HOME",
+					"Number": "(601)625-7791"
+				},
+				{
+					"Type": "HOME",
+					"Number": "(601)625-7791"
+				}
+			],
+			"County": "Scott",
+			"AvailBoy": "0",
+			"AvailGirl": "0",
+			"AvailEither": "1",
+			"PriorAne": "True",
+			"Services": [
+				"9020",
+				"9190",
+				"9410"
+			],
+			"Notes": [
+				"INFO:  2 either, age 0 - 17.",
+				"INFO:  Calculated 2 slot(s) total for resource home.",
+				"INFO:  Total of 1 slot(s) in use.",
+				"PASS:  Placement would succeed for girl age 10."
+			]
+		},
+		{
+			"ResourceType": "Foster Home",
+			"Distance": "16.37",
+			"ResourceName": "MOORE, GARY L",
+			"FamStr": "",
+			"Address": "2930 COUNTY ROAD 24, NEWTON, MS 39345",
+			"PhoneList": [
+				{
+					"Type": "CELL",
+					"Number": "(601)335-4473"
+				},
+				{
+					"Type": "CELL",
+					"Number": "(601)335-4481"
+				},
+				{
+					"Type": "HOME",
+					"Number": "(601)745-0446"
+				},
+				{
+					"Type": "WORK",
+					"Number": "(601)693-5981"
+				}
+			],
+			"County": "Newton",
+			"AvailBoy": "0",
+			"AvailGirl": "0",
+			"AvailEither": "2",
+			"PriorAne": "True",
+			"Services": [
+				"9020"
+			],
+			"Notes": [
+				"INFO:  3 either, age 0 - 12.",
+				"INFO:  Calculated 3 slot(s) total for resource home.",
+				"INFO:  Total of 1 slot(s) in use.",
+				"PASS:  Placement would succeed for girl age 10."
+			]
+		},
+		{
+			"ResourceType": "Foster Home",
+			"Distance": "17.24",
+			"ResourceName": "STINGLEY, BELINDA",
+			"FamStr": "",
+			"Address": "564 FORTUNE TRAIL, WALNUT GROVE, MS 39189",
+			"PhoneList": [
+				{
+					"Type": "CELL",
+					"Number": "(601)780-0076"
+				},
+				{
+					"Type": "CELL",
+					"Number": "(601)780-0649"
+				},
+				{
+					"Type": "CELL",
+					"Number": "(601)780-0649"
+				},
+				{
+					"Type": "CNTCT",
+					"Number": "(601)253-2504"
+				},
+				{
+					"Type": "HOME",
+					"Number": "(601)253-2137"
+				},
+				{
+					"Type": "WORK",
+					"Number": "(601)625-7432"
+				}
+			],
+			"County": "Leake",
+			"AvailBoy": "0",
+			"AvailGirl": "0",
+			"AvailEither": "2",
+			"PriorAne": "True",
+			"Services": [
+				"9020"
+			],
+			"Notes": [
+				"INFO:  3 either, age 0 - 18.",
+				"INFO:  Calculated 3 slot(s) total for resource home.",
+				"INFO:  Total of 1 slot(s) in use.",
+				"PASS:  Placement would succeed for girl age 10."
+			]
+		},
+		{
+			"ResourceType": "Foster Home",
+			"Distance": "20.98",
+			"ResourceName": "PERKINS, REBECCA",
+			"FamStr": "MC",
+			"Address": "437 RISHER RD, CARTHAGE, MS 39051",
+			"PhoneList": [
+				{
+					"Type": "CELL",
+					"Number": "(601)504-2323"
+				},
+				{
+					"Type": "CELL",
+					"Number": "(601)562-6705"
+				},
+				{
+					"Type": "WORK",
+					"Number": "(601)267-4562"
+				}
+			],
+			"County": "Leake",
+			"AvailBoy": "0",
+			"AvailGirl": "0",
+			"AvailEither": "2",
+			"PriorAne": "False",
+			"Services": [
+				"9020"
+			],
+			"Notes": [
+				"INFO:  2 either, age 0 - 13.",
+				"INFO:  Calculated 2 slot(s) total for resource home.",
+				"INFO:  Total of 0 slot(s) in use.",
+				"PASS:  Placement would succeed for girl age 10."
+			]
+		},
+		{
+			"ResourceType": "Foster Home",
+			"Distance": "23.06",
+			"ResourceName": "DUCK, WALTER C JR.",
+			"FamStr": "",
+			"Address": "9503 HIGHWAY 19  N, COLLINSVILLE, MS 39325",
+			"PhoneList": [],
+			"County": "Lauderdale",
+			"AvailBoy": "0",
+			"AvailGirl": "0",
+			"AvailEither": "1",
+			"PriorAne": "False",
+			"Services": [
+				"9020",
+				"9130"
+			],
+			"Notes": [
+				"INFO:  2 either, age 0 - 12.",
+				"INFO:  Calculated 2 slot(s) total for resource home.",
+				"INFO:  Total of 1 slot(s) in use.",
+				"PASS:  Placement would succeed for girl age 10."
+			]
+		},
+		{
+			"ResourceType": "Foster Home",
+			"Distance": "26.42",
+			"ResourceName": "HOWELL, FELECIA",
+			"FamStr": "MC",
+			"Address": "110 WELLS PL, PHILADELPHIA, MS 39350",
+			"PhoneList": [
+				{
+					"Type": "CELL",
+					"Number": "(601)504-8711"
+				},
+				{
+					"Type": "HOME",
+					"Number": "(601)879-6614"
+				}
+			],
+			"County": "Neshoba",
+			"AvailBoy": "0",
+			"AvailGirl": "0",
+			"AvailEither": "3",
+			"PriorAne": "False",
+			"Services": [
+				"9020"
+			],
+			"Notes": [
+				"INFO:  4 either, age 0 - 18.",
+				"INFO:  Calculated 4 slot(s) total for resource home.",
+				"INFO:  Total of 1 slot(s) in use.",
+				"PASS:  Placement would succeed for girl age 10."
+			]
+		},
+		{
+			"ResourceType": "Foster Home",
+			"Distance": "26.74",
+			"ResourceName": "BENNETT, CHRISSA",
+			"FamStr": "",
+			"Address": "221 MYRTLE ST W, PHILADELPHIA, MS 39350",
+			"PhoneList": [
+				{
+					"Type": "CELL",
+					"Number": "(601)416-4475"
+				},
+				{
+					"Type": "HOME",
+					"Number": "(601)416-4475"
+				},
+				{
+					"Type": "WORK",
+					"Number": "(601)774-8211"
+				}
+			],
+			"County": "Neshoba",
+			"AvailBoy": "0",
+			"AvailGirl": "2",
+			"AvailEither": "0",
+			"PriorAne": "False",
+			"Services": [
+				"9020"
+			],
+			"Notes": [
+				"INFO:  2 girls, age 7 - 18.",
+				"INFO:  Calculated 2 slot(s) total for resource home.",
+				"INFO:  Total of 0 slot(s) in use.",
+				"PASS:  Placement would succeed for girl age 10."
+			]
+		},
+		{
+			"ResourceType": "Foster Home",
+			"Distance": "27.24",
+			"ResourceName": "INGRAM, GLORIA",
+			"FamStr": "SF",
+			"Address": "10401 ROAD 545, PHILADELPHIA, MS 39350",
+			"PhoneList": [
+				{
+					"Type": "CELL",
+					"Number": "(601)650-8066"
+				}
+			],
+			"County": "Neshoba",
+			"AvailBoy": "0",
+			"AvailGirl": "0",
+			"AvailEither": "2",
+			"PriorAne": "False",
+			"Services": [
+				"9020"
+			],
+			"Notes": [
+				"INFO:  3 either, age 0 - 18.",
+				"INFO:  Calculated 3 slot(s) total for resource home.",
+				"INFO:  Total of 1 slot(s) in use.",
+				"PASS:  Placement would succeed for girl age 10."
+			]
+		},
+		{
+			"ResourceType": "Foster Home",
+			"Distance": "27.89",
+			"ResourceName": "YATES, EASTER M",
+			"FamStr": "SF",
+			"Address": "1919 COUNTY ROAD 333, ENTERPRISE, MS 39330",
+			"PhoneList": [
+				{
+					"Type": "CELL",
+					"Number": "(601)616-4760"
+				},
+				{
+					"Type": "CNTCT",
+					"Number": "(601)616-4760"
+				},
+				{
+					"Type": "HOME",
+					"Number": "(601)659-9114"
+				}
+			],
+			"County": "Clarke",
+			"AvailBoy": "0",
+			"AvailGirl": "0",
+			"AvailEither": "2",
+			"PriorAne": "True",
+			"Services": [
+				"9020",
+				"9130"
+			],
+			"Notes": [
+				"INFO:  3 either, age 0 - 18.",
+				"INFO:  Calculated 3 slot(s) total for resource home.",
+				"INFO:  Total of 1 slot(s) in use.",
+				"PASS:  Placement would succeed for girl age 10."
+			]
+		},
+		{
+			"ResourceType": "Foster Home",
+			"Distance": "28.78",
+			"ResourceName": "PALMER, FELTON",
+			"FamStr": "",
+			"Address": "293 KIRBY RD, CARTHAGE, MS 39051",
+			"PhoneList": [
+				{
+					"Type": "CELL",
+					"Number": "(601)562-8208"
+				},
+				{
+					"Type": "CELL",
+					"Number": "(601)416-5171"
+				}
+			],
+			"County": "Leake",
+			"AvailBoy": "0",
+			"AvailGirl": "0",
+			"AvailEither": "1",
+			"PriorAne": "False",
+			"Services": [
+				"9020",
+				"9190",
+				"9410"
+			],
+			"Notes": [
+				"INFO:  2 either, age 0 - 18.",
+				"INFO:  Calculated 2 slot(s) total for resource home.",
+				"INFO:  Total of 1 slot(s) in use.",
+				"PASS:  Placement would succeed for girl age 10."
+			]
+		},
+		{
+			"ResourceType": "Foster Home",
+			"Distance": "28.78",
+			"ResourceName": "HARBIN, SYLVIA B",
+			"FamStr": "MC",
+			"Address": "607 64TH AVE, MERIDIAN, MS 39307",
+			"PhoneList": [
+				{
+					"Type": "CELL",
+					"Number": "(601)479-0484"
+				},
+				{
+					"Type": "HOME",
+					"Number": "(601)693-6875"
+				}
+			],
+			"County": "Lauderdale",
+			"AvailBoy": "0",
+			"AvailGirl": "0",
+			"AvailEither": "1",
+			"PriorAne": "False",
+			"Services": [
+				"9020"
+			],
+			"Notes": [
+				"INFO:  2 either, age 1 - 17.",
+				"INFO:  Calculated 2 slot(s) total for resource home.",
+				"INFO:  Total of 1 slot(s) in use.",
+				"PASS:  Placement would succeed for girl age 10."
+			]
+		},
+		{
+			"ResourceType": "Foster Home",
+			"Distance": "29.41",
+			"ResourceName": "LEWIS, RENEE",
+			"FamStr": "",
+			"Address": "5455 WINDSOR CIR, MERIDIAN, MS 39305",
+			"PhoneList": [
+				{
+					"Type": "CELL",
+					"Number": "(601)917-4641"
+				},
+				{
+					"Type": "HOME",
+					"Number": "(601)681-9927"
+				}
+			],
+			"County": "Lauderdale",
+			"AvailBoy": "0",
+			"AvailGirl": "0",
+			"AvailEither": "2",
+			"PriorAne": "True",
+			"Services": [
+				"9020",
+				"9130"
+			],
+			"Notes": [
+				"INFO:  4 either, age 0 - 17.",
+				"INFO:  Calculated 4 slot(s) total for resource home.",
+				"INFO:  Total of 2 slot(s) in use.",
+				"PASS:  Placement would succeed for girl age 10."
+			]
+		},
+		{
+			"ResourceType": "Foster Home",
+			"Distance": "30.03",
+			"ResourceName": "JONES, ANNIE K",
+			"FamStr": "",
+			"Address": "4211 19TH ST, MERIDIAN, MS 39307",
+			"PhoneList": [
+				{
+					"Type": "HOME",
+					"Number": "(601)696-7041"
+				}
+			],
+			"County": "Lauderdale",
+			"AvailBoy": "0",
+			"AvailGirl": "0",
+			"AvailEither": "3",
+			"PriorAne": "False",
+			"Services": [
+				"9020"
+			],
+			"Notes": [
+				"INFO:  3 either, age 7 - 18.",
+				"INFO:  Calculated 3 slot(s) total for resource home.",
+				"INFO:  Total of 0 slot(s) in use.",
+				"PASS:  Placement would succeed for girl age 10."
+			]
+		},
+		{
+			"ResourceType": "Foster Home",
+			"Distance": "30.32",
+			"ResourceName": "WALKER, ROMANDE",
+			"FamStr": "SF",
+			"Address": "3915 SOUTH ST, MERIDIAN, MS 39307",
+			"PhoneList": [
+				{
+					"Type": "CELL",
+					"Number": "(601)616-6122"
+				},
+				{
+					"Type": "CNTCT",
+					"Number": "(601)207-5068"
+				}
+			],
+			"County": "Lauderdale",
+			"AvailBoy": "0",
+			"AvailGirl": "0",
+			"AvailEither": "2",
+			"PriorAne": "True",
+			"Services": [
+				"9020"
+			],
+			"Notes": [
+				"INFO:  3 either, age 6 - 19.",
+				"INFO:  Calculated 3 slot(s) total for resource home.",
+				"INFO:  Total of 1 slot(s) in use.",
+				"PASS:  Placement would succeed for girl age 10."
+			]
+		},
+		{
+			"ResourceType": "Foster Home",
+			"Distance": "30.32",
+			"ResourceName": "PENRY, DIMITRA",
+			"FamStr": "",
+			"Address": "3615 35TH ST, MERIDIAN, MS 39307",
+			"PhoneList": [
+				{
+					"Type": "CELL",
+					"Number": "(601)604-2623"
+				},
+				{
+					"Type": "CELL",
+					"Number": "(601)604-2623"
+				},
+				{
+					"Type": "HOME",
+					"Number": "(601)282-5830"
+				},
+				{
+					"Type": "HOME",
+					"Number": "(601)282-5830"
+				}
+			],
+			"County": "Lauderdale",
+			"AvailBoy": "0",
+			"AvailGirl": "0",
+			"AvailEither": "2",
+			"PriorAne": "False",
+			"Services": [
+				"9020",
+				"9190",
+				"9410"
+			],
+			"Notes": [
+				"INFO:  3 either, age 0 - 15.",
+				"INFO:  Calculated 3 slot(s) total for resource home.",
+				"INFO:  Total of 1 slot(s) in use.",
+				"PASS:  Placement would succeed for girl age 10."
+			]
+		},
+		{
+			"ResourceType": "Foster Home",
+			"Distance": "30.87",
+			"ResourceName": "RUSSELL, CAROLYN",
+			"FamStr": "SF",
+			"Address": "2714 56TH ST, MERIDIAN, MS 39305",
+			"PhoneList": [
+				{
+					"Type": "CELL",
+					"Number": "(601)678-1967"
+				},
+				{
+					"Type": "HOME",
+					"Number": "(601)482-4320"
+				}
+			],
+			"County": "Lauderdale",
+			"AvailBoy": "0",
+			"AvailGirl": "0",
+			"AvailEither": "1",
+			"PriorAne": "True",
+			"Services": [
+				"9020",
+				"9130",
+				"9190"
+			],
+			"Notes": [
+				"INFO:  3 either, age 3 - 20.",
+				"INFO:  Calculated 3 slot(s) total for resource home.",
+				"INFO:  Total of 2 slot(s) in use.",
+				"PASS:  Placement would succeed for girl age 10."
+			]
+		},
+		{
+			"ResourceType": "Foster Home",
+			"Distance": "31.73",
+			"ResourceName": "HANSCHKE, CLAIRE",
+			"FamStr": "",
+			"Address": "1305 63RD ST, MERIDIAN, MS 39305",
+			"PhoneList": [
+				{
+					"Type": "CELL",
+					"Number": "(608)770-7724"
+				},
+				{
+					"Type": "CNTCT",
+					"Number": "(262)352-1844"
+				}
+			],
+			"County": "Lauderdale",
+			"AvailBoy": "0",
+			"AvailGirl": "0",
+			"AvailEither": "1",
+			"PriorAne": "True",
+			"Services": [
+				"9020"
+			],
+			"Notes": [
+				"INFO:  3 either, age 0 - 10.",
+				"INFO:  Calculated 3 slot(s) total for resource home.",
+				"INFO:  Total of 2 slot(s) in use.",
+				"PASS:  Placement would succeed for girl age 10."
+			]
+		},
+		{
+			"ResourceType": "Foster Home",
+			"Distance": "31.79",
+			"ResourceName": "MCCOY, DARNELL",
+			"FamStr": "MC",
+			"Address": "6628 13TH PLACE, MERIDIAN, MS 39305",
+			"PhoneList": [
+				{
+					"Type": "CELL",
+					"Number": "(601)604-2928"
+				},
+				{
+					"Type": "CELL",
+					"Number": "(601)604-8881"
+				}
+			],
+			"County": "Lauderdale",
+			"AvailBoy": "0",
+			"AvailGirl": "1",
+			"AvailEither": "0",
+			"PriorAne": "False",
+			"Services": [
+				"9020"
+			],
+			"Notes": [
+				"INFO:  3 girls, age 6 - 15.",
+				"INFO:  Calculated 3 slot(s) total for resource home.",
+				"INFO:  Total of 2 slot(s) in use.",
+				"PASS:  Placement would succeed for girl age 10."
+			]
+		},
+		{
+			"ResourceType": "Foster Home",
+			"Distance": "31.96",
+			"ResourceName": "CRAIG, VERGANELL",
+			"FamStr": "",
+			"Address": "903 23RD ST, MERIDIAN, MS 39301",
+			"PhoneList": [
+				{
+					"Type": "CELL",
+					"Number": "(601)686-6315"
+				}
+			],
+			"County": "Lauderdale",
+			"AvailBoy": "0",
+			"AvailGirl": "0",
+			"AvailEither": "2",
+			"PriorAne": "False",
+			"Services": [
+				"9020"
+			],
+			"Notes": [
+				"INFO:  2 either, age 0 - 18.",
+				"INFO:  Calculated 2 slot(s) total for resource home.",
+				"INFO:  Total of 0 slot(s) in use.",
+				"PASS:  Placement would succeed for girl age 10."
+			]
+		},
+		{
+			"ResourceType": "Foster Home",
+			"Distance": "31.98",
+			"ResourceName": "HERSEY, SUSAN",
+			"FamStr": "",
+			"Address": "803 29TH ST 711, MERIDIAN, MS 39305",
+			"PhoneList": [
+				{
+					"Type": "CELL",
+					"Number": "(601)480-1902"
+				}
+			],
+			"County": "Lauderdale",
+			"AvailBoy": "0",
+			"AvailGirl": "0",
+			"AvailEither": "1",
+			"PriorAne": "False",
+			"Services": [
+				"9020"
+			],
+			"Notes": [
+				"INFO:  2 either, age 0 - 12.",
+				"INFO:  Calculated 2 slot(s) total for resource home.",
+				"INFO:  Total of 1 slot(s) in use.",
+				"PASS:  Placement would succeed for girl age 10."
+			]
+		},
+		{
+			"ResourceType": "Foster Home",
+			"Distance": "31.99",
+			"ResourceName": "RHODES, CATHERINE",
+			"FamStr": "",
+			"Address": "231 CHESTNUT ST, PACHUTA, MS 39347",
+			"PhoneList": [
+				{
+					"Type": "HOME",
+					"Number": "(601)776-9047"
+				}
+			],
+			"County": "Clarke",
+			"AvailBoy": "0",
+			"AvailGirl": "0",
+			"AvailEither": "1",
+			"PriorAne": "False",
+			"Services": [
+				"9020"
+			],
+			"Notes": [
+				"INFO:  3 either, age 0 - 12.",
+				"INFO:  Calculated 3 slot(s) total for resource home.",
+				"INFO:  Total of 2 slot(s) in use.",
+				"PASS:  Placement would succeed for girl age 10."
+			]
+		},
+		{
+			"ResourceType": "Foster Home",
+			"Distance": "33.39",
+			"ResourceName": "MAYO, TRACI",
+			"FamStr": "",
+			"Address": "326 REDBUD LANE, MERIDIAN, MS 39301",
+			"PhoneList": [
+				{
+					"Type": "CELL",
+					"Number": "(601)480-4075"
+				}
+			],
+			"County": "Clarke",
+			"AvailBoy": "0",
+			"AvailGirl": "0",
+			"AvailEither": "1",
+			"PriorAne": "False",
+			"Services": [
+				"9020"
+			],
+			"Notes": [
+				"INFO:  3 either, age 0 - 12.",
+				"INFO:  Calculated 3 slot(s) total for resource home.",
+				"INFO:  Total of 2 slot(s) in use.",
+				"PASS:  Placement would succeed for girl age 10."
+			]
+		},
+		{
+			"ResourceType": "Foster Home",
+			"Distance": "34.25",
+			"ResourceName": "JOHNSON, BETTY J",
+			"FamStr": "SF",
+			"Address": "4775 C A PICKARD RD, MERIDIAN, MS 39301",
+			"PhoneList": [
+				{
+					"Type": "CELL",
+					"Number": "(601)527-7131"
+				},
+				{
+					"Type": "CNTCT",
+					"Number": "(601)595-0163"
+				}
+			],
+			"County": "Lauderdale",
+			"AvailBoy": "0",
+			"AvailGirl": "0",
+			"AvailEither": "3",
+			"PriorAne": "True",
+			"Services": [
+				"9020",
+				"9130"
+			],
+			"Notes": [
+				"INFO:  3 either, age 0 - 16.",
+				"INFO:  Calculated 3 slot(s) total for resource home.",
+				"INFO:  Total of 0 slot(s) in use.",
+				"PASS:  Placement would succeed for girl age 10."
+			]
+		},
+		{
+			"ResourceType": "Foster Home",
+			"Distance": "34.64",
+			"ResourceName": "MADERE, MARY",
+			"FamStr": "",
+			"Address": "5391 ZERO RD, MERIDIAN, MS 39301",
+			"PhoneList": [
+				{
+					"Type": "CELL",
+					"Number": "(601)604-2605"
+				}
+			],
+			"County": "Lauderdale",
+			"AvailBoy": "0",
+			"AvailGirl": "0",
+			"AvailEither": "1",
+			"PriorAne": "False",
+			"Services": [
+				"9020"
+			],
+			"Notes": [
+				"INFO:  1 either, age 5 - 12.",
+				"INFO:  Calculated 1 slot(s) total for resource home.",
+				"INFO:  Total of 0 slot(s) in use.",
+				"PASS:  Placement would succeed for girl age 10."
+			]
+		},
+		{
+			"ResourceType": "Foster Home",
+			"Distance": "34.9",
+			"ResourceName": "HENRY, BONNIE J",
+			"FamStr": "",
+			"Address": "1672 KEELI RD, CARTHAGE, MS 39051",
+			"PhoneList": [
+				{
+					"Type": "CELL",
+					"Number": "(601)946-7997"
+				},
+				{
+					"Type": "HOME",
+					"Number": "(601)267-8367"
+				},
+				{
+					"Type": "WORK",
+					"Number": "(601)267-3223"
+				}
+			],
+			"County": "Leake",
+			"AvailBoy": "0",
+			"AvailGirl": "0",
+			"AvailEither": "1",
+			"PriorAne": "True",
+			"Services": [
+				"9020",
+				"9130"
+			],
+			"Notes": [
+				"INFO:  4 either, age 0 - 18.",
+				"INFO:  Calculated 4 slot(s) total for resource home.",
+				"INFO:  Total of 3 slot(s) in use.",
+				"PASS:  Placement would succeed for girl age 10."
+			]
+		},
+		{
+			"ResourceType": "Foster Home",
+			"Distance": "35.56",
+			"ResourceName": "JONES, JENNIFER",
+			"FamStr": "SF",
+			"Address": "1128 WALKER SPUR RD, MERIDIAN, MS 39301",
+			"PhoneList": [
+				{
+					"Type": "CELL",
+					"Number": "(601)701-5827"
+				}
+			],
+			"County": "Lauderdale",
+			"AvailBoy": "0",
+			"AvailGirl": "0",
+			"AvailEither": "1",
+			"PriorAne": "False",
+			"Services": [
+				"9020"
+			],
+			"Notes": [
+				"INFO:  2 either, age 1 - 16.",
+				"INFO:  Calculated 2 slot(s) total for resource home.",
+				"INFO:  Total of 1 slot(s) in use.",
+				"PASS:  Placement would succeed for girl age 10."
+			]
+		},
+		{
+			"ResourceType": "Foster Home",
+			"Distance": "36.17",
+			"ResourceName": "WEST, GARY",
+			"FamStr": "MC",
+			"Address": "2143 JOHNS MAYTON RD, BRANDON, MS 39042",
+			"PhoneList": [
+				{
+					"Type": "CELL",
+					"Number": "(769)610-1096"
+				},
+				{
+					"Type": "CNTCT",
+					"Number": "(601)201-7713"
+				},
+				{
+					"Type": "CNTCT",
+					"Number": "(601)201-7713"
+				}
+			],
+			"County": "Rankin",
+			"AvailBoy": "0",
+			"AvailGirl": "0",
+			"AvailEither": "3",
+			"PriorAne": "False",
+			"Services": [
+				"9020",
+				"9130"
+			],
+			"Notes": [
+				"INFO:  3 either, age 0 - 15.",
+				"INFO:  Calculated 3 slot(s) total for resource home.",
+				"INFO:  Total of 0 slot(s) in use.",
+				"PASS:  Placement would succeed for girl age 10."
+			]
+		},
+		{
+			"ResourceType": "Foster Home",
+			"Distance": "36.42",
+			"ResourceName": "CAMERON, ZELLA",
+			"FamStr": "",
+			"Address": "2471 HIGHWAY 513, QUITMAN, MS 39355",
+			"PhoneList": [
+				{
+					"Type": "CELL",
+					"Number": "(601)934-6511"
+				},
+				{
+					"Type": "WORK",
+					"Number": "(601)776-1015"
+				}
+			],
+			"County": "Clarke",
+			"AvailBoy": "0",
+			"AvailGirl": "1",
+			"AvailEither": "0",
+			"PriorAne": "False",
+			"Services": [
+				"9020",
+				"9190",
+				"9410"
+			],
+			"Notes": [
+				"INFO:  1 boys, age 6 - 17.",
+				"INFO:  1 girls, age 6 - 12.",
+				"INFO:  Calculated 2 slot(s) total for resource home.",
+				"INFO:  Total of 1 slot(s) in use.",
+				"PASS:  Placement would succeed for girl age 10."
+			]
+		},
+		{
+			"ResourceType": "Foster Home",
+			"Distance": "37.32",
+			"ResourceName": "BOZEMAN, INETA E",
+			"FamStr": "MC",
+			"Address": "10951 ROAD 2826, PHILADELPHIA, MS 39350",
+			"PhoneList": [
+				{
+					"Type": "HOME",
+					"Number": "(601)650-9502"
+				},
+				{
+					"Type": "WORK",
+					"Number": "(601)656-3463"
+				}
+			],
+			"County": "Neshoba",
+			"AvailBoy": "0",
+			"AvailGirl": "0",
+			"AvailEither": "1",
+			"PriorAne": "True",
+			"Services": [
+				"9020",
+				"9080",
+				"9130"
+			],
+			"Notes": [
+				"INFO:  2 either, age 0 - 12.",
+				"INFO:  Calculated 2 slot(s) total for resource home.",
+				"INFO:  Total of 1 slot(s) in use.",
+				"PASS:  Placement would succeed for girl age 10."
+			]
+		},
+		{
+			"ResourceType": "Foster Home",
+			"Distance": "37.73",
+			"ResourceName": "DRANE, THARLYN",
+			"FamStr": "",
+			"Address": "4233 HWY 16  E, CANTON, MS 39046",
+			"PhoneList": [
+				{
+					"Type": "CELL",
+					"Number": "(601)942-8076"
+				},
+				{
+					"Type": "HOME",
+					"Number": "(601)859-1902"
+				}
+			],
+			"County": "Madison",
+			"AvailBoy": "0",
+			"AvailGirl": "0",
+			"AvailEither": "3",
+			"PriorAne": "True",
+			"Services": [
+				"9020"
+			],
+			"Notes": [
+				"INFO:  3 either, age 0 - 14.",
+				"INFO:  Calculated 3 slot(s) total for resource home.",
+				"INFO:  Total of 0 slot(s) in use.",
+				"PASS:  Placement would succeed for girl age 10."
+			]
+		},
+		{
+			"ResourceType": "Foster Home",
+			"Distance": "38.04",
+			"ResourceName": "CHAMPION, MATHEW",
+			"FamStr": "",
+			"Address": "1260 COUNTY ROAD 140, QUITMAN, MS 39355",
+			"PhoneList": [
+				{
+					"Type": "CELL",
+					"Number": "(601)479-8595"
+				},
+				{
+					"Type": "CELL",
+					"Number": "(601)479-6010"
+				},
+				{
+					"Type": "WORK",
+					"Number": "(601)703-9695"
+				}
+			],
+			"County": "Clarke",
+			"AvailBoy": "0",
+			"AvailGirl": "0",
+			"AvailEither": "2",
+			"PriorAne": "False",
+			"Services": [
+				"9020",
+				"9130"
+			],
+			"Notes": [
+				"INFO:  2 either, age 0 - 17.",
+				"INFO:  Calculated 2 slot(s) total for resource home.",
+				"INFO:  Total of 0 slot(s) in use.",
+				"PASS:  Placement would succeed for girl age 10."
+			]
+		},
+		{
+			"ResourceType": "Foster Home",
+			"Distance": "38.28",
+			"ResourceName": "HEGWOOD, WILLIAM D",
+			"FamStr": "MC",
+			"Address": "3680 HWY 80  E, BRANDON, MS 39042",
+			"PhoneList": [
+				{
+					"Type": "CELL",
+					"Number": "(601)201-6620"
+				},
+				{
+					"Type": "CNTCT",
+					"Number": "(601)259-3673"
+				},
+				{
+					"Type": "HOME",
+					"Number": "(601)825-7743"
+				}
+			],
+			"County": "Rankin",
+			"AvailBoy": "0",
+			"AvailGirl": "0",
+			"AvailEither": "1",
+			"PriorAne": "True",
+			"Services": [
+				"9020",
+				"9130"
+			],
+			"Notes": [
+				"INFO:  3 either, age 0 - 19.",
+				"INFO:  Calculated 3 slot(s) total for resource home.",
+				"INFO:  Total of 2 slot(s) in use.",
+				"PASS:  Placement would succeed for girl age 10."
+			]
+		},
+		{
+			"ResourceType": "Foster Home",
+			"Distance": "38.91",
+			"ResourceName": "EVANS, HEATHER",
+			"FamStr": "",
+			"Address": "3839 COUNTY ROAD 114, QUITMAN, MS 39355",
+			"PhoneList": [
+				{
+					"Type": "CELL",
+					"Number": "(601)480-3371"
+				}
+			],
+			"County": "Clarke",
+			"AvailBoy": "0",
+			"AvailGirl": "0",
+			"AvailEither": "1",
+			"PriorAne": "True",
+			"Services": [
+				"9020",
+				"9190",
+				"9410"
+			],
+			"Notes": [
+				"INFO:  3 either, age 0 - 12.",
+				"INFO:  Calculated 3 slot(s) total for resource home.",
+				"INFO:  Total of 2 slot(s) in use.",
+				"PASS:  Placement would succeed for girl age 10."
+			]
+		},
+		{
+			"ResourceType": "Foster Home",
+			"Distance": "39.09",
+			"ResourceName": "BOOKER, STACEY",
+			"FamStr": "",
+			"Address": "305 MULBERRY LN, QUITMAN, MS 39355",
+			"PhoneList": [
+				{
+					"Type": "CELL",
+					"Number": "(601)616-4623"
+				},
+				{
+					"Type": "CELL",
+					"Number": "(601)678-5727"
+				},
+				{
+					"Type": "CNTCT",
+					"Number": "(601)678-5727"
+				}
+			],
+			"County": "Clarke",
+			"AvailBoy": "0",
+			"AvailGirl": "0",
+			"AvailEither": "2",
+			"PriorAne": "False",
+			"Services": [
+				"9020",
+				"9130"
+			],
+			"Notes": [
+				"INFO:  3 either, age 0 - 14.",
+				"INFO:  Calculated 3 slot(s) total for resource home.",
+				"INFO:  Total of 1 slot(s) in use.",
+				"PASS:  Placement would succeed for girl age 10."
+			]
+		},
+		{
+			"ResourceType": "Foster Home",
+			"Distance": "39.12",
+			"ResourceName": "PARKER, ALENE",
+			"FamStr": "",
+			"Address": "10801 ROAD 789, PRESTON, MS 39354",
+			"PhoneList": [
+				{
+					"Type": "CELL",
+					"Number": "(601)575-8477"
+				},
+				{
+					"Type": "CELL",
+					"Number": "(601)575-7754"
+				}
+			],
+			"County": "Neshoba",
+			"AvailBoy": "0",
+			"AvailGirl": "0",
+			"AvailEither": "1",
+			"PriorAne": "True",
+			"Services": [
+				"9020",
+				"9130"
+			],
+			"Notes": [
+				"INFO:  5 either, age 4 - 17.",
+				"INFO:  Calculated 5 slot(s) total for resource home.",
+				"INFO:  Total of 4 slot(s) in use.",
+				"PASS:  Placement would succeed for girl age 10."
+			]
+		},
+		{
+			"ResourceType": "Foster Home",
+			"Distance": "39.13",
+			"ResourceName": "WATKINS, REBECCA W",
+			"FamStr": "",
+			"Address": "E 601 CHURCH ST, QUITMAN, MS 39355",
+			"PhoneList": [
+				{
+					"Type": "CELL",
+					"Number": "(601)938-5247"
+				},
+				{
+					"Type": "HOME",
+					"Number": "(601)776-5433"
+				}
+			],
+			"County": "Clarke",
+			"AvailBoy": "0",
+			"AvailGirl": "0",
+			"AvailEither": "2",
+			"PriorAne": "False",
+			"Services": [
+				"9020"
+			],
+			"Notes": [
+				"INFO:  2 either, age 0 - 18.",
+				"INFO:  Calculated 2 slot(s) total for resource home.",
+				"INFO:  Total of 0 slot(s) in use.",
+				"PASS:  Placement would succeed for girl age 10."
+			]
+		},
+		{
+			"ResourceType": "Foster Home",
+			"Distance": "39.47",
+			"ResourceName": "RANKIN-THOMPSON, KENNY E",
+			"FamStr": "MC",
+			"Address": "145 RUBY TAYLOR RD, MENDENHALL, MS 39114",
+			"PhoneList": [
+				{
+					"Type": "CELL",
+					"Number": "(601)953-4474"
+				},
+				{
+					"Type": "CNTCT",
+					"Number": "(228)234-1871"
+				},
+				{
+					"Type": "HOME",
+					"Number": "(601)847-0118"
+				}
+			],
+			"County": "Simpson",
+			"AvailBoy": "0",
+			"AvailGirl": "0",
+			"AvailEither": "3",
+			"PriorAne": "False",
+			"Services": [
+				"9020",
+				"9190",
+				"9410"
+			],
+			"Notes": [
+				"INFO:  3 either, age 0 - 18.",
+				"INFO:  Calculated 3 slot(s) total for resource home.",
+				"INFO:  Total of 0 slot(s) in use.",
+				"PASS:  Placement would succeed for girl age 10."
+			]
+		},
+		{
+			"ResourceType": "Foster Home",
+			"Distance": "39.76",
+			"ResourceName": "JAMES OLIVER, JESSIE",
+			"FamStr": "",
+			"Address": "2401 18 E HIGHWAY, QUITMAN, MS 39355",
+			"PhoneList": [],
+			"County": "Clarke",
+			"AvailBoy": "0",
+			"AvailGirl": "0",
+			"AvailEither": "1",
+			"PriorAne": "True",
+			"Services": [
+				"9020"
+			],
+			"Notes": [
+				"INFO:  2 either, age 0 - 13.",
+				"INFO:  Calculated 2 slot(s) total for resource home.",
+				"INFO:  Total of 1 slot(s) in use.",
+				"PASS:  Placement would succeed for girl age 10."
+			]
+		},
+		{
+			"ResourceType": "Foster Home",
+			"Distance": "40.58",
+			"ResourceName": "COTTON, AMY",
+			"FamStr": "",
+			"Address": "3446 ATTALA ROAD 1106, CARTHAGE, MS 39051",
+			"PhoneList": [
+				{
+					"Type": "HOME",
+					"Number": "(662)582-3723"
+				}
+			],
+			"County": "Attala",
+			"AvailBoy": "0",
+			"AvailGirl": "0",
+			"AvailEither": "2",
+			"PriorAne": "False",
+			"Services": [
+				"9020"
+			],
+			"Notes": [
+				"INFO:  3 either, age 4 - 16.",
+				"INFO:  Calculated 3 slot(s) total for resource home.",
+				"INFO:  Total of 1 slot(s) in use.",
+				"PASS:  Placement would succeed for girl age 10."
+			]
+		},
+		{
+			"ResourceType": "Foster Home",
+			"Distance": "40.84",
+			"ResourceName": "ROGERS, DEBRA",
+			"FamStr": "SF",
+			"Address": "190 STULL RD, BRANDON, MS 39047",
+			"PhoneList": [
+				{
+					"Type": "CELL",
+					"Number": "(601)927-4099"
+				},
+				{
+					"Type": "CELL",
+					"Number": "(601)720-8946"
+				},
+				{
+					"Type": "HOME",
+					"Number": "(601)829-2861"
+				}
+			],
+			"County": "Rankin",
+			"AvailBoy": "0",
+			"AvailGirl": "0",
+			"AvailEither": "2",
+			"PriorAne": "True",
+			"Services": [
+				"9020",
+				"9210"
+			],
+			"Notes": [
+				"INFO:  2 either, age 0 - 18.",
+				"INFO:  Calculated 2 slot(s) total for resource home.",
+				"INFO:  Total of 0 slot(s) in use.",
+				"PASS:  Placement would succeed for girl age 10."
+			]
+		},
+		{
+			"ResourceType": "Foster Home",
+			"Distance": "40.92",
+			"ResourceName": "NIXON, SABRINA A",
+			"FamStr": "MC",
+			"Address": "14246 COUNTY ROAD 210, VOSSBURG, MS 39366",
+			"PhoneList": [
+				{
+					"Type": "CNTCT",
+					"Number": "(601)935-1048"
+				},
+				{
+					"Type": "HOME",
+					"Number": "(601)787-2232"
+				}
+			],
+			"County": "Clarke",
+			"AvailBoy": "0",
+			"AvailGirl": "0",
+			"AvailEither": "1",
+			"PriorAne": "False",
+			"Services": [
+				"9020",
+				"9190",
+				"9410"
+			],
+			"Notes": [
+				"INFO:  1 either, age 0 - 12.",
+				"INFO:  Calculated 1 slot(s) total for resource home.",
+				"INFO:  Total of 0 slot(s) in use.",
+				"PASS:  Placement would succeed for girl age 10."
+			]
+		},
+		{
+			"ResourceType": "Foster Home",
+			"Distance": "41.47",
+			"ResourceName": "NEVINS, ERIC",
+			"FamStr": "",
+			"Address": "637 POWER CIR, BILOXI, MS 39531",
+			"PhoneList": [
+				{
+					"Type": "CELL",
+					"Number": "(334)313-4924"
+				},
+				{
+					"Type": "CNTCT",
+					"Number": "(334)730-5752"
+				}
+			],
+			"County": "Harrison",
+			"AvailBoy": "0",
+			"AvailGirl": "0",
+			"AvailEither": "3",
+			"PriorAne": "True",
+			"Services": [
+				"9020",
+				"9130"
+			],
+			"Notes": [
+				"INFO:  3 either, age 0 - 10.",
+				"INFO:  Calculated 3 slot(s) total for resource home.",
+				"INFO:  Total of 0 slot(s) in use.",
+				"PASS:  Placement would succeed for girl age 10."
+			]
+		},
+		{
+			"ResourceType": "Foster Home",
+			"Distance": "41.83",
+			"ResourceName": "SMITH, JENNIFER",
+			"FamStr": "MC",
+			"Address": "2188 LOVORN RD, LOUISVILLE, MS 39339",
+			"PhoneList": [
+				{
+					"Type": "CELL",
+					"Number": "(662)803-0561"
+				},
+				{
+					"Type": "CELL",
+					"Number": "(662)803-8462"
+				},
+				{
+					"Type": "WORK",
+					"Number": "(662)779-0099"
+				}
+			],
+			"County": "Winston",
+			"AvailBoy": "0",
+			"AvailGirl": "0",
+			"AvailEither": "1",
+			"PriorAne": "False",
+			"Services": [
+				"9020",
+				"9130"
+			],
+			"Notes": [
+				"INFO:  3 either, age 0 - 10.",
+				"INFO:  Calculated 3 slot(s) total for resource home.",
+				"INFO:  Total of 2 slot(s) in use.",
+				"PASS:  Placement would succeed for girl age 10."
+			]
+		},
+		{
+			"ResourceType": "Foster Home",
+			"Distance": "42.33",
+			"ResourceName": "POWE, CAROLYN",
+			"FamStr": "MC",
+			"Address": "940 CO RD 220, HEIDELBERG, MS 39439",
+			"PhoneList": [
+				{
+					"Type": "CELL",
+					"Number": "(601)513-0858"
+				},
+				{
+					"Type": "CELL",
+					"Number": "(601)935-8891"
+				},
+				{
+					"Type": "HOME",
+					"Number": "(601)787-3557"
+				},
+				{
+					"Type": "WORK",
+					"Number": "(601)776-6123"
+				}
+			],
+			"County": "Clarke",
+			"AvailBoy": "0",
+			"AvailGirl": "0",
+			"AvailEither": "3",
+			"PriorAne": "False",
+			"Services": [
+				"9020"
+			],
+			"Notes": [
+				"INFO:  3 either, age 0 - 16.",
+				"INFO:  Calculated 3 slot(s) total for resource home.",
+				"INFO:  Total of 0 slot(s) in use.",
+				"PASS:  Placement would succeed for girl age 10."
+			]
+		},
+		{
+			"ResourceType": "Foster Home",
+			"Distance": "42.93",
+			"ResourceName": "ROBERTS, ANNA",
+			"FamStr": "",
+			"Address": "101 FAITH WAY, BRANDON, MS 39042",
+			"PhoneList": [
+				{
+					"Type": "CELL",
+					"Number": "(601)966-2680"
+				},
+				{
+					"Type": "CNTCT",
+					"Number": "(601)937-0306"
+				}
+			],
+			"County": "Rankin",
+			"AvailBoy": "0",
+			"AvailGirl": "0",
+			"AvailEither": "1",
+			"PriorAne": "False",
+			"Services": [
+				"9020",
+				"9130"
+			],
+			"Notes": [
+				"INFO:  2 either, age 5 - 12.",
+				"INFO:  Calculated 2 slot(s) total for resource home.",
+				"INFO:  Total of 1 slot(s) in use.",
+				"PASS:  Placement would succeed for girl age 10."
+			]
+		},
+		{
+			"ResourceType": "Foster Home",
+			"Distance": "42.98",
+			"ResourceName": "MCDONALD, MICHELLE",
+			"FamStr": "MC",
+			"Address": "7693 KEMPER SPRING RD, LAUDERDALE, MS 39335",
+			"PhoneList": [
+				{
+					"Type": "CELL",
+					"Number": "(601)938-1927"
+				},
+				{
+					"Type": "HOME",
+					"Number": "(601)743-4158"
+				}
+			],
+			"County": "Kemper",
+			"AvailBoy": "0",
+			"AvailGirl": "0",
+			"AvailEither": "1",
+			"PriorAne": "True",
+			"Services": [
+				"9020",
+				"9130",
+				"9190",
+				"9410"
+			],
+			"Notes": [
+				"INFO:  3 either, age 0 - 18.",
+				"INFO:  Calculated 3 slot(s) total for resource home.",
+				"INFO:  Total of 2 slot(s) in use.",
+				"PASS:  Placement would succeed for girl age 10."
+			]
+		},
+		{
+			"ResourceType": "Foster Home",
+			"Distance": "43.37",
+			"ResourceName": "ALLISON, COURTNEY",
+			"FamStr": "MC",
+			"Address": "268 REEDY CREEK RD, LAUREL, MS 39443",
+			"PhoneList": [
+				{
+					"Type": "CELL",
+					"Number": "(601)422-7090"
+				}
+			],
+			"County": "Jones",
+			"AvailBoy": "0",
+			"AvailGirl": "0",
+			"AvailEither": "1",
+			"PriorAne": "True",
+			"Services": [
+				"9020",
+				"9130"
+			],
+			"Notes": [
+				"INFO:  2 either, age 0 - 12.",
+				"INFO:  Calculated 2 slot(s) total for resource home.",
+				"INFO:  Total of 1 slot(s) in use.",
+				"PASS:  Placement would succeed for girl age 10."
+			]
+		},
+		{
+			"ResourceType": "Foster Home",
+			"Distance": "43.83",
+			"ResourceName": "NELMS, AMANDA",
+			"FamStr": "MC",
+			"Address": "104 WELLINGTON PL, BRANDON, MS 39042",
+			"PhoneList": [
+				{
+					"Type": "HOME",
+					"Number": "(662)299-0966"
+				}
+			],
+			"County": "Rankin",
+			"AvailBoy": "0",
+			"AvailGirl": "0",
+			"AvailEither": "2",
+			"PriorAne": "True",
+			"Services": [
+				"9020",
+				"9150"
+			],
+			"Notes": [
+				"INFO:  2 either, age 0 - 18.",
+				"INFO:  Calculated 2 slot(s) total for resource home.",
+				"INFO:  Total of 0 slot(s) in use.",
+				"PASS:  Placement would succeed for girl age 10."
+			]
+		},
+		{
+			"ResourceType": "Foster Home",
+			"Distance": "44.1",
+			"ResourceName": "MCCOY, RICHARD",
+			"FamStr": "MC",
+			"Address": "362 TOWNE ST, BRANDON, MS 39042",
+			"PhoneList": [
+				{
+					"Type": "CELL",
+					"Number": "(601)941-0913"
+				},
+				{
+					"Type": "WORK",
+					"Number": "(601)576-6986"
+				}
+			],
+			"County": "Rankin",
+			"AvailBoy": "0",
+			"AvailGirl": "0",
+			"AvailEither": "1",
+			"PriorAne": "False",
+			"Services": [
+				"9020",
+				"9130"
+			],
+			"Notes": [
+				"INFO:  2 either, age 0 - 10.",
+				"INFO:  Calculated 2 slot(s) total for resource home.",
+				"INFO:  Total of 1 slot(s) in use.",
+				"PASS:  Placement would succeed for girl age 10."
+			]
+		},
+		{
+			"ResourceType": "Foster Home",
+			"Distance": "45.19",
+			"ResourceName": "CHAPMAN, CATHERINE",
+			"FamStr": "MC",
+			"Address": "1425 BAYVISTA, BRANDON, MS 39047",
+			"PhoneList": [
+				{
+					"Type": "CELL",
+					"Number": "(601)716-4285"
+				}
+			],
+			"County": "Rankin",
+			"AvailBoy": "0",
+			"AvailGirl": "1",
+			"AvailEither": "0",
+			"PriorAne": "False",
+			"Services": [
+				"9020"
+			],
+			"Notes": [
+				"INFO:  1 boys, age 6 - 13.",
+				"INFO:  1 girls, age 6 - 18.",
+				"INFO:  Calculated 2 slot(s) total for resource home.",
+				"INFO:  Total of 1 slot(s) in use.",
+				"PASS:  Placement would succeed for girl age 10."
+			]
+		},
+		{
+			"ResourceType": "Foster Home",
+			"Distance": "45.29",
+			"ResourceName": "CLARK, DIANNE S",
+			"FamStr": "SF",
+			"Address": "2970 HWY 532, TAYLORSVILLE, MS 39168",
+			"PhoneList": [
+				{
+					"Type": "CELL",
+					"Number": "(601)335-4609"
+				},
+				{
+					"Type": "CELL",
+					"Number": "(601)452-2771"
+				}
+			],
+			"County": "Covington",
+			"AvailBoy": "0",
+			"AvailGirl": "0",
+			"AvailEither": "1",
+			"PriorAne": "True",
+			"Services": [
+				"9020"
+			],
+			"Notes": [
+				"INFO:  3 either, age 0 - 10.",
+				"INFO:  Calculated 3 slot(s) total for resource home.",
+				"INFO:  Total of 2 slot(s) in use.",
+				"PASS:  Placement would succeed for girl age 10."
+			]
+		},
+		{
+			"ResourceType": "Foster Home",
+			"Distance": "45.65",
+			"ResourceName": "WILLIAMS, TREMAYNE",
+			"FamStr": "",
+			"Address": "130 WILLIE CARTER DR, MENDENHALL, MS 39114",
+			"PhoneList": [
+				{
+					"Type": "CELL",
+					"Number": "(601)672-1590"
+				}
+			],
+			"County": "Simpson",
+			"AvailBoy": "0",
+			"AvailGirl": "0",
+			"AvailEither": "2",
+			"PriorAne": "False",
+			"Services": [
+				"9020"
+			],
+			"Notes": [
+				"INFO:  3 either, age 0 - 13.",
+				"INFO:  Calculated 3 slot(s) total for resource home.",
+				"INFO:  Total of 1 slot(s) in use.",
+				"PASS:  Placement would succeed for girl age 10."
+			]
+		},
+		{
+			"ResourceType": "Foster Home",
+			"Distance": "45.67",
+			"ResourceName": "MCLAURIN, STEPHANIE",
+			"FamStr": "",
+			"Address": "116 WOODGATE DR, MAGEE, MS 39111",
+			"PhoneList": [
+				{
+					"Type": "CELL",
+					"Number": "(601)564-3905"
+				},
+				{
+					"Type": "CNTCT",
+					"Number": "(601)849-3227"
+				}
+			],
+			"County": "Simpson",
+			"AvailBoy": "0",
+			"AvailGirl": "0",
+			"AvailEither": "2",
+			"PriorAne": "False",
+			"Services": [
+				"9020"
+			],
+			"Notes": [
+				"INFO:  3 either, age 0 - 14.",
+				"INFO:  Calculated 3 slot(s) total for resource home.",
+				"INFO:  Total of 1 slot(s) in use.",
+				"PASS:  Placement would succeed for girl age 10."
+			]
+		},
+		{
+			"ResourceType": "Foster Home",
+			"Distance": "45.98",
+			"ResourceName": "MOFFITT, ROBIN A",
+			"FamStr": "",
+			"Address": "521 STONECREEK DR, BRANDON, MS 39042",
+			"PhoneList": [
+				{
+					"Type": "CELL",
+					"Number": "(601)906-8948"
+				},
+				{
+					"Type": "WORK",
+					"Number": "(601)825-4706"
+				}
+			],
+			"County": "Rankin",
+			"AvailBoy": "0",
+			"AvailGirl": "0",
+			"AvailEither": "1",
+			"PriorAne": "False",
+			"Services": [
+				"9020",
+				"9130",
+				"9130"
+			],
+			"Notes": [
+				"INFO:  4 either, age 0 - 15.",
+				"INFO:  Calculated 4 slot(s) total for resource home.",
+				"INFO:  Total of 3 slot(s) in use.",
+				"PASS:  Placement would succeed for girl age 10."
+			]
+		},
+		{
+			"ResourceType": "Foster Home",
+			"Distance": "46.17",
+			"ResourceName": "MONK, JIMMY",
+			"FamStr": "",
+			"Address": "194 CUMBERLAND RD B, BRANDON, MS 39047",
+			"PhoneList": [
+				{
+					"Type": "CELL",
+					"Number": "(601)760-8796"
+				}
+			],
+			"County": "Rankin",
+			"AvailBoy": "0",
+			"AvailGirl": "0",
+			"AvailEither": "1",
+			"PriorAne": "False",
+			"Services": [
+				"9020",
+				"9130"
+			],
+			"Notes": [
+				"INFO:  2 either, age 0 - 13.",
+				"INFO:  Calculated 2 slot(s) total for resource home.",
+				"INFO:  Total of 1 slot(s) in use.",
+				"PASS:  Placement would succeed for girl age 10."
+			]
+		},
+		{
+			"ResourceType": "Foster Home",
+			"Distance": "46.32",
+			"ResourceName": "DEUEL, CHRIS",
+			"FamStr": "MC",
+			"Address": "112 BRANDY RUN RD, BRANDON, MS 39047",
+			"PhoneList": [
+				{
+					"Type": "CELL",
+					"Number": "(601)214-1458"
+				}
+			],
+			"County": "Rankin",
+			"AvailBoy": "0",
+			"AvailGirl": "0",
+			"AvailEither": "1",
+			"PriorAne": "True",
+			"Services": [
+				"9020",
+				"9190"
+			],
+			"Notes": [
+				"INFO:  3 either, age 0 - 10.",
+				"INFO:  Calculated 3 slot(s) total for resource home.",
+				"INFO:  Total of 2 slot(s) in use.",
+				"PASS:  Placement would succeed for girl age 10."
+			]
+		},
+		{
+			"ResourceType": "Foster Home",
+			"Distance": "46.33",
+			"ResourceName": "KREILAUS, JOSEPH M",
+			"FamStr": "MC",
+			"Address": "307 TURTLE CREEK DR, BRANDON, MS 39047",
+			"PhoneList": [
+				{
+					"Type": "CELL",
+					"Number": "(601)398-8611"
+				}
+			],
+			"County": "Rankin",
+			"AvailBoy": "0",
+			"AvailGirl": "0",
+			"AvailEither": "1",
+			"PriorAne": "False",
+			"Services": [
+				"9020"
+			],
+			"Notes": [
+				"INFO:  4 either, age 0 - 15.",
+				"INFO:  Calculated 4 slot(s) total for resource home.",
+				"INFO:  Total of 3 slot(s) in use.",
+				"PASS:  Placement would succeed for girl age 10."
+			]
+		},
+		{
+			"ResourceType": "Foster Home",
+			"Distance": "46.6",
+			"ResourceName": "GILL, JOSEPH W",
+			"FamStr": "",
+			"Address": "304 PEPPERTREE CV, BRANDON, MS 39047",
+			"PhoneList": [
+				{
+					"Type": "CELL",
+					"Number": "(601)850-6442"
+				}
+			],
+			"County": "Rankin",
+			"AvailBoy": "0",
+			"AvailGirl": "0",
+			"AvailEither": "2",
+			"PriorAne": "False",
+			"Services": [
+				"9020"
+			],
+			"Notes": [
+				"INFO:  2 either, age 5 - 12.",
+				"INFO:  Calculated 2 slot(s) total for resource home.",
+				"INFO:  Total of 0 slot(s) in use.",
+				"PASS:  Placement would succeed for girl age 10."
+			]
+		},
+		{
+			"ResourceType": "Foster Home",
+			"Distance": "46.63",
+			"ResourceName": "BYRD, DOUGLAS T",
+			"FamStr": "",
+			"Address": "142 FOREST RIDGE DR, BRANDON, MS 39042",
+			"PhoneList": [
+				{
+					"Type": "CELL",
+					"Number": "(601)383-0025"
+				}
+			],
+			"County": "Rankin",
+			"AvailBoy": "0",
+			"AvailGirl": "0",
+			"AvailEither": "2",
+			"PriorAne": "False",
+			"Services": [
+				"9020"
+			],
+			"Notes": [
+				"INFO:  2 either, age 0 - 14.",
+				"INFO:  Calculated 2 slot(s) total for resource home.",
+				"INFO:  Total of 0 slot(s) in use.",
+				"PASS:  Placement would succeed for girl age 10."
+			]
+		},
+		{
+			"ResourceType": "Foster Home",
+			"Distance": "46.76",
+			"ResourceName": "COOLEY, AMANDA",
+			"FamStr": "",
+			"Address": "10 CLAIRMONT CIR, LAUREL, MS 39440",
+			"PhoneList": [
+				{
+					"Type": "HOME",
+					"Number": "(601)577-4724"
+				}
+			],
+			"County": "Jones",
+			"AvailBoy": "0",
+			"AvailGirl": "0",
+			"AvailEither": "1",
+			"PriorAne": "False",
+			"Services": [
+				"9020"
+			],
+			"Notes": [
+				"INFO:  3 either, age 0 - 15.",
+				"INFO:  Calculated 3 slot(s) total for resource home.",
+				"INFO:  Total of 2 slot(s) in use.",
+				"PASS:  Placement would succeed for girl age 10."
+			]
+		},
+		{
+			"ResourceType": "Foster Home",
+			"Distance": "46.89",
+			"ResourceName": "WILSON, HOWARD",
+			"FamStr": "",
+			"Address": "60 TERRAPIN HILL RD N, BRANDON, MS 39042",
+			"PhoneList": [
+				{
+					"Type": "CNTCT",
+					"Number": "(601)829-4344"
+				}
+			],
+			"County": "Rankin",
+			"AvailBoy": "0",
+			"AvailGirl": "0",
+			"AvailEither": "3",
+			"PriorAne": "False",
+			"Services": [
+				"9020",
+				"9130"
+			],
+			"Notes": [
+				"INFO:  3 either, age 0 - 12.",
+				"INFO:  Calculated 3 slot(s) total for resource home.",
+				"INFO:  Total of 0 slot(s) in use.",
+				"PASS:  Placement would succeed for girl age 10."
+			]
+		},
+		{
+			"ResourceType": "Foster Home",
+			"Distance": "47.76",
+			"ResourceName": "PAYTON, JERINA",
+			"FamStr": "",
+			"Address": "85 FLYNT ROAD RD, LAUREL, MS 39440",
+			"PhoneList": [
+				{
+					"Type": "CELL",
+					"Number": "(601)651-6353"
+				},
+				{
+					"Type": "CNTCT",
+					"Number": "(601)323-9811"
+				}
+			],
+			"County": "Jones",
+			"AvailBoy": "0",
+			"AvailGirl": "1",
+			"AvailEither": "0",
+			"PriorAne": "False",
+			"Services": [
+				"9020",
+				"9190",
+				"9410"
+			],
+			"Notes": [
+				"INFO:  2 girls, age 0 - 18.",
+				"INFO:  Calculated 2 slot(s) total for resource home.",
+				"INFO:  Total of 1 slot(s) in use.",
+				"PASS:  Placement would succeed for girl age 10."
+			]
+		},
+		{
+			"ResourceType": "Foster Home",
+			"Distance": "48",
+			"ResourceName": "NOBLES, JERLEAN",
+			"FamStr": "SF",
+			"Address": "E 720 18TH ST, LAUREL, MS 39440",
+			"PhoneList": [
+				{
+					"Type": "CELL",
+					"Number": "(601)470-8150"
+				},
+				{
+					"Type": "CNTCT",
+					"Number": "(601)319-3354"
+				}
+			],
+			"County": "Jones",
+			"AvailBoy": "0",
+			"AvailGirl": "0",
+			"AvailEither": "1",
+			"PriorAne": "True",
+			"Services": [
+				"9020"
+			],
+			"Notes": [
+				"INFO:  4 either, age 0 - 12.",
+				"INFO:  Calculated 4 slot(s) total for resource home.",
+				"INFO:  Total of 3 slot(s) in use.",
+				"PASS:  Placement would succeed for girl age 10."
+			]
+		},
+		{
+			"ResourceType": "Foster Home",
+			"Distance": "48.22",
+			"ResourceName": "MCNATT, DAVID",
+			"FamStr": "",
+			"Address": "E 441 DINKINS ST, CANTON, MS 39046",
+			"PhoneList": [
+				{
+					"Type": "CELL",
+					"Number": "(601)955-4006"
+				},
+				{
+					"Type": "CELL",
+					"Number": "(601)942-9259"
+				}
+			],
+			"County": "Madison",
+			"AvailBoy": "0",
+			"AvailGirl": "0",
+			"AvailEither": "4",
+			"PriorAne": "True",
+			"Services": [
+				"9020",
+				"9130",
+				"9190"
+			],
+			"Notes": [
+				"INFO:  5 either, age 0 - 18.",
+				"INFO:  Calculated 5 slot(s) total for resource home.",
+				"INFO:  Total of 1 slot(s) in use.",
+				"PASS:  Placement would succeed for girl age 10."
+			]
+		},
+		{
+			"ResourceType": "Foster Home",
+			"Distance": "48.39",
+			"ResourceName": "LORINCZOVA, MONIKA",
+			"FamStr": "MC",
+			"Address": "113 EAGLE DR, BRANDON, MS 39047",
+			"PhoneList": [
+				{
+					"Type": "CELL",
+					"Number": "(601)609-0283"
+				},
+				{
+					"Type": "WORK",
+					"Number": "(662)325-1815"
+				}
+			],
+			"County": "Rankin",
+			"AvailBoy": "0",
+			"AvailGirl": "0",
+			"AvailEither": "2",
+			"PriorAne": "False",
+			"Services": [
+				"9020",
+				"9130"
+			],
+			"Notes": [
+				"INFO:  2 either, age 0 - 12.",
+				"INFO:  Calculated 2 slot(s) total for resource home.",
+				"INFO:  Total of 0 slot(s) in use.",
+				"PASS:  Placement would succeed for girl age 10."
+			]
+		},
+		{
+			"ResourceType": "Foster Home",
+			"Distance": "48.51",
+			"ResourceName": "FLOWERS, TYWANDA",
+			"FamStr": "",
+			"Address": "205 JACKS PL, BRANDON, MS 39047",
+			"PhoneList": [
+				{
+					"Type": "CELL",
+					"Number": "(662)803-6860"
+				}
+			],
+			"County": "Rankin",
+			"AvailBoy": "0",
+			"AvailGirl": "0",
+			"AvailEither": "1",
+			"PriorAne": "False",
+			"Services": [
+				"9020"
+			],
+			"Notes": [
+				"INFO:  1 either, age 0 - 10.",
+				"INFO:  Calculated 1 slot(s) total for resource home.",
+				"INFO:  Total of 0 slot(s) in use.",
+				"PASS:  Placement would succeed for girl age 10."
+			]
+		},
+		{
+			"ResourceType": "Foster Home",
+			"Distance": "48.77",
+			"ResourceName": "GRAHAM, COURTNEY",
+			"FamStr": "MC",
+			"Address": "460 OLYMPIC DR, FLOWOOD, MS 39232",
+			"PhoneList": [
+				{
+					"Type": "CELL",
+					"Number": "(601)540-0976"
+				},
+				{
+					"Type": "WORK",
+					"Number": "(601)984-1801"
+				}
+			],
+			"County": "Rankin",
+			"AvailBoy": "0",
+			"AvailGirl": "0",
+			"AvailEither": "1",
+			"PriorAne": "False",
+			"Services": [
+				"9020",
+				"9130"
+			],
+			"Notes": [
+				"INFO:  2 either, age 0 - 13.",
+				"INFO:  Calculated 2 slot(s) total for resource home.",
+				"INFO:  Total of 1 slot(s) in use.",
+				"PASS:  Placement would succeed for girl age 10."
+			]
+		},
+		{
+			"ResourceType": "Foster Home",
+			"Distance": "48.95",
+			"ResourceName": "HINTON, ANGELA",
+			"FamStr": "MC",
+			"Address": "N 520 8TH AVE, LAUREL, MS 39440",
+			"PhoneList": [
+				{
+					"Type": "CELL",
+					"Number": "(601)270-1872"
+				},
+				{
+					"Type": "CELL",
+					"Number": "(601)255-5474"
+				}
+			],
+			"County": "Jones",
+			"AvailBoy": "0",
+			"AvailGirl": "0",
+			"AvailEither": "2",
+			"PriorAne": "True",
+			"Services": [
+				"9020",
+				"9130"
+			],
+			"Notes": [
+				"INFO:  3 either, age 0 - 18.",
+				"INFO:  Calculated 3 slot(s) total for resource home.",
+				"INFO:  Total of 1 slot(s) in use.",
+				"PASS:  Placement would succeed for girl age 10."
+			]
+		},
+		{
+			"ResourceType": "Foster Home",
+			"Distance": "49.26",
+			"ResourceName": "OBANNON, TINA F",
+			"FamStr": "SF",
+			"Address": "994 CLUBHOUSE DR, PEARL, MS 39028",
+			"PhoneList": [
+				{
+					"Type": "CELL",
+					"Number": "(601)572-1392"
+				},
+				{
+					"Type": "HOME",
+					"Number": "(662)235-4397"
+				},
+				{
+					"Type": "WORK",
+					"Number": "(662)235-5113"
+				}
+			],
+			"County": "Rankin",
+			"AvailBoy": "0",
+			"AvailGirl": "0",
+			"AvailEither": "2",
+			"PriorAne": "False",
+			"Services": [
+				"9020",
+				"9130"
+			],
+			"Notes": [
+				"INFO:  3 either, age 0 - 12.",
+				"INFO:  Calculated 3 slot(s) total for resource home.",
+				"INFO:  Total of 1 slot(s) in use.",
+				"PASS:  Placement would succeed for girl age 10."
+			]
+		},
+		{
+			"ResourceType": "Foster Home",
+			"Distance": "49.44",
+			"ResourceName": "CLAY, ETHEL M",
+			"FamStr": "SF",
+			"Address": "313 PISGAH BOTTOM RD, CANTON, MS 39046",
+			"PhoneList": [
+				{
+					"Type": "CELL",
+					"Number": "(601)209-3530"
+				},
+				{
+					"Type": "CELL",
+					"Number": "(601)209-3530"
+				},
+				{
+					"Type": "HOME",
+					"Number": "(601)859-9086"
+				}
+			],
+			"County": "Madison",
+			"AvailBoy": "0",
+			"AvailGirl": "0",
+			"AvailEither": "4",
+			"PriorAne": "True",
+			"Services": [
+				"9020",
+				"9210"
+			],
+			"Notes": [
+				"INFO:  5 either, age 0 - 19.",
+				"INFO:  Calculated 5 slot(s) total for resource home.",
+				"INFO:  Total of 1 slot(s) in use.",
+				"PASS:  Placement would succeed for girl age 10."
+			]
+		},
+		{
+			"ResourceType": "Foster Home",
+			"Distance": "49.59",
+			"ResourceName": "JOHNSON, MICHAEL",
+			"FamStr": "",
+			"Address": "517 ARBOR DR, MADISON, MS 39110",
+			"PhoneList": [
+				{
+					"Type": "CELL",
+					"Number": "(601)573-8659"
+				}
+			],
+			"County": "Madison",
+			"AvailBoy": "0",
+			"AvailGirl": "0",
+			"AvailEither": "1",
+			"PriorAne": "False",
+			"Services": [
+				"9020",
+				"9130"
+			],
+			"Notes": [
+				"INFO:  2 either, age 1 - 12.",
+				"INFO:  Calculated 2 slot(s) total for resource home.",
+				"INFO:  Total of 1 slot(s) in use.",
+				"PASS:  Placement would succeed for girl age 10."
+			]
+		},
+		{
+			"ResourceType": "Foster Home",
+			"Distance": "49.61",
+			"ResourceName": "BISHOP, MAGGIE",
+			"FamStr": "",
+			"Address": "106 STAPLETON DRIVE, CANTON, MS 39046",
+			"PhoneList": [
+				{
+					"Type": "CELL",
+					"Number": "(662)386-3083"
+				},
+				{
+					"Type": "CNTCT",
+					"Number": "(314)749-1149"
+				}
+			],
+			"County": "Madison",
+			"AvailBoy": "0",
+			"AvailGirl": "1",
+			"AvailEither": "0",
+			"PriorAne": "True",
+			"Services": [
+				"9020"
+			],
+			"Notes": [
+				"INFO:  2 girls, age 7 - 16.",
+				"INFO:  Calculated 2 slot(s) total for resource home.",
+				"INFO:  Total of 1 slot(s) in use.",
+				"PASS:  Placement would succeed for girl age 10."
+			]
+		},
+		{
+			"ResourceType": "Foster Home",
+			"Distance": "49.82",
+			"ResourceName": "HATHORN, MORICE D",
+			"FamStr": "",
+			"Address": "18380 HIGHWAY 15  N, LOUISVILLE, MS 39339",
+			"PhoneList": [
+				{
+					"Type": "CELL",
+					"Number": "(662)803-2568"
+				},
+				{
+					"Type": "CNTCT",
+					"Number": "(662)803-6305"
+				},
+				{
+					"Type": "WORK",
+					"Number": "(662)773-9418"
+				}
+			],
+			"County": "Winston",
+			"AvailBoy": "0",
+			"AvailGirl": "1",
+			"AvailEither": "0",
+			"PriorAne": "True",
+			"Services": [
+				"9020",
+				"9130"
+			],
+			"Notes": [
+				"INFO:  1 girls, age 2 - 18.",
+				"INFO:  Calculated 1 slot(s) total for resource home.",
+				"INFO:  Total of 1 slot(s) in use.",
+				"PASS:  Placement would succeed for girl age 10."
+			]
+		},
+		{
+			"ResourceType": "Foster Home",
+			"Distance": "49.91",
+			"ResourceName": "OWEN, AMANDA",
+			"FamStr": "",
+			"Address": "39 MAPLE ST, FLORENCE, MS 39073",
+			"PhoneList": [
+				{
+					"Type": "CELL",
+					"Number": "(601)566-8716"
+				},
+				{
+					"Type": "CELL",
+					"Number": "(601)278-8951"
+				}
+			],
+			"County": "Rankin",
+			"AvailBoy": "0",
+			"AvailGirl": "0",
+			"AvailEither": "1",
+			"PriorAne": "False",
+			"Services": [
+				"9020",
+				"9130"
+			],
+			"Notes": [
+				"INFO:  3 either, age 2 - 18.",
+				"INFO:  Calculated 3 slot(s) total for resource home.",
+				"INFO:  Total of 2 slot(s) in use.",
+				"PASS:  Placement would succeed for girl age 10."
+			]
+		}
+	]
+}

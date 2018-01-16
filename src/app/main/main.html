@@ -1,9 +1,119 @@
-<div>
   <div>
-    <acme-navbar ></acme-navbar>
-  </div>  
-  <div >
-    <search-tabs></search-tabs>
-  </div>  
-</div>
+    <acme-navbar creation-date="main.creationDate"></acme-navbar>
+  </div>
+   <nav id="sidebar">
+        <div id="dismiss">
+            <i class="">Close</i>
+        </div>
 
+      <form class="form" role="form" name="advancedSearchForm" novalidate="">
+        <div class="options">
+          <label >Distance</label>
+          <input type="number" name="distance" class="form-control" id="distance" ng-model="distanceField" min="0" max="370" ng-pattern="/^[0-9]*$/">
+          <span ng-messages="advancedSearchForm.distance.$error" class="has-error ng-scope ng-active "
+             ng-if="advancedSearchForm.distance.$invalid || advancedSearchForm.distance.$dirty">
+            <span ng-message="min"><span>Please enter distance between 0 and 370</span></span>
+            <span ng-message="max"><span>Please enter distance between 0 and 370</span></span> 
+            <span ng-message="pattern"><span>Invalid pattern</span></span>
+          </span> 
+        </div>
+
+        <div class="options">
+          <label>Region</label>
+          <select class="form-control" id="region" name="region" ng-model="regionType">
+            <option value="" ng-selected="true" ng-disabled="true">Please Select</option>
+            <option ng-repeat="option in regions track by $index" ng-value="option.RegionCode">{{option.RomanValue}}</option>
+          </select>
+        </div>
+
+        <div class="options">
+          <label>Special Needs</label>
+          <select class="form-control" name="needs" id="needs" ng-model="specialNeeds">
+            <option class="form-control" value="" >---Please select---</option>
+            <option ng-repeat="need in main.advancedOptions.Disabilities" value="Disabilities">{{need}}</option> 
+          </select>
+        </div>
+
+        <div class="options">
+          <label>Type Of Service</label>
+          <select class="form-control" name="service" id="service" ng-model="typeOfService">
+            <option class="form-control" value="" >---Please select---</option> 
+          </select>
+        </div>
+
+        <div class="options">
+          <label>
+            Current Children in the Home
+          </label>
+          <div class="col-sm-8">
+            <label>
+              <h5>Gender</h5>
+            </label>
+            <select class="form-control" name="gender" id="gender" ng-model="gender">
+              <option class="form-control" value="" >---Please select---</option>
+              <option class="form-control" value="either" >Either</option>
+              <option class="form-control" value="female" >Female</option>
+              <option class="form-control" value="male" >Male</option> 
+            </select>
+          </div>
+          <div class="col-sm-6">
+            <label>
+               <h5>Age</h5>
+            </label>
+            <input type="number" name="fromAge" class="form-control" id="fromAge" ng-model="fromAge" min="0" max="21" ng-pattern="/^[0-9]*$/">
+            <p>To</p>
+            <input type="number" name="toAge" class="form-control" id="toAge" ng-model="toAge" min="0" max="21" ng-pattern="/^[0-9]*$/">
+          </div>
+        </div>
+        <div>
+          <input type="button" value="Apply" class="btn btn-lg btn-primary btn-block" ng-model="submit" ng-click="" id="apply" name="btnApply"/>
+        </div>
+      </form>
+    </nav>
+
+    <nav class="navbarAdvanced navbar-default">
+      <div class="container-fluid">
+          <div class="navbar-header pull-right">
+              <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn pull-right"> 
+                  <span>Advanced Search</span>
+              </button>
+          </div>
+      </div>
+    </nav>
+
+
+  <!-- <div class="jumbotron text-center">
+    <h1>'Allo, 'Allo!</h1>
+    <p class="lead">
+      <img src="assets/images/yeoman.png" alt="I'm Yeoman"><br>
+      Always a pleasure scaffolding your apps.
+    </p>
+    <p class="animated infinite" ng-class="main.classAnimation">
+      <button type="button" class="btn btn-lg btn-success" ng-click="main.showToastr()">Splendid Toastr</button>
+    </p>
+    <p>
+      With ♥ thanks to the contributions of<acme-malarkey extra-values="['Yeoman', 'Gulp', 'Angular']"></acme-malarkey>
+    </p>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-6 col-md-4" ng-repeat="awesomeThing in main.awesomeThings | orderBy:'rank'">
+      <div class="thumbnail">
+        <img class="pull-right" ng-src="assets/images/{{ awesomeThing.logo }}" alt="{{ awesomeThing.title }}">
+        <div class="caption">
+          <h3>{{ awesomeThing.title }}</h3>
+          <p>{{ awesomeThing.description }}</p>
+          <p><a ng-href="{{awesomeThing.url}}">{{ awesomeThing.url }}</a></p>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+
+  <div>
+    <search-tabs></search-tabs>
+  </div> 
+  
+  
+
+  

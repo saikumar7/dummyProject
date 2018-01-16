@@ -1,16 +1,14 @@
 
 @media (min-width: $screen-sm-min) {
-    section {
-        width: 90%;
-    }
-    .sidebar {
+		
+	.sidebar {
 	    position: fixed;
-	    top: 60px;
+	    top: 61px;
 	    bottom: 0;
 	    height:100%;
 	    left: 0;
 	    z-index: 1000;
-	    padding: 20px;
+	    padding-left: 20px;
 	    overflow-x: auto;
 	    overflow-y: auto;
 	    border-right: 1px solid #eee;
@@ -18,11 +16,11 @@
 }
 
 @media (max-width: $screen-xs-max) { 
-    .sidebar {
-         margin-top: 65px;
-         box-shadow: inset 0 1px 1px rgba(128, 128, 128, 0.075), 0 0 8px rgba(128, 128, 128, 0.6);
-    }
- }
+   .sidebar {
+   	 margin-top: 65px;
+   	 box-shadow: inset 0 1px 1px rgba(128, 128, 128, 0.075), 0 0 8px rgba(128, 128, 128, 0.6);
+   }
+}
 
 .bg-faded {
     background-color: #f7f7f7;
@@ -30,18 +28,22 @@
 
 .customPills {
     > li {
-        > a {
+          > a {
             &:hover,
             &:focus {
               color: #ffffff;
               text-decoration: none;
               background-color: rgb(118, 121, 129);
-        }
+            }
+            
         @media (max-width: $screen-xs-max) {
             text-align: center;
             text-align: -webkit-center; 
             text-align: -moz-center;
+            }
         }
-    }
- }
+
+ 	}
 }
+
+

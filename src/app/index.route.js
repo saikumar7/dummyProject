@@ -2,7 +2,7 @@
   'use strict';
 
   angular
-    .module('placementMatchingTool')
+    .module('testProject')
     .config(routerConfig);
 
   /** @ngInject */

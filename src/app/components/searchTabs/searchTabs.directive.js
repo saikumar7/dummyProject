@@ -2,7 +2,7 @@
   'use strict';
 
   angular
-    .module('placementMatchingTool')
+    .module('testProject')
     .directive('searchTabs', searchTabs);
 
   /** @ngInject */
@@ -21,17 +21,30 @@
     return directive;
 
     /** @ngInject */
-    function searchTabsController() {
-      var vm = this;
-      vm.tab = 2;
+    function searchTabsController(setTabsService, $scope) {
 
-      vm.isSet = function(checkTab) {
-        return vm.tab === checkTab;
-      };
+          var vm = this;
+          vm.tab = 2;
 
-      vm.setTab = function(activeTab) {
-        vm.tab = activeTab;
-      };
+          vm.Set = function(checkTab) {
+            return setTabsService.isSet(checkTab);
+          };
+
+          vm.Tab = function(activeTab) {
+            return setTabsService.setTab(activeTab);
+          };
+
+          vm.clear = function () {
+            $scope.$broadcast('angucomplete-alt:clearInput');
+          }
+
+          // vm.isSet = function(checkTab) {
+          //   return vm.tab === checkTab;
+          // };
+
+          // vm.setTab = function(activeTab) {
+          //   vm.tab = activeTab;
+          // };
     }
   }
 

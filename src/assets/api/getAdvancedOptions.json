@@ -1,0 +1,235 @@
+
+// http://10.15.66.88/CCWISRest/Placement/DropDownData;
+
+{
+	"Regions": [
+		{
+			"RegionCode": "21",
+			"NumberValue": "1-N",
+			"RomanValue": "I-N"
+		},
+		{
+			"RegionCode": "22",
+			"NumberValue": "1-S",
+			"RomanValue": "I-S"
+		},
+		{
+			"RegionCode": "19",
+			"NumberValue": "2-E",
+			"RomanValue": "II-E"
+		},
+		{
+			"RegionCode": "20",
+			"NumberValue": "2-W",
+			"RomanValue": "II-W"
+		},
+		{
+			"RegionCode": "12",
+			"NumberValue": "3-N",
+			"RomanValue": "III-N"
+		},
+		{
+			"RegionCode": "11",
+			"NumberValue": "3-S",
+			"RomanValue": "III-S"
+		},
+		{
+			"RegionCode": "17",
+			"NumberValue": "4-N",
+			"RomanValue": "IV-N"
+		},
+		{
+			"RegionCode": "18",
+			"NumberValue": "4-S",
+			"RomanValue": "IV-S"
+		},
+		{
+			"RegionCode": "15",
+			"NumberValue": "5-E",
+			"RomanValue": "V-E"
+		},
+		{
+			"RegionCode": "16",
+			"NumberValue": "5-W",
+			"RomanValue": "V-W"
+		},
+		{
+			"RegionCode": "7",
+			"NumberValue": "6",
+			"RomanValue": "VI"
+		},
+		{
+			"RegionCode": "14",
+			"NumberValue": "7-E",
+			"RomanValue": "VII-E"
+		},
+		{
+			"RegionCode": "23",
+			"NumberValue": "7-C",
+			"RomanValue": "VII-C"
+		},
+		{
+			"RegionCode": "13",
+			"NumberValue": "7-W",
+			"RomanValue": "VII-W"
+		}
+	],
+	"Disabilities": [
+		[
+			{
+				"DEVDS": "Developmental Disability"
+			},
+			{
+				"EMOTD": "Emotional Disturbance"
+			},
+			{
+				"HERIM": "Hearing Impaired"
+			},
+			{
+				"MEDCO": "Medical Conditions"
+			},
+			{
+				"MENDS": "Mental Disability"
+			},
+			{
+				"PHYDS": "Physical Disability"
+			},
+			{
+				"VISIM": "Visually Impaired"
+			}
+		]
+	],
+	"ServiceTypes": [
+		[
+			{
+				"9010": "Acute Care"
+			},
+			{
+				"9020": "Foster Home"
+			},
+			{
+				"9030": "Residential Treatment"
+			},
+			{
+				"9040": "Emergency Foster Home"
+			},
+			{
+				"9050": "ICFMR"
+			},
+			{
+				"9060": "Therapeutic Foster Home"
+			},
+			{
+				"9070": "Maternity Home"
+			},
+			{
+				"9080": "Foster/Adopt Foster Home"
+			},
+			{
+				"9090": "Nursing Home"
+			},
+			{
+				"9100": "Chemically Dependent Group"
+			},
+			{
+				"9110": "Adoption Unit Foster Home"
+			},
+			{
+				"9120": "Specialized Residential School"
+			},
+			{
+				"9130": "Adoptive Home (Domestic)"
+			},
+			{
+				"9140": "Medical Treatment Group Home"
+			},
+			{
+				"9150": "Respite Foster Home"
+			},
+			{
+				"9170": "Medical/Treatment Foster Home"
+			},
+			{
+				"9190": "Relative Foster Home"
+			},
+			{
+				"9210": "Teenage Parent Foster Home"
+			},
+			{
+				"9230": "Contract Facility - Non MDHS"
+			},
+			{
+				"9250": "Group Home"
+			},
+			{
+				"9260": "Therapeutic Group Home"
+			},
+			{
+				"9270": "Licensed Facility"
+			},
+			{
+				"9275": "ICPC - Incoming"
+			},
+			{
+				"9280": "ICPC - Outgoing"
+			},
+			{
+				"9290": "Child-specific"
+			},
+			{
+				"9300": "Runaway"
+			},
+			{
+				"9305": "CO NonLicensed Det/Trng School"
+			},
+			{
+				"9310": "Own Home"
+			},
+			{
+				"9315": "CO NonLicensed Shelter"
+			},
+			{
+				"9320": "Child Placing Agency"
+			},
+			{
+				"9330": "Emergency Shelter"
+			},
+			{
+				"9340": "Residential Child Caring Facil"
+			},
+			{
+				"9350": "Institution"
+			},
+			{
+				"9360": "Supervised Indep. Living"
+			},
+			{
+				"9370": "Adoption (International)"
+			},
+			{
+				"9375": "CO Non Licensed Relative"
+			},
+			{
+				"9380": "CO Non Licensed Non-Relative"
+			},
+			{
+				"9385": "Interim Placement"
+			},
+			{
+				"9390": "Own Home - Mother"
+			},
+			{
+				"9395": "Own Home- Father"
+			},
+			{
+				"9400": "Own Home- Parents"
+			},
+			{
+				"9405": "Own Home- Other Caretaker"
+			},
+			{
+				"9410": "Expedited Pending Relative Res"
+			}
+		]
+	]
+}
