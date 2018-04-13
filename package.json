@@ -1,9 +1,13 @@
 {
-  "name": "placementMatchingTool",
+  "name": "testProject",
   "version": "0.0.0",
-  "dependencies": {},
+  "dependencies": {
+    "angucomplete-alt": "^3.0.0"
+  },
   "scripts": {
-    "test": "gulp test"
+    "test": "gulp test",
+    "start": "gulp serve",
+    "build": "gulp build"
   },
   "devDependencies": {
     "estraverse": "~4.1.0",

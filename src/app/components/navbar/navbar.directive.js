@@ -14,18 +14,29 @@
           creationDate: '='
       },
       controller: NavbarController,
-      controllerAs: 'vm',
+      controllerAs: 'nav',
       bindToController: true
     };
 
     return directive;
 
     /** @ngInject */
-    function NavbarController(moment) {
+    function NavbarController(setTabsService, $rootScope, $scope) {
       var vm = this;
+      vm.tab = 2;
+      $scope.isCollapsed = true;
 
-      // "vm.creationDate" is available by directive option "bindToController: true"
-      vm.relativeDate = moment(vm.creationDate).fromNow();
+      vm.set = function (checkTab) {
+        return setTabsService.isSet(checkTab);
+      };
+
+      vm.tab = function (activeTab) {
+        return setTabsService.setTab(activeTab);
+      };
+
+      vm.clear = function () {
+        $scope.$broadcast('clickTab');
+      };
     }
   }
 

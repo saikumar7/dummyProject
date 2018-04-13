@@ -1,119 +1,150 @@
-  <div>
-    <acme-navbar creation-date="main.creationDate"></acme-navbar>
+<div>
+  <acme-navbar creation-date="main.creationDate"></acme-navbar>
+</div>
+
+<nav id="sidebar" class="">
+  <div id="dismiss">
+    <i class="fa fa-times fa-lg" aria-hidden="true"></i>
   </div>
-   <nav id="sidebar">
-        <div id="dismiss">
-            <i class="">Close</i>
-        </div>
 
-      <form class="form" role="form" name="advancedSearchForm" novalidate="">
-        <div class="options">
-          <label >Distance</label>
-          <input type="number" name="distance" class="form-control" id="distance" ng-model="distanceField" min="0" max="370" ng-pattern="/^[0-9]*$/">
-          <span ng-messages="advancedSearchForm.distance.$error" class="has-error ng-scope ng-active "
-             ng-if="advancedSearchForm.distance.$invalid || advancedSearchForm.distance.$dirty">
-            <span ng-message="min"><span>Please enter distance between 0 and 370</span></span>
-            <span ng-message="max"><span>Please enter distance between 0 and 370</span></span> 
-            <span ng-message="pattern"><span>Invalid pattern</span></span>
-          </span> 
-        </div>
+  <form class="form" role="form" name="advancedSearchForm" ng-submit="main.onAdvanceSearch($event, main.advSearch)" novalidate>
+    <div class="options col-sm-12">
+      <h4>
+        Distance (miles)
+      </h4>
+      <rzslider rz-slider-model="main.advSearch.maxdistance" rz-slider-options="main.slider.options">
+      </rzslider>
+      <!-- <input type="number" name="distance" class="form-control" id="distance" ng-model="main.advSearch.maxdistance" min="0" max="370"
+        ng-pattern="/^[0-9]*$/" ng-show="showDistance">
+      <span ng-messages="advancedSearchForm.distance.$error" class="has-error ng-scope ng-active " ng-if="advancedSearchForm.distance.$invalid || advancedSearchForm.distance.$dirty">
+        <span ng-message="min">
+          <span>Please enter distance between 0 and 370</span>
+        </span>
+        <span ng-message="max">
+          <span>Please enter distance between 0 and 370</span>
+        </span>
+        <span ng-message="pattern">
+          <span>Invalid pattern</span>
+        </span>
+      </span> -->
+    </div>
+    <hr>
+    <div class="options col-sm-12">
+      <h4>
+        Region
+        <i class="fa fa-chevron-up rotate pull-right" aria-hidden="true" ng-click="showRegion = !showRegion"></i>
+      </h4>
+      <select class="form-control" id="region" name="region" ng-model="main.advSearch.region" ng-show="showRegion" ng-change="main.clearDistance()">
+        <option value="" ng-selected="true">Please Select</option>
+        <option ng-value="all">All</option>
+        <option ng-repeat="option in main.regions track by $index" ng-value="option.RegionCode">{{option.RomanValue}}</option>
+      </select>
+    </div>
+    <hr>
 
-        <div class="options">
-          <label>Region</label>
-          <select class="form-control" id="region" name="region" ng-model="regionType">
-            <option value="" ng-selected="true" ng-disabled="true">Please Select</option>
-            <option ng-repeat="option in regions track by $index" ng-value="option.RegionCode">{{option.RomanValue}}</option>
-          </select>
-        </div>
+    <div class="options col-sm-12">
+      <h4>
+        Special Needs
+        <i class="fa fa-chevron-up rotate pull-right" aria-hidden="true" ng-click="showSpecialNeeds = !showSpecialNeeds"></i>
+      </h4>
+      <!-- <div ng-dropdown-multiselect=""
+            options="main.disabilities"
+            selected-model="main.selected_baselines"
+            extra-settings="main.selected_baseline_settings"
+            checkboxes = "true">
+      </div> -->
 
-        <div class="options">
-          <label>Special Needs</label>
-          <select class="form-control" name="needs" id="needs" ng-model="specialNeeds">
-            <option class="form-control" value="" >---Please select---</option>
-            <option ng-repeat="need in main.advancedOptions.Disabilities" value="Disabilities">{{need}}</option> 
-          </select>
-        </div>
+  
 
-        <div class="options">
-          <label>Type Of Service</label>
-          <select class="form-control" name="service" id="service" ng-model="typeOfService">
-            <option class="form-control" value="" >---Please select---</option> 
-          </select>
-        </div>
+      <!-- <select class="form-control" id="specialNeeds" name="specialNeeds" selected-model="main.advSearch.needs" ng-show="showSpecialNeeds">
+        <option value="" ng-selected="true">Please Select</option>
+        <option ng-repeat="disablity in main.disabilities" ng-value="disablity.value">{{disablity.key}}</option>
+      </select> -->
+      <ui-select multiple ng-model="main.advSearch.needs" theme="select2" ng-show="showSpecialNeeds">
+        <ui-select-match placeholder="Select needs...">{{$item.key}}</ui-select-match>
+        <ui-select-choices repeat="disability.value as disability in main.disabilities  | filter: $select.search">
+          <div ng-bind-html="disability.key | highlight: $select.search"></div>
+        </ui-select-choices>
+      </ui-select>
+    </div>
+    <hr>
 
-        <div class="options">
-          <label>
-            Current Children in the Home
-          </label>
-          <div class="col-sm-8">
-            <label>
-              <h5>Gender</h5>
-            </label>
-            <select class="form-control" name="gender" id="gender" ng-model="gender">
-              <option class="form-control" value="" >---Please select---</option>
-              <option class="form-control" value="either" >Either</option>
-              <option class="form-control" value="female" >Female</option>
-              <option class="form-control" value="male" >Male</option> 
-            </select>
-          </div>
-          <div class="col-sm-6">
-            <label>
-               <h5>Age</h5>
-            </label>
-            <input type="number" name="fromAge" class="form-control" id="fromAge" ng-model="fromAge" min="0" max="21" ng-pattern="/^[0-9]*$/">
-            <p>To</p>
-            <input type="number" name="toAge" class="form-control" id="toAge" ng-model="toAge" min="0" max="21" ng-pattern="/^[0-9]*$/">
-          </div>
-        </div>
-        <div>
-          <input type="button" value="Apply" class="btn btn-lg btn-primary btn-block" ng-model="submit" ng-click="" id="apply" name="btnApply"/>
-        </div>
-      </form>
-    </nav>
+    <div class="options col-sm-12">
+      <h4>
+        Type Of Service
+        <i class="fa fa-chevron-up rotate pull-right" aria-hidden="true" ng-click="showServices = !showServices"></i>
+      </h4>
+      <select class="form-control" id="services" name="services" ng-model="main.advSearch.service" ng-show="showServices">
+        <option value="" ng-selected="true">Please Select</option>
+        <option ng-repeat="service in main.services" ng-value="service.value">{{service.key}}</option>
+      </select>
+    </div>
+    <hr>
 
-    <nav class="navbarAdvanced navbar-default">
-      <div class="container-fluid">
-          <div class="navbar-header pull-right">
-              <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn pull-right"> 
-                  <span>Advanced Search</span>
-              </button>
-          </div>
+    <div class="options col-sm-12">
+      <h4>
+        Current Children in the Home
+        <i class="fa fa-chevron-up rotate pull-right" aria-hidden="true" ng-click="showChlidren = !showChlidren"></i>
+      </h4>
+      <div class="col-sm-9" ng-show="showChlidren">
+        <label>
+          <h5>Gender</h5>
+        </label>
+        <select class="form-control" name="gender" id="gender" ng-model="main.advSearch.gender">
+          <option value="" ng-selected="true" ng-disabled="true">Please Select</option>
+          <option class="form-control" value="either">Either</option>
+          <option class="form-control" value="female">Female</option>
+          <option class="form-control" value="male">Male</option>
+        </select>
       </div>
-    </nav>
-
-
-  <!-- <div class="jumbotron text-center">
-    <h1>'Allo, 'Allo!</h1>
-    <p class="lead">
-      <img src="assets/images/yeoman.png" alt="I'm Yeoman"><br>
-      Always a pleasure scaffolding your apps.
-    </p>
-    <p class="animated infinite" ng-class="main.classAnimation">
-      <button type="button" class="btn btn-lg btn-success" ng-click="main.showToastr()">Splendid Toastr</button>
-    </p>
-    <p>
-      With ♥ thanks to the contributions of<acme-malarkey extra-values="['Yeoman', 'Gulp', 'Angular']"></acme-malarkey>
-    </p>
-  </div>
-
-  <div class="row">
-    <div class="col-sm-6 col-md-4" ng-repeat="awesomeThing in main.awesomeThings | orderBy:'rank'">
-      <div class="thumbnail">
-        <img class="pull-right" ng-src="assets/images/{{ awesomeThing.logo }}" alt="{{ awesomeThing.title }}">
-        <div class="caption">
-          <h3>{{ awesomeThing.title }}</h3>
-          <p>{{ awesomeThing.description }}</p>
-          <p><a ng-href="{{awesomeThing.url}}">{{ awesomeThing.url }}</a></p>
-        </div>
+      <div class="col-sm-9" ng-show="showChlidren">
+        <label>
+          <h5>Age</h5>
+        </label>
+        <input type="number" name="fromAge" class="form-control" id="fromAge" ng-model="main.advSearch.fromAge" min="0" max="21"
+          ng-pattern="/^[0-9]*$/">
+        <p>To</p>
+        <input type="number" name="toAge" class="form-control" id="toAge" ng-model="main.advSearch.toAge" min="0" max="21" ng-pattern="/^[0-9]*$/">
       </div>
     </div>
-  </div> -->
+    <div class="options col-sm-12">
+      <input type="submit" value="Apply" class="btn btn-lg btn-primary btn-block apply-btn" ng-disabled="advancedSearchForm.$invalid"
+        id="apply" name="btnApply" />
+    </div>
+  </form>
+</nav>
 
-
-  <div>
-    <search-tabs></search-tabs>
-  </div> 
-  
-  
-
-  
+<nav class="navbar-advanced navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <!-- <div class=" navbar-header" id="bs-example-navbar-collapse-6">
+      <ul id="sideNav" class="nav nav-tabs custom-pills">
+        <li class="nav-item " ng-class="{active:main.set(1)}">
+          <a href="" class="nav-link" ng-click="main.tab(1); main.clear()">
+            <strong>Address</strong>
+          </a>
+        </li>
+        <li class="nav-item" ng-class="{active:main.set(2)}">
+          <a href="" class="nav-link" ng-click="main.tab(2); main.clear()">
+            <strong>Child's Name</strong>
+          </a>
+        </li>
+      </ul>
+    </div> -->
+    <div class=" pull-right">
+      <button type="button" id="info" class="btn btn-default navbar-btn btn-alignment" uib-tooltip="Business Rules" tooltip-placement="bottom"
+        ng-click="main.open('lg')">
+        <span ng-style="{'color': '#147E8B', 'font-size': '1.4em'}">
+          <i class="fa fa-info" aria-hidden="true"></i>
+        </span>
+      </button>
+      <button type="button" id="sidebarCollapse" class="btn navbar-btn btn-advanced-search pull-right">
+        <span class="overlay"></span>
+        <span>Advanced Search</span>
+      </button>
+    </div>
+  </div>
+</nav>
+<div>
+  <!-- <search-tabs></search-tabs> -->
+  <search-by-name></search-by-name>
+</div>

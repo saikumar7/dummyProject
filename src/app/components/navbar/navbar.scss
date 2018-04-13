@@ -1,4 +1,4 @@
-.acme-navbar-text{
+.acme-navbar-text {
   color: white;
 }
 
@@ -6,24 +6,86 @@ a {
   color: black;
 }
 
-h1 {
-  font-size: 2em;
-  margin: 0;
-  line-height: 1.25em;
+img {
+  width: 145px;
+  transform-origin: center center;
+  transition: all .58s cubic-bezier(.19, 1, .22, 1);
 }
 
-.customNav {
+@media (max-width: $screen-xs-max) {
+  img {
+    width: 14vh;
+  }
+}
+
+@media (max-width: $screen-sm-max) {
+  h3 {
+    font-size: 1.5vmax;
+  }
+}
+
+.navbar-default .navbar-brand {
+  color: #ffffff !important;
+  font-size: 24px;
+  &:hover,
+  &:focus {
+    color: #1f1b1b !important;
+  }
+}
+
+.nav.navbar-nav {
+  >li >a {
+    color: #ffffff !important;
+    font-weight: bold;
+    &:hover,
+    &:focus {
+      color: #1f1b1b !important;
+      background-color: $navbar-default-link-hover-bg;
+    }
+  }
+  > .active > a {
+    &,
+    &:hover,
+    &:focus {
+      color: #ffffff !important;
+      background-color: #061D42;
+      //background-color: darken(#3367d6, 6.5%) !important;
+    }
+  }
+}
+
+.nav-custom {
+  background: linear-gradient(90deg, #3367d6 0%, #417bfa 49.83%, #3367d6 100%);
+  box-shadow: 1px 1px 1px rgba(23, 23, 23, 0.3);
+  border-color: #417bfa;
+}
+
+.navbar-fixed-top > li{
+  z-index: 10000;
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: transparent;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #ffffff;
+}
+.custom-nav {
   position: fixed;
   overflow: hidden;
   top: 0;
   left: 0;
   height: 60px;
   z-index: 9999;
-  width: 100%;
-  //background-color: #34405F;
-  background-color: #2F536F;
-  border-color: #2F536F;
+  width: 100%; //background-color: #34405F;
+  //background-color: #2F536F;
+  background: linear-gradient(90deg, #3367d6 0%, #417bfa 49.83%, #3367d6 100%);
+  box-shadow: 1px 1px 1px rgba(23, 23, 23, 0.3);
+  border-color: #417bfa;
   border-radius: 0px;
   text-align: center;
   font-family: arial;
 }
+

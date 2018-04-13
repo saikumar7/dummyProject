@@ -1,245 +1,358 @@
+<!-- <div class="content col-sm-9 offset-sm-3 col-md-10 offset-md-2 col-lg-10 col-xl-8"> -->
+<div class="content container-fluid" ng-hide="sbn.set(3)">
+  <div class="container">
 
-<div class="content col-sm-9 offset-sm-3 col-md-10 offset-md-2 col-lg-10 col-xl-8">
-    <form class="form" role="form" name="byNameForm" novalidate="">    
-      <div class="col-sm-12" ng-hide="sbn.Set(1)">
-        <div class="form-group col-sm-7 col-md-5" >
-          <label for="ChildName" ><h4 class="required">Child's Name</h4></label>
-          <angucomplete-alt id="childname"              
-                placeholder="Enter Child's name"
-                pause="100"
-                selected-object="selectedChild"
-                local-data="sbn.children"
-                local-search="localSearch"
-                title-field="FirstName,LastName"
-                search-fields = "FirstName,LastName,FullName"
-                description-field = "DOB"
-                minlength="1"
-                input-class="form-control form-control-small"
-                override-suggestions="true"
-                input-name="childName"
-                field-required="true"
-                auto-match="true"
-                ng-model = "selectedChild.originalObject.FullName"
-                match-class="highlight"/>
+    <form class="form" role="form" name="byNameForm" novalidate="">
+      <div class="col-sm-12" ng-hide="sbn.set(1)">
+        <div class="col-sm-4 form-group">
+          <label for="filter">
+            <h4>Filter</h4>
+          </label>
+          <select name="filter" id="filter" class="form-control" ng-model="filter.user" ng-change="sbn.getChildrenData()">
+            <option ng-value="all">All</option>
+            <option value="" ng-selected="true">My Caseload</option>
+            <option ng-repeat="worker in sbn.activeWorkers | orderBy:'firstName'" ng-value="worker.Email">{{worker.FirstName}} {{worker.LastName}}</option>
+          </select>
         </div>
-        <div class="form-group col-sm-4 col-md-3 col-lg-2">
-          <label for="DOB"><h4 >Date of Birth</h4></label>       
-          <input class="form-control"  name="dob" id="dob" placeholder="mm/dd/yyyy" ng-pattern="/^([0-9]{2}[-/][0-9]{2}[-/][0-9]{4})|([0-9]{8})/" 
-          ng-model = "selectedChild.originalObject.DOB" ng-class="{'borderRed':byNameForm.dob.$dirty && byNameForm.dob.$invalid}" > 
-          <span ng-messages="byNameForm.dob.$error" class="has-error ng-scope ng-active "
-            ng-if="byNameForm.dob.$submitted || byNameForm.dob.$Invalid || byNameForm.dob.$dirty  ">
-            <span ng-message="pattern"><span>Should be in mm/dd/yyyy</span></span>
-          </span>     
+        <div class="col-sm-12 has-error" ng-if="!sbn.children.length">
+          {{sbn.noChildren}}
+        </div>
+      </div>
+      <div class="col-sm-12" ng-hide="sbn.set(1)">
+        <div class="form-group col-sm-7">
+          <label for="ChildName">
+            <h4 class="required">Child's Name</h4>
+          </label>
+          <angucomplete-alt id="childname" placeholder="Enter Child's name" pause="100" selected-object="selectedChild" local-data="sbn.children"
+            local-search="localSearch" title-field="FirstName,LastName" search-fields="FirstName,LastName,Name" description-field="DOB"
+            minlength="1" input-class="form-control form-control-small" override-suggestions="true" input-name="childName"
+            field-required="true" auto-match="true" ng-model="selectedChild.originalObject.Name" match-class="highlight" />
+        </div>
+        <div class="form-group col-sm-4">
+          <label for="DOB">
+            <h4>Date of Birth</h4>
+          </label>
+          <input class="form-control" name="dob" id="dob" placeholder="mm/dd/yyyy" ng-pattern="/^([0-9]{2}[-/][0-9]{2}[-/][0-9]{4})|([0-9]{8})/"
+            ng-model="selectedChild.originalObject.DOB" ng-class="{'border-red':byNameForm.dob.$dirty && byNameForm.dob.$invalid}">
+          <span ng-messages="byNameForm.dob.$error" class="has-error ng-scope ng-active " ng-if="byNameForm.dob.$submitted || byNameForm.dob.$Invalid || byNameForm.dob.$dirty  ">
+            <span ng-message="pattern">
+              <span>Should be in mm/dd/yyyy</span>
+            </span>
+          </span>
         </div>
         <input type="hidden" name="childid" ng-model="selectedChild.originalObject.PersonId" />
       </div>
     </form>
-    <form class="form" role="form" name="searchForm" novalidate=""> 
+
+    <form class="form" role="form" name="searchForm" novalidate="">
+
       <div class="col-sm-12">
-        <div class="form-group col-sm-7 col-md-5" >
-          <label for="Address" ><h4 class="required">Address at Custody</h4></label>        
-            <input class="form-control" name="address" id="Address" placeholder="Address" ng-model ="selectedChild.originalObject.AddrLine1"
-            ng-class="{'borderRed':searchForm.address.$dirty && searchForm.address.$invalid}" required=""
-            ng-disabled= "selectedChild.originalObject.FullName.length && !(selectedChild.originalObject.AddrLine1 && selectedChild.originalObject.AddrCity && selectedChild.originalObject.AddrState)">
-            <span ng-messages="searchForm.address.$error" class="has-error ng-scope ng-active "
-              ng-if="searchForm.$submitted || searchForm.address.$Invalid || searchForm.address.$dirty">
-              <span ng-message="required"><span>Address Required</span></span>
+        <div class="form-group col-sm-7 ">
+          <label for="Address">
+            <h4 class="required">Address at Removal</h4>
+          </label>
+          <input class="form-control" name="address" id="Address" placeholder="Address" ng-model="selectedChild.originalObject.AddrLine1"
+            ng-class="{'border-red':searchForm.address.$dirty && searchForm.address.$invalid}" required="" ng-disabled="selectedChild.originalObject.FullName.length && !(selectedChild.originalObject.AddrLine1 && selectedChild.originalObject.AddrCity && selectedChild.originalObject.AddrState)"
+            ng-pattern="/^(?!.*(\b(?:p\.?\s*o\.?|post\s+office)\s+box\b))/i">
+          <!-- /^(?!.*(\b(?:p\.?\s*o\.?|post\s+office)\s+box\b))/i -->
+          <!-- /^(?!.*((#\d+)|((box|bin)[-. \/\\]?\d+)|(.*p[ \.]? ?(o|0)[-. \/\\]? *-?((box|bin)|b|(#|num)?\d+))|(p(ost)? *(o(ff(ice)?)?)? *((box|bin)|b)? *\d+)|(p *-?\/?(o)? *-?box)|post office box|((box|bin)|b) *(number|num|#)? *\d+|(num|number|#) *\d+))/i -->
+          <span ng-messages="searchForm.address.$error" class="has-error ng-scope ng-active " ng-if="searchForm.$submitted || searchForm.address.$Invalid || searchForm.address.$dirty">
+            <span ng-message="required">
+              <span>Address Required</span>
             </span>
-             <span ng-messages="searchForm.address.$error" class="has-error ng-scope ng-active "
-              ng-if="searchForm.childName.$dirty && searchForm.childName.$valid && searchForm.address.$pristine && searchForm.city.$pristine  && searchForm.state.$pristine">
-              <span ng-message="required"><span>No address in MACWIS</span></span>
-            </span>               
-        </div>
-        <div class="form-group col-sm-4 col-md-3 col-lg-2" ng-show="sbn.Set(1)">
-          <label for="Zip" ><h4>Address Line 2</h4></label>
-          <input class="form-control" name="addressLine2"  id="addressLine2" placeholder="Apt / Suite" ng-model = "AddrLine2">
-        </div>
-      </div>
-      <div class="col-sm-12">
-      <div class="form-group col-sm-4 col-md-3" >
-        <label for="City" ><h4 class="required">City</h4></label>      
-          <input class="form-control" type="text" name="city"  id="City" placeholder="City" ng-model = "selectedChild.originalObject.AddrCity" 
-          ng-class="{'borderRed':searchForm.city.$dirty && searchForm.city.$invalid}" required
-          ng-disabled= "selectedChild.originalObject.FullName.length && !(selectedChild.originalObject.AddrLine1 && selectedChild.originalObject.AddrCity && selectedChild.originalObject.AddrState)">
-          <span ng-messages="searchForm.city.$error" class="has-error ng-scope ng-active "
-             ng-if="searchForm.$submitted || searchForm.city.$Invalid || searchForm.city.$dirty">
-            <span ng-message="required"><span>City Required</span></span>
+            <span ng-message="pattern">
+              <span>Street Address required</span>
+            </span>
           </span>
-      </div>
-      <div class="form-group col-sm-3 col-md-2" >
-        <label for="State"><h4 class="required">State</h4></label>
-          <input class="form-control" type="text" name="state"  id="State" placeholder="State" ng-maxlength = "2" 
-          ng-model = "selectedChild.originalObject.AddrState" ng-class="{'borderRed':searchForm.state.$dirty && searchForm.state.$invalid}" required
-          ng-disabled= "selectedChild.originalObject.FullName && !(selectedChild.originalObject.AddrLine1 && selectedChild.originalObject.AddrCity && selectedChild.originalObject.AddrState)">
-          <span ng-messages="searchForm.state.$error" class="has-error ng-scope ng-active "
-             ng-if="searchForm.$submitted || searchForm.state.$Invalid || searchForm.state.$dirty  ">
-            <span ng-message="required"><span>State Required</span></span>
-            <span ng-message="maxlength"><span>State should be MS</span></span>
-          </span> 
-      </div>
-      <div class="form-group col-sm-4 col-md-3 col-lg-2" >
-        <label for="Zip" ><h4 class="required">Zip</h4></label>
-          <input class="form-control" name="zip"  id="Zip" placeholder="Zip" ng-maxlength = "5" ng-model = "selectedChild.originalObject.AddrZip"
-          ng-pattern='/^(\d{5}(-\d{4})?|[A-Z]\d[A-Z] *\d[A-Z]\d)$/' ng-minlength="5" ng-class="{'borderRed':searchForm.zip.$dirty && searchForm.zip.$invalid}" required ng-disabled= "selectedChild.originalObject.FullName && !(selectedChild.originalObject.AddrLine1 && selectedChild.originalObject.AddrCity && selectedChild.originalObject.AddrState)">
-          <span ng-messages="searchForm.zip.$error" class="has-error ng-scope ng-active "
-             ng-if="searchForm.$submitted || searchForm.zip.$Invalid || searchForm.zip.$dirty">
-            <span ng-message="required"><span>Zip Required</span></span>
-            <span ng-message="pattern"><span>Invalid zip code</span></span>
-            <span ng-message="maxlength"><span>Should be in 5 digits</span></span>
-          </span> 
-      </div><br/>
+          <span ng-messages="searchForm.address.$error" class="has-error ng-scope ng-active " ng-if="byNameForm.childName.$dirty && byNameForm.childName.$valid && searchForm.address.$pristine && searchForm.city.$pristine  && searchForm.state.$pristine">
+            <span ng-message="required">
+              <span>No address in MACWIS</span>
+            </span>
+          </span>
+        </div>
+        <div class="form-group col-sm-4 " ng-show="sbn.set(1)">
+          <label for="Apt">
+            <h4>Apt / Suite</h4>
+          </label>
+          <input class="form-control" name="addressLine2" id="addressLine2" placeholder="Apt / Suite" ng-model="AddrLine2">
+        </div>
       </div>
       <div class="col-sm-12">
-      <div class="form-group col-sm-5 col-md-3 pull-left" >
-        <label for="Addtnchld" ng-hide="sbn.Set(1)"><h4 >Additional Children</h4></label>
-        <label for="Addtnchld" ng-show="sbn.Set(1)"><h4 class="required">Number of Children</h4></label>
-        <input class="form-control" type="number" name="addtnchld"  id="Addtnchld" ng-pattern="/^[0-9]*$/" min="0" ng-model = "addChildren"  ng-change = "sbn.additionalChildren()" ng-class="{'borderRed':searchForm.addtnchld.$dirty && searchForm.addtnchld.$invalid}">
-            <span ng-messages="searchForm.addtnchld.$error" class="has-error ng-scope ng-active "
-             ng-if="searchForm.addtnchld.$invalid || searchForm.addtnchld.$dirty">
-             <span ng-message="min"><span>Minimum value is 0</span></span>
-            <span ng-message="pattern"><span>Invalid</span></span>
-          </span> 
-      </div> 
-      </div> 
-      <div class="col-xs-12 col-sm-12" ng-repeat = "a in childArray track by $index" ng-if = "!addChildren == ''">
+        <div class="form-group col-sm-4 ">
+          <label for="City">
+            <h4 class="required">City</h4>
+          </label>
+          <input class="form-control" type="text" name="city" id="City" placeholder="City" ng-model="selectedChild.originalObject.AddrCity"
+            ng-class="{'border-red':searchForm.city.$dirty && searchForm.city.$invalid}" required ng-disabled="selectedChild.originalObject.FullName.length && !(selectedChild.originalObject.AddrLine1 && selectedChild.originalObject.AddrCity && selectedChild.originalObject.AddrState)">
+          <span ng-messages="searchForm.city.$error" class="has-error ng-scope ng-active " ng-if="searchForm.$submitted || searchForm.city.$Invalid || searchForm.city.$dirty">
+            <span ng-message="required">
+              <span>City Required</span>
+            </span>
+          </span>
+        </div>
+        <div class="form-group col-sm-3 ">
+          <label for="State">
+            <h4 class="required">State</h4>
+          </label>
+          <input class="form-control" type="text" name="state" id="State" placeholder="State" ng-maxlength="2" ng-model="selectedChild.originalObject.AddrState"
+            ng-class="{'border-red':searchForm.state.$dirty && searchForm.state.$invalid}" required ng-disabled="selectedChild.originalObject.FullName && !(selectedChild.originalObject.AddrLine1 && selectedChild.originalObject.AddrCity && selectedChild.originalObject.AddrState)"
+            ng-init="selectedChild.originalObject.AddrState='MS'">
+          <span ng-messages="searchForm.state.$error" class="has-error ng-scope ng-active " ng-if="searchForm.$submitted || searchForm.state.$Invalid || searchForm.state.$dirty  ">
+            <span ng-message="required">
+              <span>State Required</span>
+            </span>
+            <span ng-message="maxlength">
+              <span>State should be MS</span>
+            </span>
+          </span>
+        </div>
+        <div class="form-group col-sm-4 " ng-class="{'has-error':searchForm.zip.$dirty && searchForm.zip.$invalid}">
+          <label for="Zip">
+            <h4 class="required">Zip</h4>
+          </label>
+          <input class="form-control" name="zip" id="Zip" placeholder="Zip" ng-model="selectedChild.originalObject.AddrZip" ng-pattern='/^(\d{5}(-\d{4})?|[A-Z]\d[A-Z] *\d[A-Z]\d)$/'
+            ng-minlength="5" ng-class="{'border-red':searchForm.zip.$dirty && searchForm.zip.$invalid}" required ng-disabled="selectedChild.originalObject.FullName && !(selectedChild.originalObject.AddrLine1 && selectedChild.originalObject.AddrCity && selectedChild.originalObject.AddrState)">
+          <span ng-messages="searchForm.zip.$error" class="has-error ng-scope ng-active " ng-if="searchForm.$submitted || searchForm.zip.$Invalid || searchForm.zip.$dirty">
+            <span ng-message="required">
+              <span>Zip Required</span>
+            </span>
+            <span ng-message="pattern">
+              <span>Invalid zip code</span>
+            </span>
+          </span>
+        </div>
+        <br/>
+      </div>
+
+      <div class="col-sm-12" ng-show="selectedChild.originalObject.siblings && selectedChild.originalObject.siblings.length">
+        <div class="container-fluid form-group">
+          <h4>
+            <span>
+              <i class="fa fa-plus rotate-plus" aria-hidden="true" ng-click="isCollapsed = !isCollapsed" ng-model="expand"></i>
+              Include siblings in this case.
+            </span>
+            <!-- <span>
+              <i class="fa fa-minus" aria-hidden="true" ng-model="minimize" ng-click="isCollapsed = !isCollapsed"></i>
+            </span> -->
+            <!-- <input type="checkbox" id="showSiblings" name="showSiblings" ng-model="siblingsList" ng-click="isCollapsed = !isCollapsed"> Include all siblings in this case who are in active custody. -->
+          </h4>
+        </div>
+        <br/>
+
+        <div uib-collapse="!isCollapsed">
+          <table class="table table-responsive">
+            <tbody>
+              <tr ng-repeat="sibling in selectedChild.originalObject.siblings track by $index">
+                <td>
+                  <input type="checkbox" id="sibling" class="input-sm"  ng-checked="sbn.checkSelected(sibling[$index])" ng-click="sbn.addSibling(sibling[$index], sibling)"
+                  />
+                </td>
+                <td>{{ sibling.Name }}</td>
+                <td>{{ sibling.DOB }}</td>
+              </tr>
+            </tbody>
+          </table>
+          <br/>
+        </div>
+      </div>
+
+      <div class="col-sm-12" ng-hide="isCollapsed">
+        <div class="form-group col-sm-5">
+          <label for="Addtnchld" ng-hide="sbn.set(1)">
+            <h4>Number of Additional Children</h4>
+          </label>
+          <label for="Addtnchld" ng-show="sbn.set(1)">
+            <h4 class="required">Number of Children</h4>
+          </label>
+          <input class="form-control" type="number" name="addtnchld" id="Addtnchld" ng-pattern="/^[0-9]*$/" min="0" ng-model="addChildren"
+            ng-change="sbn.additionalChildren()" ng-class="{'border-red':searchForm.addtnchld.$dirty && searchForm.addtnchld.$invalid}">
+          <span ng-messages="searchForm.addtnchld.$error" class="has-error ng-scope ng-active " ng-if="searchForm.addtnchld.$invalid || searchForm.addtnchld.$dirty">
+            <span ng-message="min">
+              <span>Minimum value is 0</span>
+            </span>
+            <span ng-message="pattern">
+              <span>Invalid</span>
+            </span>
+          </span>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-12" ng-repeat="a in childArray track by $index" ng-if="addChildren">
         <div class="form-group col-sm-5 col-md-3 col-lg-3">
           <label class="required">Gender</label>
-          <select class="form-control" name="gender{{$index}}" id = "{{ 'gender-' + $index }}" ng-model="gender[$index]" ng-change="disableInputs = (gender[$index]=== 'ig' || gender[$index]=== 'ib')" required="" ng-class="{'borderRed':searchForm['gender' + $index].$touched && 
-          searchForm['gender' + $index].$invalid}">
-              <option class="form-control" value="" >---Please select---</option> 
-              <option class="form-control" value="f">Female</option> 
-              <option class="form-control" value="m">Male</option>
-              <option class="form-control" value="ig">Infant Female(0 to 18mo)</option>
-              <option class="form-control" value="ib">Infant Male(0 to 18mo)</option>
+          <select class="form-control" name="gender{{$index}}" id="{{ 'gender-' + $index }}" ng-model="gender[$index]" ng-change="disableInputs = (gender[$index]=== 'ig' || gender[$index]=== 'ib')"
+            ng-class="{'border-red':searchForm['gender' + $index].$touched && 
+          searchForm['gender' + $index].$invalid}" required="">
+            <option class="form-control" value="">---Please select---</option>
+            <option class="form-control" value="f">Female</option>
+            <option class="form-control" value="m">Male</option>
+            <option class="form-control" value="ig">Infant Female(0 to 18mo)</option>
+            <option class="form-control" value="ib">Infant Male(0 to 18mo)</option>
           </select>
-          <span ng-messages="searchForm['gender' + $index].$error" class="has-error ng-scope ng-active "
-             ng-if="searchForm['gender' + $index].$Invalid || searchForm['gender' + $index].$touched">
-            <span ng-message="required"><span>Required</span></span>
-          </span>          
-          <p class="required"><small class="form-text text-muted">Children under 18 months shall sleep in a crib.</small></p>       
+          <span ng-messages="searchForm['gender' + $index].$error" class="has-error ng-scope ng-active " ng-if="searchForm['gender' + $index].$Invalid || searchForm['gender' + $index].$touched">
+            <span ng-message="required">
+              <span>Required</span>
+            </span>
+          </span>
+          <p class="required">
+            <small class="form-text text-muted">Children under 18 months shall sleep in a crib.</small>
+          </p>
         </div>
         <div class="form-group col-sm-3 col-md-2 col-lg-2" ng-if="!disableInputs">
           <label class="required">Age</label>
-          <input class="form-control" id="{{ 'age-' + $index }}" type="number" name="age{{$index}}" maxlength="2" min="0" max="21" ng-model="age[$index]" ng-pattern="/^[0-9]*$/" ng-class="{'borderRed':searchForm['age' + $index].$dirty && 
-          searchForm['age' + $index].$invalid}" required="">         
-          <span ng-messages="searchForm['age' + $index].$error" class="has-error ng-scope ng-active"
-                ng-if="searchForm['age' + $index].$invalid || searchForm['age' + $index].$dirty">
-            <span ng-message="min"><span>Please enter age between 0 and 21</span></span>
-            <span ng-message="max"><span>Please enter age between 0 and 21</span></span>
-            <span ng-message="pattern"><span>Invalid Pattern</span></span>
-          </span> 
-        </div> <br/>
-      </div>
-      <div class="row"> 
-        <input type="button" value="Clear" class="btn btn-lg btn-danger  pull-right" ng-model="submit" ng-click="sbn.clear()"  id="clear"  name="btnClear"/> 
-        <input type="button" value="Search" class="btn btn-lg btn-primary btn-position pull-right" ng-model="submit" ng-click="sbn.search(); sbn.onClick(0)" ng-disabled="searchForm.$invalid && byNameForm.$invalid || sbn.Set(1) && searchForm.$invalid" id="search" name="btnSubmit"/> 
-      </div> 
-    </form>
-   <!--  <pre>pagedItems.length: {{pagedItems.length| json }}</pre>  
-     <pre>currentPage: {{currentPage|json}}</pre>  -->
-    <form>
-      <div class="row" ng-show = "pagedItems.length">
-        <div class="col-sm-3 col-md-2 col-lg-2">
-          <label>Show</label>
-          <select class="form-control" id="entries" name="entries" ng-model="entriesPerPage" ng-init="entriesPerPage = '25'" ng-change="sbn.groupToPages(); sbn.setPage(currentPage)">
-            <option class="form-control" selected="selected" value="25">25</option>
-            <option class="form-control" value="50">50</option>
-            <option class="form-control" value="75">75</option>
-            <option class="form-control" value="100">100</option>
-          </select>
-          <!-- <input class="form-control" id="entries" type="number" name="entries" min="0" ng-model="entries" ng-init="entries = 25" ng-change = "sbn.groupToPages()"> -->
+          <input class="form-control" id="{{ 'age-' + $index }}" type="number" name="age{{$index}}" maxlength="2" min="0" max="21"
+            ng-model="age[$index]" ng-pattern="/^[0-9]*$/" ng-class="{'border-red':searchForm['age' + $index].$dirty && 
+          searchForm['age' + $index].$invalid}" required="">
+          <span ng-messages="searchForm['age' + $index].$error" class="has-error ng-scope ng-active" ng-if="searchForm['age' + $index].$invalid || searchForm['age' + $index].$dirty">
+            <span ng-message="min">
+              <span>Please enter age between 0 and 21</span>
+            </span>
+            <span ng-message="max">
+              <span>Please enter age between 0 and 21</span>
+            </span>
+            <span ng-message="pattern">
+              <span>Invalid Pattern</span>
+            </span>
+          </span>
         </div>
-      </div> 
+        <br/>
+      </div>
+      <div class="row">
+        <input type="button" value="Clear" class="btn btn-lg btn-danger view-btn pull-right" ng-model="submit" ng-click="sbn.clear()"
+          id="clear" name="btnClear" />
+        <input type="button" value="Search" class="btn btn-lg btn-primary btn-position pull-right view-btn" ng-model="submit" ng-click="sbn.search(); sbn.onClick(0)"
+          ng-disabled="searchForm.$invalid || (sbn.set(1) && !addChildren)" id="search" name="btnSubmit" />
+      </div>
     </form>
-    <br/>             
-    <div class="table table-responsive" ng-if = "pagedItems.length">
-      <table class="table table-hover">
-        <thead>
-          <td colspan="7">
-            <nav class="pull-right">
-                <ul class="pagination">
-                    <li ng-class="{disabled: currentPage == 0}" class="page-item">
-                        <a href ng-click="sbn.firstPage()">« First</a>
-                    </li>
-                    <li ng-class="{disabled: currentPage == 0}" class="page-item">
-                        <a href ng-click="sbn.prevPage()">« Prev</a>
-                    </li>
-                
-                    <li ng-repeat="page in sbn.range(pagedItems.length, currentPage, currentPage + gap) "
-                        ng-class="{active: page == currentPage}"
-                        ng-click="sbn.setPage(page)" class="page-item">
-                        <a href ng-bind="page + 1">1</a>
-                    </li>
-                 
-                    <li ng-class="{disabled: (currentPage) == pagedItems.length - 1}" class="page-item">
-                        <a href ng-click="sbn.nextPage()">Next »</a>
-                    </li>
-                    <li ng-class="{disabled: (currentPage) == pagedItems.length - 1}" class="page-item">
-                        <a href ng-click="sbn.lastPage()">Last »</a>
-                    </li>
-                </ul>
-            </nav>
+  </div>
+
+  <br/>
+  <div class="container-fluid" ng-show="pagedItems.length">
+    <hr/>
+    <h4 class="has-error">
+      Note: Please contact the Resource Worker prior to contacting the Resource Home to verify availability and suitability for
+      the child(ren) to be placed.
+    </h4>
+    <hr>
+  </div>
+  <br/>
+
+  <form>
+    <div class="row" ng-show="pagedItems.length">
+      <div class="col-sm-3 col-md-2 col-lg-2">
+        <label>Show</label>
+        <select class="form-control" id="entries" name="entries" ng-model="entriesPerPage" ng-init="entriesPerPage = '25'" ng-change="sbn.groupToPages(); sbn.setPage(currentPage)">
+          <option class="form-control" selected="selected" value="25">25</option>
+          <option class="form-control" value="50">50</option>
+          <option class="form-control" value="75">75</option>
+          <option class="form-control" value="100">100</option>
+        </select>
+        <!-- <input class="form-control" id="entries" type="number" name="entries" min="0" ng-model="entries" ng-init="entries = 25" ng-change = "sbn.groupToPages()"> -->
+      </div>
+    </div>
+  </form>
+  <br>
+
+  <div class="container" ng-if="sbn.placements['Results'].length === 0">
+    <div class="col-sm-12 has-error">
+      {{sbn.exception}}
+    </div>
+  </div>
+  <div class="table table-responsive" ng-if="pagedItems.length">
+    <table class="table table-hover">
+      <thead>
+        <td colspan="7">
+          <nav class="pull-left">
+            <ul class="pagination">
+              <li ng-class="{disabled: currentPage == 0}" class="page-item">
+                <a href ng-click="sbn.firstPage()">« First</a>
+              </li>
+              <li ng-class="{disabled: currentPage == 0}" class="page-item">
+                <a href ng-click="sbn.prevPage()">« Prev</a>
+              </li>
+
+              <li ng-repeat="page in sbn.range(pagedItems.length, currentPage, currentPage + gap) " ng-class="{active: page == currentPage}"
+                ng-click="sbn.setPage(page)" class="page-item">
+                <a href ng-bind="page + 1">1</a>
+              </li>
+
+              <li ng-class="{disabled: (currentPage) == pagedItems.length - 1}" class="page-item">
+                <a href ng-click="sbn.nextPage()">Next »</a>
+              </li>
+              <li ng-class="{disabled: (currentPage) == pagedItems.length - 1}" class="page-item">
+                <a href ng-click="sbn.lastPage()">Last »</a>
+              </li>
+            </ul>
+          </nav>
+        </td>
+      </thead>
+      <thead class="thead-inverse">
+        <tr>
+          <th style="min-width: 100px">Type Of Home</th>
+          <th>Distance
+            <br/> (miles)</th>
+          <th>Male Beds
+            <br/>Available
+          </th>
+          <th>Female Beds
+            <br/>Available</th>
+          <th>Either Beds
+            <br/> Available</th>
+          <th>Resource Name</th>
+          <th ng-style="{'min-width': '150px'}">Address</th>
+          <th ng-style="{'min-width': '150px'}">Phone Number</th>
+          <th>County</th>
+          <th>Resource Worker</th>
+        </tr>
+      </thead>
+      <tfoot>
+        <td colspan="7">
+          <nav class="pull-left">
+            <ul class="pagination">
+              <li ng-class="{disabled: currentPage == 0}" class="page-item">
+                <a href ng-click="sbn.firstPage()">« First</a>
+              </li>
+              <li ng-class="{disabled: currentPage == 0}" class="page-item">
+                <a href ng-click="sbn.prevPage()">« Prev</a>
+              </li>
+
+              <li ng-repeat="page in sbn.range(pagedItems.length, currentPage, currentPage + gap) " ng-class="{active: page == currentPage}"
+                ng-click="sbn.setPage(page)" class="page-item">
+                <a href ng-bind="page + 1">1</a>
+              </li>
+
+              <li ng-class="{disabled: (currentPage) == pagedItems.length - 1}" class="page-item">
+                <a href ng-click="sbn.nextPage()">Next »</a>
+              </li>
+              <li ng-class="{disabled: (currentPage) == pagedItems.length - 1}" class="page-item">
+                <a href ng-click="sbn.lastPage()">Last »</a>
+              </li>
+            </ul>
+          </nav>
+        </td>
+      </tfoot>
+      <tbody ng-repeat="placement in pagedItems[currentPage]">
+        <tr>
+          <td ng-bind-html="sbn.priorAne(placement)"></td>
+          <td ng-style="{'text-align': 'center'}">{{placement.Distance | number:2}} </td>
+          <td ng-style="{'text-align': 'center'}">{{placement.AvailBoy}} </td>
+          <td ng-style="{'text-align': 'center'}">{{placement.AvailGirl}} </td>
+          <td ng-style="{'text-align': 'center'}">{{placement.AvailEither}}</td>
+          <td>{{placement.ResourceName}} </td>
+          <td>{{placement.Address}}</td>
+          <td>
+            <div ng-repeat="list in placement.PhoneList">{{list.Number}}</div>
           </td>
-        </thead>
-        <thead class="thead-inverse">
-          <tr>
-            <th>Type Of Home</th>
-            <th>Distance(mi)</th>
-            <th>Male Beds <br/>Available</th>
-            <th>Female Beds <br/>Available</th>
-            <th>Either Beds<br/> Available</th>
-            <th>Resource Name</th>
-            <th>Resource Address</th>
-            <th>Resource <br/>Phone Number</th>
-            <th>County</th>  
-          </tr>
-        </thead>
-        <tfoot>
-          <td colspan="7">
-            <nav class="pull-right">
-                <ul class="pagination">
-                    <li ng-class="{disabled: currentPage == 0}" class="page-item">
-                        <a href ng-click="sbn.firstPage()">« First</a>
-                    </li>
-                    <li ng-class="{disabled: currentPage == 0}" class="page-item">
-                        <a href ng-click="sbn.prevPage()">« Prev</a>
-                    </li>
-                
-                    <li ng-repeat="page in sbn.range(pagedItems.length, currentPage, currentPage + gap) "
-                        ng-class="{active: page == currentPage}"
-                        ng-click="sbn.setPage(page)" class="page-item">
-                        <a href ng-bind="page + 1">1</a>
-                    </li>
-                 
-                    <li ng-class="{disabled: (currentPage) == pagedItems.length - 1}" class="page-item">
-                        <a href ng-click="sbn.nextPage()">Next »</a>
-                    </li>
-                    <li ng-class="{disabled: (currentPage) == pagedItems.length - 1}" class="page-item">
-                        <a href ng-click="sbn.lastPage()">Last »</a>
-                    </li>
-                </ul>
-            </nav>
+          <td>{{placement.County}} </td>
+          <td>{{placement.LicWorker}} <br>
+            {{placement.LicWorkerPhone}} <br>
+            {{placement.LicWorkerEmail}}
           </td>
-        </tfoot>
-        <tbody ng-repeat="placement in pagedItems[currentPage]">
-          <tr>
-            <td>{{  sbn.priorAne(placement) }} </td>
-            <td style="text-align: center">{{placement.Distance | number:2}} </td>
-            <td style="text-align: center">{{placement.AvailBoy}} </td>
-            <td style="text-align: center">{{placement.AvailGirl}} </td>
-            <td style="text-align: center">{{placement.AvailEither}}</td>
-            <td>{{placement.ResourceName}} </td>
-            <td>{{placement.Address}}</td>
-            <td>
-              <div ng-repeat= "list in placement.PhoneList">{{list.Number}}</div>
-            </td>
-            <td>{{placement.County}} </td>           
-          </tr>       
-        </tbody>
-      </table>
-    </div>  
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
 </div>
 <div class="loading" ng-show="loading">
   <div class="spinn"></div>
 </div>
-

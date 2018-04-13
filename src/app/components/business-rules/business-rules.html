@@ -1,0 +1,93 @@
+<div class="modal-dialog">
+  <div class="modal-header">
+    <button type="button" class="close" ng-click="rules.cancel()">&times;</button>
+    <h2 class="modal-title">Business Rules</h2>
+  </div>
+  <div class="modal-body">
+    <div ng-if="rules.set(2)">
+      <h4>
+        <strong>Searching by Child's Name</strong>
+      </h4>
+      <ul>
+        <li>
+          When searching using
+          <strong>“Child’s Name”</strong>, the report will pull a list of all children currently who have a custody start date with
+          no custody end date.
+          <ul>
+            <li>Selecting a Child who has an address in MACWIS (on the demographics) will enable the Search option.</li>
+            <li>
+              If no address for the child is entered in MACWIS,
+              <ul>
+                <li>the address will have to be entered in MACWIS first</li>
+                <br/>OR
+                <br/>
+                <li>Select ‘Address’ to search by an address</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <div ng-if="rules.set(1)">
+      <h4>
+        <strong>Searching by Address</strong>
+      </h4>
+      <ul>
+        <li> When searching using
+          <strong>“Address”</strong>, the entire address (except Apt/Suite) is required as well as the Number of children in order
+          for the search option to be available. </li>
+      </ul>
+    </div>
+    <br/>
+    <hr/>
+    <h4>
+      <strong>Search Results</strong>
+    </h4>
+    <ul>
+      <li>
+        Resource Homes are returned in the search results using the following criteria:
+        <ul>
+          <li>Within 50 miles (“as the crow flies”) of the child’s address displayed in the tool.</li>
+          <li>The Resource Home’s current license status is Active.</li>
+          <li>
+            Provides one of the following three Placement Services: Foster Home, Adopter/Foster Adopt Home, Emergency Foster Home.
+          </li>
+          <li>Has bed space available based on the age and gender of the child(ren).</li>
+        </ul>
+      </li>
+      <li>
+        Resource homes will NOT be included in the Initial Search Results if:
+        <ul>
+          <li>The distance between the Resource Home’s address is more than 50 miles from the child’s Address at Removal.</li>
+          <li>The home does not have space based on the age and gender of the child(ren). </li>
+          <li>There are 3 foster children currently placed in the home. (Regardless of the number of licensed beds in MACWIS).
+          </li>
+          <li>There are 5 total children in the home (foster, biological, or adopted).</li>
+          <li>There are 2 children under the age of two in the home and the child needing placement is two years old or less.</li>
+        </ul>
+      </li>
+      <li>
+        Results indicate if there is a previous ANE on the home, regardless if the previous ANE was unsubstantiated. If there is
+        a current ANE on the home, the home will not display in the results.
+      </li>
+      <li>
+        <strong>Advanced Search:</strong> There is an additional search option under the Advanced Search that will allow the distance
+        between the Address at Removal and the Resource Home to be increased or decreased to find the best placement for
+        the child.
+        <ul>
+          <li>
+            NOTE 1: In order to clear the number of miles in the advanced search, it will be necessary to remove the miles entered (This
+            will change in a future release).
+          </li>
+          <li>NOTE 2: More Advanced Search options are coming in future releases. </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-default" ng-click="rules.cancel()">Close</button>
+    <button type="button" class="btn btn-warning" ng-click="rules.ok()">Ok</button>
+  </div>
+</div>
+<!-- /.modal-dialog -->

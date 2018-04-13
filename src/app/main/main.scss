@@ -1,38 +1,87 @@
 
 
-.navbarAdvanced {
-    padding: 5px 10px;
-    background: #fff;
+.navbar-advanced {
+    background: #fff; //rgb(164, 177, 209);
+    //background-color: darken(#3367d6, 6.5%) !important;
     border: none;
     border-radius: 0;
+    height: 51px;
+    position: sticky;
     margin-bottom: 2px;
-    margin-top: 60px;
+    margin-top:-20px;
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 .navbar-btn {
     box-shadow: none;
+    height: 35px;
     outline: none !important;
     border: none;
+    margin-right: 1px;
 }
 
+.btn-advanced-search {
+    background-color: #3163cf;
+    //background-color: rgba(173, 32, 32, 0.863);
+    color: #ffffff;
+    box-shadow: 12px 15px 20px rgba(0,0,0,.1);
+	transition: box-shadow .2s ease-in-out,background-color .2s ease-in-out;
+    &:hover,
+    &:focus {
+        color: #ffffff;
+    }
+}
+
+.btn-alignment {
+    margin-right: 1em;
+}
+
+.custom-pills {
+    margin-top: 4px;
+    > li {
+          > a {
+            &:hover,
+            &:focus {
+              color: #ffffff;
+              text-decoration: none;
+              background-color: #417bfa;
+            }
+
+        @media (max-width: $screen-xs-max) {
+            text-align: center;
+            text-align: -webkit-center; 
+            text-align: -moz-center;
+            }
+        }
+
+    }
+}
 
 /* ---------------------------------------------------
     SIDEBAR STYLE
 ----------------------------------------------------- */
 #sidebar {
-    width: 350px;
-    position: absolute;
-    top: 60px;
+    //width: 350px;
+    width: 25%;
+    position: fixed;
+    top: 0px;
     bottom: 0;
-    right: -350px;
-    height: 100vh;
-    z-index: 999;
-    background: #3B3637;
-    color: #fff;
+    //right: -350px;
+    right: -25%;
+    max-height: 100%;
+    z-index: 9999;
+    //background: #3B3637;
+    //background: #696969;
+    background: #ffffff;
+    //color: #fff;
     transition: all 0.3s;
     overflow-y: auto;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+    @media (max-width: $screen-sm-max) {
+        width: 35%;
+        right: -35%;
+    }
+
     @media (max-width: $screen-xs-max) {
         width: 100%;
         right: -100%;
@@ -44,7 +93,7 @@
         font-weight: 300;
         line-height: 1.7em;
         text-align: center;
-        color: #fff;
+        //color: #fff;
     }
 
     > form {
@@ -61,7 +110,7 @@
     height: 35px;
     line-height: 35px;
     text-align: center;
-    background: #3B3637;
+    //background: #696969;
     position: absolute;
     top: 10px;
     right: 10px;
@@ -70,9 +119,13 @@
     -o-transition: all 0.3s;
     transition: all 0.3s;
 }
-#dismiss:hover {
-    background: #fff;
-    color: #3B3637;
+// #dismiss:hover {
+//     background: #fff;
+//     color: #696969;
+// }
+
+#dismiss.active {
+    right: 0;
 }
 
 .overlay {
@@ -85,11 +138,96 @@
     top: 0;
     left: 0;
 }
+.rotate {
+    -moz-transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
 
+.rotate.down{
+    -moz-transform:rotate(180deg);
+    -webkit-transform:rotate(180deg);
+    transform:rotate(180deg);
+}
 
+.dropdown {
+    border-color: #ececec;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 2px;
+    width: 100%;
+    padding: 6px;
+    cursor: pointer;
+    z-index: 9999;
+    position: absolute;
+    overflow-y: auto;
+    max-height: 350px;
+    /*top: 32px;
+    left: 0px;
+    */
+    margin-top: -6px;
+    background-color: #ffffff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
 
 .options {
     margin-bottom: 20px;
+    @media (min-width: $screen-sm-min) {
+        display: inline-block;
+    }
 }
 
+.apply-btn {
+    background: #02b3e4;
+    border: #02b3e4;
+    letter-spacing: .15em;
+    font-size: 16px;
+    font-weight: 600;
+    box-shadow: 12px 15px 20px rgba(0,0,0,.1);
+	transition: box-shadow .2s ease-in-out,background-color .2s ease-in-out;
+    text-transform: uppercase;
+}
 
+hr {
+    border: 0;
+    clear:both;
+    display:block;
+    width: 96%;
+    background-color:rgb(190, 175, 178);
+    height: 0.5px;
+    opacity: 0.5;
+    margin-bottom: 1px;
+  }
+
+.select2 > .select2-choice.ui-select-match {
+    /* Because of the inclusion of Bootstrap */
+    height: 29px;
+}
+
+.selectize-control > .selectize-dropdown {
+    top: 36px;
+}
+/* Some additional styling to demonstrate that append-to-body helps achieve the proper z-index layering. */
+.select-box {
+  background: #fff;
+  position: relative;
+  z-index: 1;
+}
+.alert-info.positioned {
+  margin-top: 1em;
+  position: relative;
+  z-index: 10000; /* The select2 dropdown has a z-index of 9999 */
+}
+
+.select2-container-multi .select2-choices .select2-search-field input {
+    max-width: 100%;
+    width: 220px !important;
+}
+.select2-result-label .ui-select-choices-row-inner {
+    color: #000000 !important;
+}
+
+.select2-results .select2-highlighted:hover {
+    color: #ffffff !important;
+    background: #69615f;
+}

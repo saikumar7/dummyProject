@@ -16,7 +16,7 @@
       })
       .state('error', {
         url: '/error',
-        templateUrl: 'app/components/views/error.html',
+        templateUrl: 'app/components/error/error.html',
         controller: 'ErrorController',
         controllerAs: 'errorCtrl'
       });

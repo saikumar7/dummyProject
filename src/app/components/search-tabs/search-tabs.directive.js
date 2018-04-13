@@ -9,10 +9,8 @@
   function searchTabs() {
     var directive = {
       restrict: 'E',
-      templateUrl: 'app/components/searchTabs/searchTabs.html',
-      scope: {
-          creationDate: '='
-      },
+      templateUrl: 'app/components/search-tabs/search-tabs.html',
+      scope: true,
       controller: searchTabsController,
       controllerAs: 'tab',
       bindToController: true
@@ -26,16 +24,16 @@
           var vm = this;
           vm.tab = 2;
 
-          vm.Set = function(checkTab) {
+          vm.set = function(checkTab) {
             return setTabsService.isSet(checkTab);
           };
 
-          vm.Tab = function(activeTab) {
+          vm.tab = function(activeTab) {
             return setTabsService.setTab(activeTab);
           };
 
           vm.clear = function () {
-            $scope.$broadcast('angucomplete-alt:clearInput');
+            $scope.$broadcast('clickTab');         
           }
 
           // vm.isSet = function(checkTab) {
